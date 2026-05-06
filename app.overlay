@@ -32,7 +32,6 @@
 			mipi-max-frequency = <20000000>;
 			mipi-mode = "MIPI_DBI_MODE_SPI_4WIRE";
 			pixel-format = <PANEL_PIXEL_FORMAT_RGB_565>;
-			rgb-is-inverted;
 			width = <240>;
 			height = <240>;
 			display-inversion;

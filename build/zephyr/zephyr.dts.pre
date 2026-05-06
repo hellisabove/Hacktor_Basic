@@ -1,7 +1,7 @@
-# 0 "/Users/dan.tudose/zephyrproject/zephyr/misc/empty_file.c"
+# 0 "/home/nedi/zephyrproject/zephyr/misc/empty_file.c"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 1
+# 1 "/home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 1
 
 
 
@@ -9,32 +9,32 @@
 
 /dts-v1/;
 
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_wroom_n8.dtsi" 1 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_wroom_n8.dtsi" 1 3 4
 
 
 
 
 
 
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 1 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 1 3 4
 
 
 
 
 
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/dts/common/mem.h" 1 3 4
-# 7 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/dts/common/freq.h" 1 3 4
-# 8 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/xtensa.dtsi" 1 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/dts/common/mem.h" 1 3 4
+# 7 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/dts/common/freq.h" 1 3 4
+# 8 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/dts/xtensa/xtensa.dtsi" 1 3 4
 
 
 
 
 
 
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/dts/common/skeleton.dtsi" 1 3 4
-# 9 "/Users/dan.tudose/zephyrproject/zephyr/dts/common/skeleton.dtsi" 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/dts/common/skeleton.dtsi" 1 3 4
+# 9 "/home/nedi/zephyrproject/zephyr/dts/common/skeleton.dtsi" 3 4
 / {
  #address-cells = <1>;
  #size-cells = <1>;
@@ -43,7 +43,7 @@
 
  aliases {};
 };
-# 8 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/xtensa.dtsi" 2 3 4
+# 8 "/home/nedi/zephyrproject/zephyr/dts/xtensa/xtensa.dtsi" 2 3 4
 
 / {
  soc {
@@ -53,48 +53,48 @@
   ranges;
  };
 };
-# 9 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h" 1 3 4
-# 9 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h" 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h" 1 3 4
-# 19 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h" 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_macro.h" 1 3 4
-# 34 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_macro.h" 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 1 3 4
-# 18 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_loops.h" 1 3 4
-# 1083 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_loops.h" 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_listify.h" 1 3 4
-# 1084 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_loops.h" 2 3 4
-# 19 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
-# 203 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal_is_eq.h" 1 3 4
-# 204 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
-# 234 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_inc.h" 1 3 4
-# 235 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 9 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h" 1 3 4
+# 9 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h" 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h" 1 3 4
+# 19 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h" 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_macro.h" 1 3 4
+# 34 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_macro.h" 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 1 3 4
+# 18 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_loops.h" 1 3 4
+# 1083 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_loops.h" 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_listify.h" 1 3 4
+# 1084 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_loops.h" 2 3 4
+# 19 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 162 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal_is_eq.h" 1 3 4
+# 163 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 193 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_inc.h" 1 3 4
+# 194 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
 
 
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_dec.h" 1 3 4
-# 238 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_dec.h" 1 3 4
+# 197 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
 
 
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_x2.h" 1 3 4
-# 241 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
-# 35 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/sys/util_macro.h" 2 3 4
-# 20 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h" 2 3 4
-# 10 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h" 2 3 4
-# 10 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
-# 11 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
-# 12 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/clock/esp32s3_clock.h" 1 3 4
-# 13 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/interrupt-controller/esp32s3-xtensa-intmux.h" 1 3 4
-# 14 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32s3-pinctrl.h" 1 3 4
-# 15 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_x2.h" 1 3 4
+# 200 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 35 "/home/nedi/zephyrproject/zephyr/include/zephyr/sys/util_macro.h" 2 3 4
+# 20 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h" 2 3 4
+# 10 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h" 2 3 4
+# 10 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
+# 11 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
+# 12 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/clock/esp32s3_clock.h" 1 3 4
+# 13 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/interrupt-controller/esp32s3-xtensa-intmux.h" 1 3 4
+# 14 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32s3-pinctrl.h" 1 3 4
+# 15 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi" 2 3 4
 
 / {
  aliases {
@@ -242,18 +242,6 @@
          <80 0 0>;
    interrupt-parent = <&intc>;
    #mbox-cells = <1>;
-  };
-
-  rtc_slow_ram: memory@50000000 {
-   compatible = "zephyr,memory-region", "mmio-sram";
-   reg = <0x50000000 ((8) * 1024)>;
-   zephyr,memory-region = "RTC_SLOW_RAM";
-  };
-
-  rtc_fast_ram: memory@600fe000 {
-   compatible = "zephyr,memory-region", "mmio-sram";
-   reg = <0x600fe000 ((8) * 1024)>;
-   zephyr,memory-region = "RTC_FAST_RAM";
   };
 
   intc: interrupt-controller@600c2000 {
@@ -700,25 +688,25 @@
   };
  };
 };
-# 8 "/Users/dan.tudose/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_wroom_n8.dtsi" 2 3 4
+# 8 "/home/nedi/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_wroom_n8.dtsi" 2 3 4
 
 
 &flash0 {
  reg = <0x0 (((8) * 1024) * 1024)>;
 };
-# 9 "/Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h" 1 3 4
-# 10 "/Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/input/esp32-touch-sensor-input.h" 1 3 4
-# 11 "/Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_amp.dtsi" 1 3 4
+# 9 "/home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h" 1 3 4
+# 10 "/home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/input/esp32-touch-sensor-input.h" 1 3 4
+# 11 "/home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
+# 1 "/home/nedi/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_amp.dtsi" 1 3 4
 
 
 
 
 
 
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_amp_4M.dtsi" 1 3 4
+# 1 "/home/nedi/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_amp_4M.dtsi" 1 3 4
 
 
 
@@ -787,20 +775,20 @@
   };
  };
 };
-# 8 "/Users/dan.tudose/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_amp.dtsi" 2 3 4
-# 12 "/Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc-pinctrl.dtsi" 1
+# 8 "/home/nedi/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_amp.dtsi" 2 3 4
+# 12 "/home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
+# 1 "/home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc-pinctrl.dtsi" 1
 
 
 
 
 
 
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp-pinctrl-common.h" 1 3 4
-# 8 "/Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc-pinctrl.dtsi" 2
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp-pinctrl-common.h" 1 3 4
+# 8 "/home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc-pinctrl.dtsi" 2
 
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32s3-gpio-sigmap.h" 1 3 4
-# 10 "/Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc-pinctrl.dtsi" 2
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32s3-gpio-sigmap.h" 1 3 4
+# 10 "/home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc-pinctrl.dtsi" 2
 
 &pinctrl {
  uart0_default: uart0_default {
@@ -900,7 +888,7 @@
   };
  };
 };
-# 13 "/Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
+# 13 "/home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts" 2
 
 / {
  model = "Espressif ESP32S3-DevkitC PROCPU";
@@ -1046,15 +1034,16 @@ zephyr_udc0: &usb_otg {
  status = "okay";
 };
 # 0 "<command-line>" 2
-# 1 "/Users/dan.tudose/zephyrproject/Hacktor_Basic/app.overlay" 1
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/include/zephyr/dt-bindings/display/panel.h" 1 3 4
-# 2 "/Users/dan.tudose/zephyrproject/Hacktor_Basic/app.overlay" 2
+# 1 "/home/nedi/zephyrproject/Hacktor_Basic/app.overlay" 1
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/display/panel.h" 1 3 4
+# 2 "/home/nedi/zephyrproject/Hacktor_Basic/app.overlay" 2
 
 
 
 
 
-
+# 1 "/home/nedi/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32s3-pinctrl.h" 1 3 4
+# 8 "/home/nedi/zephyrproject/Hacktor_Basic/app.overlay" 2
 
 / {
  chosen {
@@ -1082,7 +1071,6 @@ zephyr_udc0: &usb_otg {
    mipi-max-frequency = <20000000>;
    mipi-mode = "MIPI_DBI_MODE_SPI_4WIRE";
    pixel-format = <(0x1 << 4)>;
-   rgb-is-inverted;
    width = <240>;
    height = <240>;
    display-inversion;
@@ -1194,4 +1182,4 @@ zephyr_udc0: &usb_otg {
  };
 };
 # 0 "<command-line>" 2
-# 1 "/Users/dan.tudose/zephyrproject/zephyr/misc/empty_file.c"
+# 1 "/home/nedi/zephyrproject/zephyr/misc/empty_file.c"

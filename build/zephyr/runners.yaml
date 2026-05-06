@@ -11,15 +11,15 @@ debug-runner: openocd
 
 # Common runner configuration values.
 config:
-  board_dir: /Users/dan.tudose/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc
+  board_dir: /home/nedi/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc
   # Build outputs:
   elf_file: zephyr.elf
   bin_file: zephyr.bin
   # Host tools:
-  gdb: /Users/dan.tudose/zephyr-sdk-0.17.4/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gdb
-  openocd: /opt/homebrew/bin/openocd
+  gdb: /home/nedi/zephyr-sdk-0.17.4/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gdb
+  openocd: /home/nedi/zephyr-sdk-0.17.4/sysroots/x86_64-pokysdk-linux/usr/bin/openocd
   openocd_search:
-    - /Users/dan.tudose/zephyr-sdk-0.17.4/sysroots/arm64-pokysdk-linux/usr/share/openocd/scripts
+    - /home/nedi/zephyr-sdk-0.17.4/sysroots/x86_64-pokysdk-linux/usr/share/openocd/scripts
 
 # Runner specific arguments
 args:
@@ -42,9 +42,9 @@ args:
     - thb main
   esp32:
     - --esp-monitor-baud=
-    - --esp-idf-path=/Users/dan.tudose/zephyrproject/modules/hal/espressif
+    - --esp-idf-path=/home/nedi/zephyrproject/modules/hal/espressif
     - --esp-app-address=0x0
     - --esp-flash-size=8MB
     - --esp-flash-freq=80m
     - --esp-flash-mode=dio
-    - --esp-idf-path=/Users/dan.tudose/zephyrproject/modules/hal/espressif
+    - --esp-idf-path=/home/nedi/zephyrproject/modules/hal/espressif

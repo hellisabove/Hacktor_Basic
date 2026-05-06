@@ -139,3 +139,7 @@ app
 - The LCD panel is configured through Zephyr's `galaxycore,gc9x01x` driver.
 - The touch controller is described as `hynitron,cst816s` in devicetree because that is the supported Zephyr driver path used by this hardware setup.
 - The application is intentionally small and focused on hardware bring-up rather than product UI structure.
+
+## Setup
+- In this repo there are 2 scripts for setting up zephyr 4.3. One is for arch and the other for ubuntu.
+- Download the script for your distro, it will setup the zephyr sdk and everything. Then clone the repo in the zephyrproject folder and build it.

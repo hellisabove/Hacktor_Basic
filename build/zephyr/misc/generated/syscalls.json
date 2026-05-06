@@ -609,30 +609,6 @@
     ],
     [
         [
-            "int k_thread_runtime_stack_unused_threshold_pct_set",
-            "struct k_thread *thread,\n\t\t\t\t\t\t\t      uint32_t pct"
-        ],
-        "kernel.h",
-        true
-    ],
-    [
-        [
-            "int k_thread_runtime_stack_unused_threshold_set",
-            "struct k_thread *thread,\n\t\t\t\t\t\t\t  size_t threshold"
-        ],
-        "kernel.h",
-        true
-    ],
-    [
-        [
-            "size_t k_thread_runtime_stack_unused_threshold_get",
-            "struct k_thread *thread"
-        ],
-        "kernel.h",
-        true
-    ],
-    [
-        [
             "int k_thread_join",
             "struct k_thread *thread, k_timeout_t timeout"
         ],
@@ -2793,6 +2769,22 @@
     ],
     [
         [
+            "void mdio_bus_enable",
+            "const struct device *dev"
+        ],
+        "mdio.h",
+        false
+    ],
+    [
+        [
+            "void mdio_bus_disable",
+            "const struct device *dev"
+        ],
+        "mdio.h",
+        false
+    ],
+    [
+        [
             "int mdio_read",
             "const struct device *dev, uint8_t prtad, uint8_t regad,\n\t\t\tuint16_t *data"
         ],
@@ -4218,7 +4210,7 @@
     [
         [
             "int net_if_ipv6_addr_lookup_by_index",
-            "const struct net_in6_addr *addr"
+            "const struct in6_addr *addr"
         ],
         "net_if.h",
         false
@@ -4226,7 +4218,7 @@
     [
         [
             "bool net_if_ipv6_addr_add_by_index",
-            "int index,\n\t\t\t\t\t     const struct net_in6_addr *addr,\n\t\t\t\t\t     enum net_addr_type addr_type,\n\t\t\t\t\t     uint32_t vlifetime"
+            "int index,\n\t\t\t\t\t     const struct in6_addr *addr,\n\t\t\t\t\t     enum net_addr_type addr_type,\n\t\t\t\t\t     uint32_t vlifetime"
         ],
         "net_if.h",
         false
@@ -4234,7 +4226,7 @@
     [
         [
             "bool net_if_ipv6_addr_rm_by_index",
-            "int index,\n\t\t\t\t\t    const struct net_in6_addr *addr"
+            "int index,\n\t\t\t\t\t    const struct in6_addr *addr"
         ],
         "net_if.h",
         false
@@ -4242,7 +4234,7 @@
     [
         [
             "int net_if_ipv4_addr_lookup_by_index",
-            "const struct net_in_addr *addr"
+            "const struct in_addr *addr"
         ],
         "net_if.h",
         false
@@ -4250,7 +4242,7 @@
     [
         [
             "bool net_if_ipv4_addr_add_by_index",
-            "int index,\n\t\t\t\t\t     const struct net_in_addr *addr,\n\t\t\t\t\t     enum net_addr_type addr_type,\n\t\t\t\t\t     uint32_t vlifetime"
+            "int index,\n\t\t\t\t\t     const struct in_addr *addr,\n\t\t\t\t\t     enum net_addr_type addr_type,\n\t\t\t\t\t     uint32_t vlifetime"
         ],
         "net_if.h",
         false
@@ -4258,7 +4250,7 @@
     [
         [
             "bool net_if_ipv4_addr_rm_by_index",
-            "int index,\n\t\t\t\t\t    const struct net_in_addr *addr"
+            "int index,\n\t\t\t\t\t    const struct in_addr *addr"
         ],
         "net_if.h",
         false
@@ -4266,7 +4258,7 @@
     [
         [
             "bool net_if_ipv4_set_netmask_by_index",
-            "int index,\n\t\t\t\t\t\t\t     const struct net_in_addr *netmask"
+            "int index,\n\t\t\t\t\t\t\t     const struct in_addr *netmask"
         ],
         "net_if.h",
         false
@@ -4274,7 +4266,7 @@
     [
         [
             "bool net_if_ipv4_set_netmask_by_addr_by_index",
-            "int index,\n\t\t\t\t\t\t\tconst struct net_in_addr *addr,\n\t\t\t\t\t\t\tconst struct net_in_addr *netmask"
+            "int index,\n\t\t\t\t\t\t\tconst struct in_addr *addr,\n\t\t\t\t\t\t\tconst struct in_addr *netmask"
         ],
         "net_if.h",
         false
@@ -4282,7 +4274,7 @@
     [
         [
             "bool net_if_ipv4_set_gw_by_index",
-            "int index, const struct net_in_addr *gw"
+            "int index, const struct in_addr *gw"
         ],
         "net_if.h",
         false
@@ -4298,7 +4290,7 @@
     [
         [
             "int net_addr_pton",
-            "net_sa_family_t family, const char *src, void *dst"
+            "sa_family_t family, const char *src, void *dst"
         ],
         "net_ip.h",
         false
@@ -4306,7 +4298,7 @@
     [
         [
             "char *net_addr_ntop",
-            "net_sa_family_t family, const void *src,\n\t\t\t      char *dst, size_t size"
+            "sa_family_t family, const void *src,\n\t\t\t      char *dst, size_t size"
         ],
         "net_ip.h",
         false
@@ -4354,7 +4346,7 @@
     [
         [
             "int zsock_bind",
-            "int sock, const struct net_sockaddr *addr,\n\t\t\t net_socklen_t addrlen"
+            "int sock, const struct sockaddr *addr,\n\t\t\t socklen_t addrlen"
         ],
         "socket.h",
         false
@@ -4362,7 +4354,7 @@
     [
         [
             "int zsock_connect",
-            "int sock, const struct net_sockaddr *addr,\n\t\t\t    net_socklen_t addrlen"
+            "int sock, const struct sockaddr *addr,\n\t\t\t    socklen_t addrlen"
         ],
         "socket.h",
         false
@@ -4378,7 +4370,7 @@
     [
         [
             "int zsock_accept",
-            "int sock, struct net_sockaddr *addr, net_socklen_t *addrlen"
+            "int sock, struct sockaddr *addr, socklen_t *addrlen"
         ],
         "socket.h",
         false
@@ -4386,7 +4378,7 @@
     [
         [
             "ssize_t zsock_sendto",
-            "int sock, const void *buf, size_t len,\n\t\t\t       int flags, const struct net_sockaddr *dest_addr,\n\t\t\t       net_socklen_t addrlen"
+            "int sock, const void *buf, size_t len,\n\t\t\t       int flags, const struct sockaddr *dest_addr,\n\t\t\t       socklen_t addrlen"
         ],
         "socket.h",
         false
@@ -4394,7 +4386,7 @@
     [
         [
             "ssize_t zsock_sendmsg",
-            "int sock, const struct net_msghdr *msg,\n\t\t\t\tint flags"
+            "int sock, const struct msghdr *msg,\n\t\t\t\tint flags"
         ],
         "socket.h",
         false
@@ -4402,7 +4394,7 @@
     [
         [
             "ssize_t zsock_recvfrom",
-            "int sock, void *buf, size_t max_len,\n\t\t\t\t int flags, struct net_sockaddr *src_addr,\n\t\t\t\t net_socklen_t *addrlen"
+            "int sock, void *buf, size_t max_len,\n\t\t\t\t int flags, struct sockaddr *src_addr,\n\t\t\t\t socklen_t *addrlen"
         ],
         "socket.h",
         false
@@ -4410,7 +4402,7 @@
     [
         [
             "ssize_t zsock_recvmsg",
-            "int sock, struct net_msghdr *msg, int flags"
+            "int sock, struct msghdr *msg, int flags"
         ],
         "socket.h",
         false
@@ -4434,7 +4426,7 @@
     [
         [
             "int zsock_getsockopt",
-            "int sock, int level, int optname,\n\t\t\t       void *optval, net_socklen_t *optlen"
+            "int sock, int level, int optname,\n\t\t\t       void *optval, socklen_t *optlen"
         ],
         "socket.h",
         false
@@ -4442,7 +4434,7 @@
     [
         [
             "int zsock_setsockopt",
-            "int sock, int level, int optname,\n\t\t\t       const void *optval, net_socklen_t optlen"
+            "int sock, int level, int optname,\n\t\t\t       const void *optval, socklen_t optlen"
         ],
         "socket.h",
         false
@@ -4450,7 +4442,7 @@
     [
         [
             "int zsock_getpeername",
-            "int sock, struct net_sockaddr *addr,\n\t\t\t\tnet_socklen_t *addrlen"
+            "int sock, struct sockaddr *addr,\n\t\t\t\tsocklen_t *addrlen"
         ],
         "socket.h",
         false
@@ -4458,7 +4450,7 @@
     [
         [
             "int zsock_getsockname",
-            "int sock, struct net_sockaddr *addr,\n\t\t\t\tnet_socklen_t *addrlen"
+            "int sock, struct sockaddr *addr,\n\t\t\t\tsocklen_t *addrlen"
         ],
         "socket.h",
         false
@@ -4474,7 +4466,7 @@
     [
         [
             "int zsock_inet_pton",
-            "net_sa_family_t family, const char *src, void *dst"
+            "sa_family_t family, const char *src, void *dst"
         ],
         "socket.h",
         false

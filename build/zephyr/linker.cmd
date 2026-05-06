@@ -11,10 +11,6 @@ procpu_irom_org = (1107296256);
 procpu_irom_len = (33554432) - (0 + 0);
 procpu_drom_org = (1006632960);
 procpu_drom_len = (33554432) - (0 + 0);
-rtc_iram_org = (1611653120);
-rtc_iram_len = (8192);
-rtc_slow_org = (1342177280);
-rtc_slow_len = (8192);
 MEMORY
 {
   FLASH (R): org = 0x0, len = 8388608 - 0x100
@@ -22,8 +18,8 @@ MEMORY
   dram0_0_seg(RW): org = procpu_dram_org, len = procpu_dram_len
   irom0_0_seg(RX): org = procpu_irom_org, len = procpu_irom_len
   drom0_0_seg(R): org = procpu_drom_org, len = procpu_drom_len
-  rtc_iram_seg(RWX): org = rtc_iram_org, len = rtc_iram_len - 0
-  rtc_slow_seg(RW): org = rtc_slow_org, len = rtc_slow_len
+  rtc_iram_seg(RWX): org = 0x600fe000, len = 0x2000 - 0
+  rtc_slow_seg(RW): org = 0x50000000, len = 0x2000
   IDT_LIST(RW): org = 0x3ebfe010, len = 0x2000
 }
 ENTRY("__start")
