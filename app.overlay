@@ -27,7 +27,7 @@
 			compatible = "galaxycore,gc9x01x";
 			reg = <0>;
 			status = "okay";
-			zephyr,deferred-init;
+			
 			orientation = "180";
 			mipi-max-frequency = <20000000>;
 			mipi-mode = "MIPI_DBI_MODE_SPI_4WIRE";
@@ -44,11 +44,6 @@
 		lcd_backlight: lcd_backlight {
 			gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
 			label = "LCD backlight";
-		};
-
-		lcd_power_enable: lcd_power_enable {
-			gpios = <&gpio0 18 GPIO_ACTIVE_HIGH>;
-			label = "LCD power enable";
 		};
 	};
 
@@ -107,7 +102,7 @@
 	pinctrl-names = "default";
 
 	imu: lsm6dsl@6a {
-		compatible = "i2c-device";
+		compatible = "st,lsm6dsl";
 		reg = <0x6a>;
 		status = "okay";
 	};
@@ -116,16 +111,24 @@
 		compatible = "maxim,max17048";
 		reg = <0x36>;
 		status = "okay";
-		zephyr,deferred-init;
+		
 	};
 
 	cst816s: cst81xx@15 {
 		compatible = "hynitron,cst816s";
 		reg = <0x15>;
 		status = "okay";
-		zephyr,deferred-init;
+		
 		irq-gpios = <&gpio0 1 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
 		rst-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+	};
+};
+
+&gpio0 {
+	lcd-pwr-hog {
+		gpio-hog;
+		gpios = <18 GPIO_ACTIVE_HIGH>;
+		output-high;
 	};
 };
 

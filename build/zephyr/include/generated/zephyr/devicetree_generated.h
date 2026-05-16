@@ -5,7 +5,7 @@
  *   /home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/zephyr.dts.pre
  *
  * Directories with bindings:
- *   /home/nedi/zephyrproject/zephyr/dts/bindings
+ *   $ZEPHYR_BASE/dts/bindings
  *
  * Node dependency ordering (ordinal and path):
  *   0   /
@@ -31,97 +31,97 @@
  *   20  /cpus/cpu@1
  *   21  /leds
  *   22  /leds/lcd_backlight
- *   23  /leds/lcd_power_enable
- *   24  /clock
- *   25  /pin-controller
- *   26  /pin-controller/spim3_lcd_default
- *   27  /soc/spi@60025000
- *   28  /mipi_dbi
- *   29  /mipi_dbi/gc9a01@0
- *   30  /pin-controller/i2c0_default
- *   31  /pin-controller/i2c0_default/group1
- *   32  /pin-controller/i2c1_default
- *   33  /pin-controller/i2c1_default/group1
- *   34  /pin-controller/i2c1_touch_default
- *   35  /pin-controller/i2c1_touch_default/group1
- *   36  /pin-controller/i2s0_default
- *   37  /pin-controller/i2s0_default/group1
- *   38  /pin-controller/i2s1_default
- *   39  /pin-controller/i2s1_default/group1
- *   40  /pin-controller/spim2_default
- *   41  /pin-controller/spim2_default/group1
- *   42  /pin-controller/spim2_default/group2
- *   43  /pin-controller/spim3_default
- *   44  /pin-controller/spim3_default/group1
- *   45  /pin-controller/spim3_default/group2
- *   46  /pin-controller/spim3_lcd_default/group1
- *   47  /pin-controller/spim3_lcd_default/group2
- *   48  /pin-controller/twai_default
- *   49  /pin-controller/twai_default/group1
- *   50  /pin-controller/uart0_default
- *   51  /pin-controller/uart0_default/group1
- *   52  /pin-controller/uart0_default/group2
- *   53  /pin-controller/uart1_default
- *   54  /pin-controller/uart1_default/group1
- *   55  /pin-controller/uart1_default/group2
- *   56  /soc/adc@60040000
- *   57  /soc/adc@60040004
- *   58  /soc/aes@6003a000
- *   59  /soc/can@6002b000
- *   60  /soc/coretemp@60008800
- *   61  /soc/i2c@60013000
- *   62  /soc/dma@6003f000
- *   63  /soc/i2s@6000f000
- *   64  /soc/i2s@6002d000
- *   65  /soc/memory@3fce5000
- *   66  /soc/ipm@3fce9400
- *   67  /soc/lcd_cam@60041000
- *   68  /soc/ledc@60019000
- *   69  /soc/mbox@3fce9408
- *   70  /soc/mcpwm@6001e000
- *   71  /soc/mcpwm@6002c000
- *   72  /soc/memory@3fc88000
- *   73  /soc/memory@3fce5400
- *   74  /soc/memory@3fcf0000
- *   75  /soc/memory@40370000
- *   76  /soc/memory@42000000
- *   77  /soc/pcnt@60017000
- *   78  /soc/rtc_timer@60008004
- *   79  /soc/sha@6003b000
- *   80  /soc/spi@60024000
- *   81  /soc/touch@6000885c
- *   82  /soc/trng@6003507c
- *   83  /soc/uart@60000000
- *   84  /soc/uart@60010000
- *   85  /soc/uart@6002e000
- *   86  /soc/uart@60038000
- *   87  /soc/usb_otg@60080000
- *   88  /soc/watchdog@6001f048
- *   89  /soc/watchdog@60020048
- *   90  /soc/xt_wdt@60021004
- *   91  /soc/counter@6001f000
- *   92  /soc/counter@6001f000/counter
- *   93  /soc/counter@6001f024
- *   94  /soc/counter@6001f024/counter
- *   95  /soc/counter@60020000
- *   96  /soc/counter@60020000/counter
- *   97  /soc/counter@60020024
- *   98  /soc/counter@60020024/counter
- *   99  /soc/flash-controller@60002000
- *   100 /soc/flash-controller@60002000/flash@0
- *   101 /soc/flash-controller@60002000/flash@0/partitions
- *   102 /soc/flash-controller@60002000/flash@0/partitions/partition@0
- *   103 /soc/flash-controller@60002000/flash@0/partitions/partition@10000
- *   104 /soc/flash-controller@60002000/flash@0/partitions/partition@20000
- *   105 /soc/flash-controller@60002000/flash@0/partitions/partition@170000
- *   106 /soc/flash-controller@60002000/flash@0/partitions/partition@2c0000
- *   107 /soc/flash-controller@60002000/flash@0/partitions/partition@330000
- *   108 /soc/flash-controller@60002000/flash@0/partitions/partition@3a0000
- *   109 /soc/flash-controller@60002000/flash@0/partitions/partition@3a8000
- *   110 /soc/flash-controller@60002000/flash@0/partitions/partition@3b0000
- *   111 /soc/flash-controller@60002000/flash@0/partitions/partition@3e0000
- *   112 /soc/flash-controller@60002000/flash@0/partitions/partition@3ff000
- *   113 /soc/gpio/gpio@60004800
+ *   23  /clock
+ *   24  /pin-controller
+ *   25  /pin-controller/spim3_lcd_default
+ *   26  /soc/spi@60025000
+ *   27  /mipi_dbi
+ *   28  /mipi_dbi/gc9a01@0
+ *   29  /pin-controller/i2c0_default
+ *   30  /pin-controller/i2c0_default/group1
+ *   31  /pin-controller/i2c1_default
+ *   32  /pin-controller/i2c1_default/group1
+ *   33  /pin-controller/i2c1_touch_default
+ *   34  /pin-controller/i2c1_touch_default/group1
+ *   35  /pin-controller/i2s0_default
+ *   36  /pin-controller/i2s0_default/group1
+ *   37  /pin-controller/i2s1_default
+ *   38  /pin-controller/i2s1_default/group1
+ *   39  /pin-controller/spim2_default
+ *   40  /pin-controller/spim2_default/group1
+ *   41  /pin-controller/spim2_default/group2
+ *   42  /pin-controller/spim3_default
+ *   43  /pin-controller/spim3_default/group1
+ *   44  /pin-controller/spim3_default/group2
+ *   45  /pin-controller/spim3_lcd_default/group1
+ *   46  /pin-controller/spim3_lcd_default/group2
+ *   47  /pin-controller/twai_default
+ *   48  /pin-controller/twai_default/group1
+ *   49  /pin-controller/uart0_default
+ *   50  /pin-controller/uart0_default/group1
+ *   51  /pin-controller/uart0_default/group2
+ *   52  /pin-controller/uart1_default
+ *   53  /pin-controller/uart1_default/group1
+ *   54  /pin-controller/uart1_default/group2
+ *   55  /soc/adc@60040000
+ *   56  /soc/adc@60040004
+ *   57  /soc/aes@6003a000
+ *   58  /soc/can@6002b000
+ *   59  /soc/coretemp@60008800
+ *   60  /soc/i2c@60013000
+ *   61  /soc/dma@6003f000
+ *   62  /soc/i2s@6000f000
+ *   63  /soc/i2s@6002d000
+ *   64  /soc/memory@3fce5000
+ *   65  /soc/ipm@3fce9400
+ *   66  /soc/lcd_cam@60041000
+ *   67  /soc/ledc@60019000
+ *   68  /soc/mbox@3fce9408
+ *   69  /soc/mcpwm@6001e000
+ *   70  /soc/mcpwm@6002c000
+ *   71  /soc/memory@3fc88000
+ *   72  /soc/memory@3fce5400
+ *   73  /soc/memory@3fcf0000
+ *   74  /soc/memory@40370000
+ *   75  /soc/memory@42000000
+ *   76  /soc/pcnt@60017000
+ *   77  /soc/rtc_timer@60008004
+ *   78  /soc/sha@6003b000
+ *   79  /soc/spi@60024000
+ *   80  /soc/touch@6000885c
+ *   81  /soc/trng@6003507c
+ *   82  /soc/uart@60000000
+ *   83  /soc/uart@60010000
+ *   84  /soc/uart@6002e000
+ *   85  /soc/uart@60038000
+ *   86  /soc/usb_otg@60080000
+ *   87  /soc/watchdog@6001f048
+ *   88  /soc/watchdog@60020048
+ *   89  /soc/xt_wdt@60021004
+ *   90  /soc/counter@6001f000
+ *   91  /soc/counter@6001f000/counter
+ *   92  /soc/counter@6001f024
+ *   93  /soc/counter@6001f024/counter
+ *   94  /soc/counter@60020000
+ *   95  /soc/counter@60020000/counter
+ *   96  /soc/counter@60020024
+ *   97  /soc/counter@60020024/counter
+ *   98  /soc/flash-controller@60002000
+ *   99  /soc/flash-controller@60002000/flash@0
+ *   100 /soc/flash-controller@60002000/flash@0/partitions
+ *   101 /soc/flash-controller@60002000/flash@0/partitions/partition@0
+ *   102 /soc/flash-controller@60002000/flash@0/partitions/partition@10000
+ *   103 /soc/flash-controller@60002000/flash@0/partitions/partition@20000
+ *   104 /soc/flash-controller@60002000/flash@0/partitions/partition@170000
+ *   105 /soc/flash-controller@60002000/flash@0/partitions/partition@2c0000
+ *   106 /soc/flash-controller@60002000/flash@0/partitions/partition@330000
+ *   107 /soc/flash-controller@60002000/flash@0/partitions/partition@3a0000
+ *   108 /soc/flash-controller@60002000/flash@0/partitions/partition@3a8000
+ *   109 /soc/flash-controller@60002000/flash@0/partitions/partition@3b0000
+ *   110 /soc/flash-controller@60002000/flash@0/partitions/partition@3e0000
+ *   111 /soc/flash-controller@60002000/flash@0/partitions/partition@3ff000
+ *   112 /soc/gpio/gpio@60004800
+ *   113 /soc/gpio/gpio@60004000/lcd-pwr-hog
  *   114 /soc/i2c@60027000
  *   115 /soc/i2c@60027000/cst81xx@15
  *   116 /soc/i2c@60027000/lsm6dsl@6a
@@ -193,9 +193,9 @@
 	13, /* /charger_inputs */ \
 	15, /* /cpus */ \
 	21, /* /leds */ \
-	24, /* /clock */ \
-	25, /* /pin-controller */ \
-	28, /* /mipi_dbi */
+	23, /* /clock */ \
+	24, /* /pin-controller */ \
+	27, /* /mipi_dbi */
 
 /* Existence and alternate IDs: */
 #define DT_N_EXISTS 1
@@ -375,7 +375,7 @@
  * Node identifier: DT_N_S_esp32_bt_hci
  *
  * Binding (compatible = espressif,esp32-bt-hci):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/bluetooth/espressif,esp32-bt-hci.yaml
+ *   $ZEPHYR_BASE/dts/bindings/bluetooth/espressif,esp32-bt-hci.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -534,7 +534,7 @@
  * Node identifier: DT_N_S_wifi
  *
  * Binding (compatible = espressif,esp32-wifi):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/wifi/espressif,esp32-wifi.yaml
+ *   $ZEPHYR_BASE/dts/bindings/wifi/espressif,esp32-wifi.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -691,47 +691,47 @@
 #define DT_N_S_soc_SUPPORTS_ORDS \
 	6, /* /soc/gpio */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	27, /* /soc/spi@60025000 */ \
-	56, /* /soc/adc@60040000 */ \
-	57, /* /soc/adc@60040004 */ \
-	58, /* /soc/aes@6003a000 */ \
-	59, /* /soc/can@6002b000 */ \
-	60, /* /soc/coretemp@60008800 */ \
-	61, /* /soc/i2c@60013000 */ \
-	62, /* /soc/dma@6003f000 */ \
-	63, /* /soc/i2s@6000f000 */ \
-	64, /* /soc/i2s@6002d000 */ \
-	65, /* /soc/memory@3fce5000 */ \
-	66, /* /soc/ipm@3fce9400 */ \
-	67, /* /soc/lcd_cam@60041000 */ \
-	68, /* /soc/ledc@60019000 */ \
-	69, /* /soc/mbox@3fce9408 */ \
-	70, /* /soc/mcpwm@6001e000 */ \
-	71, /* /soc/mcpwm@6002c000 */ \
-	72, /* /soc/memory@3fc88000 */ \
-	73, /* /soc/memory@3fce5400 */ \
-	74, /* /soc/memory@3fcf0000 */ \
-	75, /* /soc/memory@40370000 */ \
-	76, /* /soc/memory@42000000 */ \
-	77, /* /soc/pcnt@60017000 */ \
-	78, /* /soc/rtc_timer@60008004 */ \
-	79, /* /soc/sha@6003b000 */ \
-	80, /* /soc/spi@60024000 */ \
-	81, /* /soc/touch@6000885c */ \
-	82, /* /soc/trng@6003507c */ \
-	83, /* /soc/uart@60000000 */ \
-	84, /* /soc/uart@60010000 */ \
-	85, /* /soc/uart@6002e000 */ \
-	86, /* /soc/uart@60038000 */ \
-	87, /* /soc/usb_otg@60080000 */ \
-	88, /* /soc/watchdog@6001f048 */ \
-	89, /* /soc/watchdog@60020048 */ \
-	90, /* /soc/xt_wdt@60021004 */ \
-	91, /* /soc/counter@6001f000 */ \
-	93, /* /soc/counter@6001f024 */ \
-	95, /* /soc/counter@60020000 */ \
-	97, /* /soc/counter@60020024 */ \
-	99, /* /soc/flash-controller@60002000 */ \
+	26, /* /soc/spi@60025000 */ \
+	55, /* /soc/adc@60040000 */ \
+	56, /* /soc/adc@60040004 */ \
+	57, /* /soc/aes@6003a000 */ \
+	58, /* /soc/can@6002b000 */ \
+	59, /* /soc/coretemp@60008800 */ \
+	60, /* /soc/i2c@60013000 */ \
+	61, /* /soc/dma@6003f000 */ \
+	62, /* /soc/i2s@6000f000 */ \
+	63, /* /soc/i2s@6002d000 */ \
+	64, /* /soc/memory@3fce5000 */ \
+	65, /* /soc/ipm@3fce9400 */ \
+	66, /* /soc/lcd_cam@60041000 */ \
+	67, /* /soc/ledc@60019000 */ \
+	68, /* /soc/mbox@3fce9408 */ \
+	69, /* /soc/mcpwm@6001e000 */ \
+	70, /* /soc/mcpwm@6002c000 */ \
+	71, /* /soc/memory@3fc88000 */ \
+	72, /* /soc/memory@3fce5400 */ \
+	73, /* /soc/memory@3fcf0000 */ \
+	74, /* /soc/memory@40370000 */ \
+	75, /* /soc/memory@42000000 */ \
+	76, /* /soc/pcnt@60017000 */ \
+	77, /* /soc/rtc_timer@60008004 */ \
+	78, /* /soc/sha@6003b000 */ \
+	79, /* /soc/spi@60024000 */ \
+	80, /* /soc/touch@6000885c */ \
+	81, /* /soc/trng@6003507c */ \
+	82, /* /soc/uart@60000000 */ \
+	83, /* /soc/uart@60010000 */ \
+	84, /* /soc/uart@6002e000 */ \
+	85, /* /soc/uart@60038000 */ \
+	86, /* /soc/usb_otg@60080000 */ \
+	87, /* /soc/watchdog@6001f048 */ \
+	88, /* /soc/watchdog@60020048 */ \
+	89, /* /soc/xt_wdt@60021004 */ \
+	90, /* /soc/counter@6001f000 */ \
+	92, /* /soc/counter@6001f024 */ \
+	94, /* /soc/counter@60020000 */ \
+	96, /* /soc/counter@60020024 */ \
+	98, /* /soc/flash-controller@60002000 */ \
 	114, /* /soc/i2c@60027000 */ \
 	118, /* /soc/memory@3c000000 */ \
 	120, /* /soc/sdhc@60028000 */
@@ -820,7 +820,7 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_gpio_SUPPORTS_ORDS \
 	8, /* /soc/gpio/gpio@60004000 */ \
-	113, /* /soc/gpio/gpio@60004800 */
+	112, /* /soc/gpio/gpio@60004800 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_gpio_EXISTS 1
@@ -860,7 +860,7 @@
  * Node identifier: DT_N_S_soc_S_interrupt_controller_600c2000
  *
  * Binding (compatible = espressif,esp32-intc):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/interrupt-controller/espressif,esp32-intc.yaml
+ *   $ZEPHYR_BASE/dts/bindings/interrupt-controller/espressif,esp32-intc.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -913,34 +913,34 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_interrupt_controller_600c2000_SUPPORTS_ORDS \
 	8, /* /soc/gpio/gpio@60004000 */ \
-	27, /* /soc/spi@60025000 */ \
-	59, /* /soc/can@6002b000 */ \
-	61, /* /soc/i2c@60013000 */ \
-	62, /* /soc/dma@6003f000 */ \
-	63, /* /soc/i2s@6000f000 */ \
-	64, /* /soc/i2s@6002d000 */ \
-	66, /* /soc/ipm@3fce9400 */ \
-	67, /* /soc/lcd_cam@60041000 */ \
-	69, /* /soc/mbox@3fce9408 */ \
-	70, /* /soc/mcpwm@6001e000 */ \
-	71, /* /soc/mcpwm@6002c000 */ \
-	77, /* /soc/pcnt@60017000 */ \
-	78, /* /soc/rtc_timer@60008004 */ \
-	80, /* /soc/spi@60024000 */ \
-	81, /* /soc/touch@6000885c */ \
-	83, /* /soc/uart@60000000 */ \
-	84, /* /soc/uart@60010000 */ \
-	85, /* /soc/uart@6002e000 */ \
-	86, /* /soc/uart@60038000 */ \
-	87, /* /soc/usb_otg@60080000 */ \
-	88, /* /soc/watchdog@6001f048 */ \
-	89, /* /soc/watchdog@60020048 */ \
-	90, /* /soc/xt_wdt@60021004 */ \
-	91, /* /soc/counter@6001f000 */ \
-	93, /* /soc/counter@6001f024 */ \
-	95, /* /soc/counter@60020000 */ \
-	97, /* /soc/counter@60020024 */ \
-	113, /* /soc/gpio/gpio@60004800 */ \
+	26, /* /soc/spi@60025000 */ \
+	58, /* /soc/can@6002b000 */ \
+	60, /* /soc/i2c@60013000 */ \
+	61, /* /soc/dma@6003f000 */ \
+	62, /* /soc/i2s@6000f000 */ \
+	63, /* /soc/i2s@6002d000 */ \
+	65, /* /soc/ipm@3fce9400 */ \
+	66, /* /soc/lcd_cam@60041000 */ \
+	68, /* /soc/mbox@3fce9408 */ \
+	69, /* /soc/mcpwm@6001e000 */ \
+	70, /* /soc/mcpwm@6002c000 */ \
+	76, /* /soc/pcnt@60017000 */ \
+	77, /* /soc/rtc_timer@60008004 */ \
+	79, /* /soc/spi@60024000 */ \
+	80, /* /soc/touch@6000885c */ \
+	82, /* /soc/uart@60000000 */ \
+	83, /* /soc/uart@60010000 */ \
+	84, /* /soc/uart@6002e000 */ \
+	85, /* /soc/uart@60038000 */ \
+	86, /* /soc/usb_otg@60080000 */ \
+	87, /* /soc/watchdog@6001f048 */ \
+	88, /* /soc/watchdog@60020048 */ \
+	89, /* /soc/xt_wdt@60021004 */ \
+	90, /* /soc/counter@6001f000 */ \
+	92, /* /soc/counter@6001f024 */ \
+	94, /* /soc/counter@60020000 */ \
+	96, /* /soc/counter@60020024 */ \
+	112, /* /soc/gpio/gpio@60004800 */ \
 	114, /* /soc/i2c@60027000 */ \
 	120, /* /soc/sdhc@60028000 */
 
@@ -1017,7 +1017,7 @@
  * Node identifier: DT_N_S_soc_S_gpio_S_gpio_60004000
  *
  * Binding (compatible = espressif,esp32-gpio):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/gpio/espressif,esp32-gpio.yaml
+ *   $ZEPHYR_BASE/dts/bindings/gpio/espressif,esp32-gpio.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -1045,16 +1045,16 @@
 #define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_gpio) fn(DT_N_S_soc) fn(DT_N)
 
 /* Helper macros for child nodes of this node. */
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_CHILD_NUM 0
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_CHILD_NUM_STATUS_OKAY 0
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD(fn) 
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_CHILD_NUM 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_CHILD_NUM_STATUS_OKAY 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD(fn) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, __VA_ARGS__)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, __VA_ARGS__)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, __VA_ARGS__)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, __VA_ARGS__)
 
 /* Node's hash: */
 #define DT_N_S_soc_S_gpio_S_gpio_60004000_HASH xpyrJ0_bMgu640HOnNuFv0VJvKP3RQSicpWnLHTEkZ8
@@ -1078,9 +1078,9 @@
 	14, /* /charger_inputs/charger_status */ \
 	21, /* /leds */ \
 	22, /* /leds/lcd_backlight */ \
-	23, /* /leds/lcd_power_enable */ \
-	27, /* /soc/spi@60025000 */ \
-	28, /* /mipi_dbi */ \
+	26, /* /soc/spi@60025000 */ \
+	27, /* /mipi_dbi */ \
+	113, /* /soc/gpio/gpio@60004000/lcd-pwr-hog */ \
 	115, /* /soc/i2c@60027000/cst81xx@15 */
 
 /* Existence and alternate IDs: */
@@ -1186,7 +1186,7 @@
  * Node identifier: DT_N_S_buttons
  *
  * Binding (compatible = gpio-keys):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/input/gpio-keys.yaml
+ *   $ZEPHYR_BASE/dts/bindings/input/gpio-keys.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -1605,7 +1605,7 @@
  * Node identifier: DT_N_S_charger_inputs
  *
  * Binding (compatible = gpio-keys):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/input/gpio-keys.yaml
+ *   $ZEPHYR_BASE/dts/bindings/input/gpio-keys.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -1959,7 +1959,7 @@
  * Node identifier: DT_N_S_cpus_S_power_states_S_deep_sleep
  *
  * Binding (compatible = zephyr,power-state):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/power/zephyr,power-state.yaml
+ *   $ZEPHYR_BASE/dts/bindings/power/zephyr,power-state.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -2063,7 +2063,7 @@
  * Node identifier: DT_N_S_cpus_S_power_states_S_light_sleep
  *
  * Binding (compatible = zephyr,power-state):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/power/zephyr,power-state.yaml
+ *   $ZEPHYR_BASE/dts/bindings/power/zephyr,power-state.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -2167,7 +2167,7 @@
  * Node identifier: DT_N_S_cpus_S_cpu_0
  *
  * Binding (compatible = espressif,xtensa-lx7):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/cpu/espressif,xtensa-lx7.yaml
+ *   $ZEPHYR_BASE/dts/bindings/cpu/espressif,xtensa-lx7.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -2305,7 +2305,7 @@
  * Node identifier: DT_N_S_cpus_S_cpu_1
  *
  * Binding (compatible = espressif,xtensa-lx7):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/cpu/espressif,xtensa-lx7.yaml
+ *   $ZEPHYR_BASE/dts/bindings/cpu/espressif,xtensa-lx7.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -2425,7 +2425,7 @@
  * Node identifier: DT_N_S_leds
  *
  * Binding (compatible = gpio-leds):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/led/gpio-leds.yaml
+ *   $ZEPHYR_BASE/dts/bindings/led/gpio-leds.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -2453,16 +2453,16 @@
 #define DT_N_S_leds_FOREACH_ANCESTOR(fn) fn(DT_N)
 
 /* Helper macros for child nodes of this node. */
-#define DT_N_S_leds_CHILD_NUM 2
-#define DT_N_S_leds_CHILD_NUM_STATUS_OKAY 2
-#define DT_N_S_leds_FOREACH_CHILD(fn) fn(DT_N_S_leds_S_lcd_backlight) fn(DT_N_S_leds_S_lcd_power_enable)
-#define DT_N_S_leds_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_leds_S_lcd_backlight) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_leds_S_lcd_power_enable)
-#define DT_N_S_leds_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__) fn(DT_N_S_leds_S_lcd_power_enable, __VA_ARGS__)
-#define DT_N_S_leds_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_leds_S_lcd_power_enable, __VA_ARGS__)
-#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_leds_S_lcd_backlight) fn(DT_N_S_leds_S_lcd_power_enable)
-#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_leds_S_lcd_backlight) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_leds_S_lcd_power_enable)
-#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__) fn(DT_N_S_leds_S_lcd_power_enable, __VA_ARGS__)
-#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_leds_S_lcd_power_enable, __VA_ARGS__)
+#define DT_N_S_leds_CHILD_NUM 1
+#define DT_N_S_leds_CHILD_NUM_STATUS_OKAY 1
+#define DT_N_S_leds_FOREACH_CHILD(fn) fn(DT_N_S_leds_S_lcd_backlight)
+#define DT_N_S_leds_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_leds_S_lcd_backlight)
+#define DT_N_S_leds_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__)
+#define DT_N_S_leds_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__)
+#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_leds_S_lcd_backlight)
+#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_leds_S_lcd_backlight)
+#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__)
+#define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__)
 
 /* Node's hash: */
 #define DT_N_S_leds_HASH bMroFUocDdjE3kJ38dK18mDvlCOPoyya5kIIs76irj8
@@ -2478,8 +2478,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_leds_SUPPORTS_ORDS \
-	22, /* /leds/lcd_backlight */ \
-	23, /* /leds/lcd_power_enable */
+	22, /* /leds/lcd_backlight */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_leds_EXISTS 1
@@ -2615,115 +2614,12 @@
 #define DT_N_S_leds_S_lcd_backlight_P_label_EXISTS 1
 
 /*
- * Devicetree node: /leds/lcd_power_enable
- *
- * Node identifier: DT_N_S_leds_S_lcd_power_enable
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_leds_S_lcd_power_enable_PATH "/leds/lcd_power_enable"
-
-/* Node's name with unit-address: */
-#define DT_N_S_leds_S_lcd_power_enable_FULL_NAME "lcd_power_enable"
-#define DT_N_S_leds_S_lcd_power_enable_FULL_NAME_UNQUOTED lcd_power_enable
-#define DT_N_S_leds_S_lcd_power_enable_FULL_NAME_TOKEN lcd_power_enable
-#define DT_N_S_leds_S_lcd_power_enable_FULL_NAME_UPPER_TOKEN LCD_POWER_ENABLE
-
-/* Node parent (/leds) identifier: */
-#define DT_N_S_leds_S_lcd_power_enable_PARENT DT_N_S_leds
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_leds_S_lcd_power_enable_CHILD_IDX 1
-
-/* Helpers for dealing with node labels: */
-#define DT_N_S_leds_S_lcd_power_enable_NODELABEL_NUM 1
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_NODELABEL(fn) fn(lcd_power_enable)
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_NODELABEL_VARGS(fn, ...) fn(lcd_power_enable, __VA_ARGS__)
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_ANCESTOR(fn) fn(DT_N_S_leds) fn(DT_N)
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_leds_S_lcd_power_enable_CHILD_NUM 0
-#define DT_N_S_leds_S_lcd_power_enable_CHILD_NUM_STATUS_OKAY 0
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_CHILD(fn) 
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's hash: */
-#define DT_N_S_leds_S_lcd_power_enable_HASH YnRn9okfO5v_GWFCty3q6sENTvU1xBxjZ_QjEoWdnl0
-
-/* Node's dependency ordinal: */
-#define DT_N_S_leds_S_lcd_power_enable_ORD 23
-#define DT_N_S_leds_S_lcd_power_enable_ORD_STR_SORTABLE 00023
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_leds_S_lcd_power_enable_REQUIRES_ORDS \
-	8, /* /soc/gpio/gpio@60004000 */ \
-	21, /* /leds */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_leds_S_lcd_power_enable_SUPPORTS_ORDS /* nothing */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_leds_S_lcd_power_enable_EXISTS 1
-#define DT_N_NODELABEL_lcd_power_enable DT_N_S_leds_S_lcd_power_enable
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_leds_S_lcd_power_enable_REG_NUM 0
-#define DT_N_S_leds_S_lcd_power_enable_RANGES_NUM 0
-#define DT_N_S_leds_S_lcd_power_enable_FOREACH_RANGE(fn) 
-#define DT_N_S_leds_S_lcd_power_enable_IRQ_NUM 0
-#define DT_N_S_leds_S_lcd_power_enable_IRQ_LEVEL 0
-#define DT_N_S_leds_S_lcd_power_enable_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_leds_S_lcd_power_enable_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_IDX_0_EXISTS 1
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_IDX_0_PH DT_N_S_soc_S_gpio_S_gpio_60004000
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_IDX_0_VAL_pin 18
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_IDX_0_VAL_pin_EXISTS 1
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_IDX_0_VAL_flags 0
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_IDX_0_VAL_flags_EXISTS 1
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_IDX_0_FOREACH_CELL(fn) fn(DT_N_S_leds_S_lcd_power_enable, gpios, 0, pin) \
-	fn(DT_N_S_leds_S_lcd_power_enable, gpios, 0, flags)
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_IDX_0_FOREACH_CELL_SEP(fn, sep) fn(DT_N_S_leds_S_lcd_power_enable, gpios, 0, pin) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_leds_S_lcd_power_enable, gpios, 0, flags)
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_IDX_0_NUM_CELLS 2
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_FOREACH_PROP_ELEM(fn) fn(DT_N_S_leds_S_lcd_power_enable, gpios, 0)
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_leds_S_lcd_power_enable, gpios, 0)
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_leds_S_lcd_power_enable, gpios, 0, __VA_ARGS__)
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_leds_S_lcd_power_enable, gpios, 0, __VA_ARGS__)
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_LEN 1
-#define DT_N_S_leds_S_lcd_power_enable_P_gpios_EXISTS 1
-#define DT_N_S_leds_S_lcd_power_enable_P_label "LCD power enable"
-#define DT_N_S_leds_S_lcd_power_enable_P_label_STRING_UNQUOTED LCD power enable
-#define DT_N_S_leds_S_lcd_power_enable_P_label_STRING_TOKEN LCD_power_enable
-#define DT_N_S_leds_S_lcd_power_enable_P_label_STRING_UPPER_TOKEN LCD_POWER_ENABLE
-#define DT_N_S_leds_S_lcd_power_enable_P_label_IDX_0 "LCD power enable"
-#define DT_N_S_leds_S_lcd_power_enable_P_label_IDX_0_EXISTS 1
-#define DT_N_S_leds_S_lcd_power_enable_P_label_FOREACH_PROP_ELEM(fn) fn(DT_N_S_leds_S_lcd_power_enable, label, 0)
-#define DT_N_S_leds_S_lcd_power_enable_P_label_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_leds_S_lcd_power_enable, label, 0)
-#define DT_N_S_leds_S_lcd_power_enable_P_label_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_leds_S_lcd_power_enable, label, 0, __VA_ARGS__)
-#define DT_N_S_leds_S_lcd_power_enable_P_label_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_leds_S_lcd_power_enable, label, 0, __VA_ARGS__)
-#define DT_N_S_leds_S_lcd_power_enable_P_label_LEN 1
-#define DT_N_S_leds_S_lcd_power_enable_P_label_EXISTS 1
-
-/*
  * Devicetree node: /clock
  *
  * Node identifier: DT_N_S_clock
  *
  * Binding (compatible = espressif,esp32-clock):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/clock/espressif,esp32-clock.yaml
+ *   $ZEPHYR_BASE/dts/bindings/clock/espressif,esp32-clock.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -2766,8 +2662,8 @@
 #define DT_N_S_clock_HASH QnKLwDxmAK_PaPqjnffzth94QNFQAD6J185NwWdLjGI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_clock_ORD 24
-#define DT_N_S_clock_ORD_STR_SORTABLE 00024
+#define DT_N_S_clock_ORD 23
+#define DT_N_S_clock_ORD_STR_SORTABLE 00023
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_clock_REQUIRES_ORDS \
@@ -2775,36 +2671,36 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_clock_SUPPORTS_ORDS \
-	27, /* /soc/spi@60025000 */ \
-	56, /* /soc/adc@60040000 */ \
-	57, /* /soc/adc@60040004 */ \
-	58, /* /soc/aes@6003a000 */ \
-	59, /* /soc/can@6002b000 */ \
-	61, /* /soc/i2c@60013000 */ \
-	62, /* /soc/dma@6003f000 */ \
-	63, /* /soc/i2s@6000f000 */ \
-	64, /* /soc/i2s@6002d000 */ \
-	67, /* /soc/lcd_cam@60041000 */ \
-	68, /* /soc/ledc@60019000 */ \
-	70, /* /soc/mcpwm@6001e000 */ \
-	71, /* /soc/mcpwm@6002c000 */ \
-	77, /* /soc/pcnt@60017000 */ \
-	78, /* /soc/rtc_timer@60008004 */ \
-	79, /* /soc/sha@6003b000 */ \
-	80, /* /soc/spi@60024000 */ \
-	82, /* /soc/trng@6003507c */ \
-	83, /* /soc/uart@60000000 */ \
-	84, /* /soc/uart@60010000 */ \
-	85, /* /soc/uart@6002e000 */ \
-	86, /* /soc/uart@60038000 */ \
-	87, /* /soc/usb_otg@60080000 */ \
-	88, /* /soc/watchdog@6001f048 */ \
-	89, /* /soc/watchdog@60020048 */ \
-	90, /* /soc/xt_wdt@60021004 */ \
-	91, /* /soc/counter@6001f000 */ \
-	93, /* /soc/counter@6001f024 */ \
-	95, /* /soc/counter@60020000 */ \
-	97, /* /soc/counter@60020024 */ \
+	26, /* /soc/spi@60025000 */ \
+	55, /* /soc/adc@60040000 */ \
+	56, /* /soc/adc@60040004 */ \
+	57, /* /soc/aes@6003a000 */ \
+	58, /* /soc/can@6002b000 */ \
+	60, /* /soc/i2c@60013000 */ \
+	61, /* /soc/dma@6003f000 */ \
+	62, /* /soc/i2s@6000f000 */ \
+	63, /* /soc/i2s@6002d000 */ \
+	66, /* /soc/lcd_cam@60041000 */ \
+	67, /* /soc/ledc@60019000 */ \
+	69, /* /soc/mcpwm@6001e000 */ \
+	70, /* /soc/mcpwm@6002c000 */ \
+	76, /* /soc/pcnt@60017000 */ \
+	77, /* /soc/rtc_timer@60008004 */ \
+	78, /* /soc/sha@6003b000 */ \
+	79, /* /soc/spi@60024000 */ \
+	81, /* /soc/trng@6003507c */ \
+	82, /* /soc/uart@60000000 */ \
+	83, /* /soc/uart@60010000 */ \
+	84, /* /soc/uart@6002e000 */ \
+	85, /* /soc/uart@60038000 */ \
+	86, /* /soc/usb_otg@60080000 */ \
+	87, /* /soc/watchdog@6001f048 */ \
+	88, /* /soc/watchdog@60020048 */ \
+	89, /* /soc/xt_wdt@60021004 */ \
+	90, /* /soc/counter@6001f000 */ \
+	92, /* /soc/counter@6001f024 */ \
+	94, /* /soc/counter@60020000 */ \
+	96, /* /soc/counter@60020024 */ \
 	114, /* /soc/i2c@60027000 */ \
 	120, /* /soc/sdhc@60028000 */
 
@@ -2849,7 +2745,7 @@
  * Node identifier: DT_N_S_pin_controller
  *
  * Binding (compatible = espressif,esp32-pinctrl):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/pinctrl/espressif,esp32-pinctrl.yaml
+ *   $ZEPHYR_BASE/dts/bindings/pinctrl/espressif,esp32-pinctrl.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -2892,8 +2788,8 @@
 #define DT_N_S_pin_controller_HASH bWf59uCG_pY5hQAcoRx7FSfuctl8KNxAtmdgsI6QClA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_ORD 25
-#define DT_N_S_pin_controller_ORD_STR_SORTABLE 00025
+#define DT_N_S_pin_controller_ORD 24
+#define DT_N_S_pin_controller_ORD_STR_SORTABLE 00024
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_REQUIRES_ORDS \
@@ -2901,17 +2797,17 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_SUPPORTS_ORDS \
-	26, /* /pin-controller/spim3_lcd_default */ \
-	30, /* /pin-controller/i2c0_default */ \
-	32, /* /pin-controller/i2c1_default */ \
-	34, /* /pin-controller/i2c1_touch_default */ \
-	36, /* /pin-controller/i2s0_default */ \
-	38, /* /pin-controller/i2s1_default */ \
-	40, /* /pin-controller/spim2_default */ \
-	43, /* /pin-controller/spim3_default */ \
-	48, /* /pin-controller/twai_default */ \
-	50, /* /pin-controller/uart0_default */ \
-	53, /* /pin-controller/uart1_default */
+	25, /* /pin-controller/spim3_lcd_default */ \
+	29, /* /pin-controller/i2c0_default */ \
+	31, /* /pin-controller/i2c1_default */ \
+	33, /* /pin-controller/i2c1_touch_default */ \
+	35, /* /pin-controller/i2s0_default */ \
+	37, /* /pin-controller/i2s1_default */ \
+	39, /* /pin-controller/spim2_default */ \
+	42, /* /pin-controller/spim3_default */ \
+	47, /* /pin-controller/twai_default */ \
+	49, /* /pin-controller/uart0_default */ \
+	52, /* /pin-controller/uart1_default */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_EXISTS 1
@@ -3015,18 +2911,18 @@
 #define DT_N_S_pin_controller_S_spim3_lcd_default_HASH iHYDqIxY5lkaLQE1XmaI_vffaBhGPXlAs9MiptHfHuw
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spim3_lcd_default_ORD 26
-#define DT_N_S_pin_controller_S_spim3_lcd_default_ORD_STR_SORTABLE 00026
+#define DT_N_S_pin_controller_S_spim3_lcd_default_ORD 25
+#define DT_N_S_pin_controller_S_spim3_lcd_default_ORD_STR_SORTABLE 00025
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spim3_lcd_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spim3_lcd_default_SUPPORTS_ORDS \
-	27, /* /soc/spi@60025000 */ \
-	46, /* /pin-controller/spim3_lcd_default/group1 */ \
-	47, /* /pin-controller/spim3_lcd_default/group2 */
+	26, /* /soc/spi@60025000 */ \
+	45, /* /pin-controller/spim3_lcd_default/group1 */ \
+	46, /* /pin-controller/spim3_lcd_default/group2 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_spim3_lcd_default_EXISTS 1
@@ -3051,7 +2947,7 @@
  * Node identifier: DT_N_S_soc_S_spi_60025000
  *
  * Binding (compatible = espressif,esp32-spi):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/spi/espressif,esp32-spi.yaml
+ *   $ZEPHYR_BASE/dts/bindings/spi/espressif,esp32-spi.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -3094,20 +2990,20 @@
 #define DT_N_S_soc_S_spi_60025000_HASH AznhjxWB4dhjf4qM0h7xJWMCnW1aYspNqC8gyq4ldGM
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_60025000_ORD 27
-#define DT_N_S_soc_S_spi_60025000_ORD_STR_SORTABLE 00027
+#define DT_N_S_soc_S_spi_60025000_ORD 26
+#define DT_N_S_soc_S_spi_60025000_ORD_STR_SORTABLE 00026
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_60025000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
 	8, /* /soc/gpio/gpio@60004000 */ \
-	24, /* /clock */ \
-	26, /* /pin-controller/spim3_lcd_default */
+	23, /* /clock */ \
+	25, /* /pin-controller/spim3_lcd_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_spi_60025000_SUPPORTS_ORDS \
-	28, /* /mipi_dbi */
+	27, /* /mipi_dbi */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_spi_60025000_EXISTS 1
@@ -3285,7 +3181,7 @@
  * Node identifier: DT_N_S_mipi_dbi
  *
  * Binding (compatible = zephyr,mipi-dbi-spi):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/mipi-dbi/zephyr,mipi-dbi-spi.yaml
+ *   $ZEPHYR_BASE/dts/bindings/mipi-dbi/zephyr,mipi-dbi-spi.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -3328,18 +3224,18 @@
 #define DT_N_S_mipi_dbi_HASH HR9M_Ak5V_PEmV_u05dm7ejxtjZ4Wfg7SHt0Qt4gcQc
 
 /* Node's dependency ordinal: */
-#define DT_N_S_mipi_dbi_ORD 28
-#define DT_N_S_mipi_dbi_ORD_STR_SORTABLE 00028
+#define DT_N_S_mipi_dbi_ORD 27
+#define DT_N_S_mipi_dbi_ORD_STR_SORTABLE 00027
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_mipi_dbi_REQUIRES_ORDS \
 	0, /* / */ \
 	8, /* /soc/gpio/gpio@60004000 */ \
-	27, /* /soc/spi@60025000 */
+	26, /* /soc/spi@60025000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_mipi_dbi_SUPPORTS_ORDS \
-	29, /* /mipi_dbi/gc9a01@0 */
+	28, /* /mipi_dbi/gc9a01@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_mipi_dbi_EXISTS 1
@@ -3448,7 +3344,7 @@
  * Node identifier: DT_N_S_mipi_dbi_S_gc9a01_0
  *
  * Binding (compatible = galaxycore,gc9x01x):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/display/galaxycore,gc9x01x.yaml
+ *   $ZEPHYR_BASE/dts/bindings/display/galaxycore,gc9x01x.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -3491,12 +3387,12 @@
 #define DT_N_S_mipi_dbi_S_gc9a01_0_HASH Cl5dTuXFgcTf0OSipseCFLVzIGpYy9i3mvXMXtMzKtA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_mipi_dbi_S_gc9a01_0_ORD 29
-#define DT_N_S_mipi_dbi_S_gc9a01_0_ORD_STR_SORTABLE 00029
+#define DT_N_S_mipi_dbi_S_gc9a01_0_ORD 28
+#define DT_N_S_mipi_dbi_S_gc9a01_0_ORD_STR_SORTABLE 00028
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_mipi_dbi_S_gc9a01_0_REQUIRES_ORDS \
-	28, /* /mipi_dbi */
+	27, /* /mipi_dbi */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_mipi_dbi_S_gc9a01_0_SUPPORTS_ORDS /* nothing */
@@ -3820,7 +3716,7 @@
 #define DT_N_S_mipi_dbi_S_gc9a01_0_P_reg_IDX_0_EXISTS 1
 #define DT_N_S_mipi_dbi_S_gc9a01_0_P_reg_IDX_0 0
 #define DT_N_S_mipi_dbi_S_gc9a01_0_P_reg_EXISTS 1
-#define DT_N_S_mipi_dbi_S_gc9a01_0_P_zephyr_deferred_init 1
+#define DT_N_S_mipi_dbi_S_gc9a01_0_P_zephyr_deferred_init 0
 #define DT_N_S_mipi_dbi_S_gc9a01_0_P_zephyr_deferred_init_EXISTS 1
 #define DT_N_S_mipi_dbi_S_gc9a01_0_P_wakeup_source 0
 #define DT_N_S_mipi_dbi_S_gc9a01_0_P_wakeup_source_EXISTS 1
@@ -3879,17 +3775,17 @@
 #define DT_N_S_pin_controller_S_i2c0_default_HASH jwLAya2l1n5eq23pU58aJBqJOApGFQeY8GlS09jN_X8
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c0_default_ORD 30
-#define DT_N_S_pin_controller_S_i2c0_default_ORD_STR_SORTABLE 00030
+#define DT_N_S_pin_controller_S_i2c0_default_ORD 29
+#define DT_N_S_pin_controller_S_i2c0_default_ORD_STR_SORTABLE 00029
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c0_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c0_default_SUPPORTS_ORDS \
-	31, /* /pin-controller/i2c0_default/group1 */ \
-	61, /* /soc/i2c@60013000 */
+	30, /* /pin-controller/i2c0_default/group1 */ \
+	60, /* /soc/i2c@60013000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_i2c0_default_EXISTS 1
@@ -3954,12 +3850,12 @@
 #define DT_N_S_pin_controller_S_i2c0_default_S_group1_HASH _HSqkKDjPxhuu0z84CDy13StRYiLrOnhQel0xHxUxuM
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c0_default_S_group1_ORD 31
-#define DT_N_S_pin_controller_S_i2c0_default_S_group1_ORD_STR_SORTABLE 00031
+#define DT_N_S_pin_controller_S_i2c0_default_S_group1_ORD 30
+#define DT_N_S_pin_controller_S_i2c0_default_S_group1_ORD_STR_SORTABLE 00030
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c0_default_S_group1_REQUIRES_ORDS \
-	30, /* /pin-controller/i2c0_default */
+	29, /* /pin-controller/i2c0_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c0_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -4059,16 +3955,16 @@
 #define DT_N_S_pin_controller_S_i2c1_default_HASH XO1mymgcvFsuC9DhMfptRTCQBeKGbvb0Ib2nQh8oc7M
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c1_default_ORD 32
-#define DT_N_S_pin_controller_S_i2c1_default_ORD_STR_SORTABLE 00032
+#define DT_N_S_pin_controller_S_i2c1_default_ORD 31
+#define DT_N_S_pin_controller_S_i2c1_default_ORD_STR_SORTABLE 00031
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c1_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c1_default_SUPPORTS_ORDS \
-	33, /* /pin-controller/i2c1_default/group1 */
+	32, /* /pin-controller/i2c1_default/group1 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_i2c1_default_EXISTS 1
@@ -4133,12 +4029,12 @@
 #define DT_N_S_pin_controller_S_i2c1_default_S_group1_HASH cUGMjaLJ_EMYBWGL8KTvzJXC89iE0MLZ6zre2oO0xVA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c1_default_S_group1_ORD 33
-#define DT_N_S_pin_controller_S_i2c1_default_S_group1_ORD_STR_SORTABLE 00033
+#define DT_N_S_pin_controller_S_i2c1_default_S_group1_ORD 32
+#define DT_N_S_pin_controller_S_i2c1_default_S_group1_ORD_STR_SORTABLE 00032
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c1_default_S_group1_REQUIRES_ORDS \
-	32, /* /pin-controller/i2c1_default */
+	31, /* /pin-controller/i2c1_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c1_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -4238,16 +4134,16 @@
 #define DT_N_S_pin_controller_S_i2c1_touch_default_HASH 3m9V_1eJVnzkLYfatuHqCngmYsbVEHSzcGyVykpZ_DA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c1_touch_default_ORD 34
-#define DT_N_S_pin_controller_S_i2c1_touch_default_ORD_STR_SORTABLE 00034
+#define DT_N_S_pin_controller_S_i2c1_touch_default_ORD 33
+#define DT_N_S_pin_controller_S_i2c1_touch_default_ORD_STR_SORTABLE 00033
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c1_touch_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c1_touch_default_SUPPORTS_ORDS \
-	35, /* /pin-controller/i2c1_touch_default/group1 */ \
+	34, /* /pin-controller/i2c1_touch_default/group1 */ \
 	114, /* /soc/i2c@60027000 */
 
 /* Existence and alternate IDs: */
@@ -4313,12 +4209,12 @@
 #define DT_N_S_pin_controller_S_i2c1_touch_default_S_group1_HASH MmFg2Z4sgKlCFUNugIrQT6oN02puoeyI8_aS9SOsMtQ
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c1_touch_default_S_group1_ORD 35
-#define DT_N_S_pin_controller_S_i2c1_touch_default_S_group1_ORD_STR_SORTABLE 00035
+#define DT_N_S_pin_controller_S_i2c1_touch_default_S_group1_ORD 34
+#define DT_N_S_pin_controller_S_i2c1_touch_default_S_group1_ORD_STR_SORTABLE 00034
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c1_touch_default_S_group1_REQUIRES_ORDS \
-	34, /* /pin-controller/i2c1_touch_default */
+	33, /* /pin-controller/i2c1_touch_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c1_touch_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -4418,17 +4314,17 @@
 #define DT_N_S_pin_controller_S_i2s0_default_HASH I8KSYXqUxFC_tC8S9NNaSn5cjL9_U8rlQM6N0XTAzoU
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2s0_default_ORD 36
-#define DT_N_S_pin_controller_S_i2s0_default_ORD_STR_SORTABLE 00036
+#define DT_N_S_pin_controller_S_i2s0_default_ORD 35
+#define DT_N_S_pin_controller_S_i2s0_default_ORD_STR_SORTABLE 00035
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2s0_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2s0_default_SUPPORTS_ORDS \
-	37, /* /pin-controller/i2s0_default/group1 */ \
-	63, /* /soc/i2s@6000f000 */
+	36, /* /pin-controller/i2s0_default/group1 */ \
+	62, /* /soc/i2s@6000f000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_i2s0_default_EXISTS 1
@@ -4493,12 +4389,12 @@
 #define DT_N_S_pin_controller_S_i2s0_default_S_group1_HASH mFIVIAK6tp42PnrS9c_gzAb13xtLWBU5leaqXFwHVlI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2s0_default_S_group1_ORD 37
-#define DT_N_S_pin_controller_S_i2s0_default_S_group1_ORD_STR_SORTABLE 00037
+#define DT_N_S_pin_controller_S_i2s0_default_S_group1_ORD 36
+#define DT_N_S_pin_controller_S_i2s0_default_S_group1_ORD_STR_SORTABLE 00036
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2s0_default_S_group1_REQUIRES_ORDS \
-	36, /* /pin-controller/i2s0_default */
+	35, /* /pin-controller/i2s0_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2s0_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -4616,17 +4512,17 @@
 #define DT_N_S_pin_controller_S_i2s1_default_HASH 8x1vKoUVl6XpEqXOXwwjyASFOF_OxpeIVhshmos5kEY
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2s1_default_ORD 38
-#define DT_N_S_pin_controller_S_i2s1_default_ORD_STR_SORTABLE 00038
+#define DT_N_S_pin_controller_S_i2s1_default_ORD 37
+#define DT_N_S_pin_controller_S_i2s1_default_ORD_STR_SORTABLE 00037
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2s1_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2s1_default_SUPPORTS_ORDS \
-	39, /* /pin-controller/i2s1_default/group1 */ \
-	64, /* /soc/i2s@6002d000 */
+	38, /* /pin-controller/i2s1_default/group1 */ \
+	63, /* /soc/i2s@6002d000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_i2s1_default_EXISTS 1
@@ -4691,12 +4587,12 @@
 #define DT_N_S_pin_controller_S_i2s1_default_S_group1_HASH b8GMrpJGhPTbS89JNtW4yiEJmkozlB2psFU_LRFtwDY
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2s1_default_S_group1_ORD 39
-#define DT_N_S_pin_controller_S_i2s1_default_S_group1_ORD_STR_SORTABLE 00039
+#define DT_N_S_pin_controller_S_i2s1_default_S_group1_ORD 38
+#define DT_N_S_pin_controller_S_i2s1_default_S_group1_ORD_STR_SORTABLE 00038
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2s1_default_S_group1_REQUIRES_ORDS \
-	38, /* /pin-controller/i2s1_default */
+	37, /* /pin-controller/i2s1_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2s1_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -4814,18 +4710,18 @@
 #define DT_N_S_pin_controller_S_spim2_default_HASH yQ9p_zZ49maZmOnOVWRekcc6Lo5_twi_vyjzjg0jqIA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spim2_default_ORD 40
-#define DT_N_S_pin_controller_S_spim2_default_ORD_STR_SORTABLE 00040
+#define DT_N_S_pin_controller_S_spim2_default_ORD 39
+#define DT_N_S_pin_controller_S_spim2_default_ORD_STR_SORTABLE 00039
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spim2_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spim2_default_SUPPORTS_ORDS \
-	41, /* /pin-controller/spim2_default/group1 */ \
-	42, /* /pin-controller/spim2_default/group2 */ \
-	80, /* /soc/spi@60024000 */
+	40, /* /pin-controller/spim2_default/group1 */ \
+	41, /* /pin-controller/spim2_default/group2 */ \
+	79, /* /soc/spi@60024000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_spim2_default_EXISTS 1
@@ -4890,12 +4786,12 @@
 #define DT_N_S_pin_controller_S_spim2_default_S_group1_HASH p70n6PMDj1QKr_sTZSVNVgh8FWjeQJk5mPn3eq_6lJ0
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spim2_default_S_group1_ORD 41
-#define DT_N_S_pin_controller_S_spim2_default_S_group1_ORD_STR_SORTABLE 00041
+#define DT_N_S_pin_controller_S_spim2_default_S_group1_ORD 40
+#define DT_N_S_pin_controller_S_spim2_default_S_group1_ORD_STR_SORTABLE 00040
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spim2_default_S_group1_REQUIRES_ORDS \
-	40, /* /pin-controller/spim2_default */
+	39, /* /pin-controller/spim2_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spim2_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -5001,12 +4897,12 @@
 #define DT_N_S_pin_controller_S_spim2_default_S_group2_HASH 8QjmDqnyBap6vP7Vx84h2_Dt9Pvj6PnRYgLNX1RakyE
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spim2_default_S_group2_ORD 42
-#define DT_N_S_pin_controller_S_spim2_default_S_group2_ORD_STR_SORTABLE 00042
+#define DT_N_S_pin_controller_S_spim2_default_S_group2_ORD 41
+#define DT_N_S_pin_controller_S_spim2_default_S_group2_ORD_STR_SORTABLE 00041
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spim2_default_S_group2_REQUIRES_ORDS \
-	40, /* /pin-controller/spim2_default */
+	39, /* /pin-controller/spim2_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spim2_default_S_group2_SUPPORTS_ORDS /* nothing */
@@ -5100,17 +4996,17 @@
 #define DT_N_S_pin_controller_S_spim3_default_HASH Nj2frB1v9UxewzwdRbOJzSexWBAxllDEfZwFjTkVzHQ
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spim3_default_ORD 43
-#define DT_N_S_pin_controller_S_spim3_default_ORD_STR_SORTABLE 00043
+#define DT_N_S_pin_controller_S_spim3_default_ORD 42
+#define DT_N_S_pin_controller_S_spim3_default_ORD_STR_SORTABLE 00042
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spim3_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spim3_default_SUPPORTS_ORDS \
-	44, /* /pin-controller/spim3_default/group1 */ \
-	45, /* /pin-controller/spim3_default/group2 */
+	43, /* /pin-controller/spim3_default/group1 */ \
+	44, /* /pin-controller/spim3_default/group2 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_spim3_default_EXISTS 1
@@ -5175,12 +5071,12 @@
 #define DT_N_S_pin_controller_S_spim3_default_S_group1_HASH AqdKAUKce9do36D9v1XrdXGugpH6vKrmt_kRhqj_Ltg
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spim3_default_S_group1_ORD 44
-#define DT_N_S_pin_controller_S_spim3_default_S_group1_ORD_STR_SORTABLE 00044
+#define DT_N_S_pin_controller_S_spim3_default_S_group1_ORD 43
+#define DT_N_S_pin_controller_S_spim3_default_S_group1_ORD_STR_SORTABLE 00043
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spim3_default_S_group1_REQUIRES_ORDS \
-	43, /* /pin-controller/spim3_default */
+	42, /* /pin-controller/spim3_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spim3_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -5286,12 +5182,12 @@
 #define DT_N_S_pin_controller_S_spim3_default_S_group2_HASH s3MzRJ1vi_Bq2UJfj__ih5Xzhc4UQC1rotuShjYEG0o
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spim3_default_S_group2_ORD 45
-#define DT_N_S_pin_controller_S_spim3_default_S_group2_ORD_STR_SORTABLE 00045
+#define DT_N_S_pin_controller_S_spim3_default_S_group2_ORD 44
+#define DT_N_S_pin_controller_S_spim3_default_S_group2_ORD_STR_SORTABLE 00044
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spim3_default_S_group2_REQUIRES_ORDS \
-	43, /* /pin-controller/spim3_default */
+	42, /* /pin-controller/spim3_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spim3_default_S_group2_SUPPORTS_ORDS /* nothing */
@@ -5385,12 +5281,12 @@
 #define DT_N_S_pin_controller_S_spim3_lcd_default_S_group1_HASH tPqP_bzlmaHqL9zmz8IPD_9lsyKSjXk7GqpG9bjGkik
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spim3_lcd_default_S_group1_ORD 46
-#define DT_N_S_pin_controller_S_spim3_lcd_default_S_group1_ORD_STR_SORTABLE 00046
+#define DT_N_S_pin_controller_S_spim3_lcd_default_S_group1_ORD 45
+#define DT_N_S_pin_controller_S_spim3_lcd_default_S_group1_ORD_STR_SORTABLE 00045
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spim3_lcd_default_S_group1_REQUIRES_ORDS \
-	26, /* /pin-controller/spim3_lcd_default */
+	25, /* /pin-controller/spim3_lcd_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spim3_lcd_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -5490,12 +5386,12 @@
 #define DT_N_S_pin_controller_S_spim3_lcd_default_S_group2_HASH O3WVETQPt7X_LdT7tgvVi22SJgsJoXPvnN3yDoNAokg
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spim3_lcd_default_S_group2_ORD 47
-#define DT_N_S_pin_controller_S_spim3_lcd_default_S_group2_ORD_STR_SORTABLE 00047
+#define DT_N_S_pin_controller_S_spim3_lcd_default_S_group2_ORD 46
+#define DT_N_S_pin_controller_S_spim3_lcd_default_S_group2_ORD_STR_SORTABLE 00046
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spim3_lcd_default_S_group2_REQUIRES_ORDS \
-	26, /* /pin-controller/spim3_lcd_default */
+	25, /* /pin-controller/spim3_lcd_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spim3_lcd_default_S_group2_SUPPORTS_ORDS /* nothing */
@@ -5589,17 +5485,17 @@
 #define DT_N_S_pin_controller_S_twai_default_HASH cEr2u_JuEoEHCq3kPvei4M__t8osI1CvuALLllai_uU
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_twai_default_ORD 48
-#define DT_N_S_pin_controller_S_twai_default_ORD_STR_SORTABLE 00048
+#define DT_N_S_pin_controller_S_twai_default_ORD 47
+#define DT_N_S_pin_controller_S_twai_default_ORD_STR_SORTABLE 00047
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_twai_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_twai_default_SUPPORTS_ORDS \
-	49, /* /pin-controller/twai_default/group1 */ \
-	59, /* /soc/can@6002b000 */
+	48, /* /pin-controller/twai_default/group1 */ \
+	58, /* /soc/can@6002b000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_twai_default_EXISTS 1
@@ -5664,12 +5560,12 @@
 #define DT_N_S_pin_controller_S_twai_default_S_group1_HASH _ZgFg5F7NoK6z5R4_vAnmRSqhaS7xGTIFjL00CcXRSE
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_twai_default_S_group1_ORD 49
-#define DT_N_S_pin_controller_S_twai_default_S_group1_ORD_STR_SORTABLE 00049
+#define DT_N_S_pin_controller_S_twai_default_S_group1_ORD 48
+#define DT_N_S_pin_controller_S_twai_default_S_group1_ORD_STR_SORTABLE 00048
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_twai_default_S_group1_REQUIRES_ORDS \
-	48, /* /pin-controller/twai_default */
+	47, /* /pin-controller/twai_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_twai_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -5769,18 +5665,18 @@
 #define DT_N_S_pin_controller_S_uart0_default_HASH hpPoQq5QYEcDym1g2JBVllTKxA90m_i7KnAuJScDL4o
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart0_default_ORD 50
-#define DT_N_S_pin_controller_S_uart0_default_ORD_STR_SORTABLE 00050
+#define DT_N_S_pin_controller_S_uart0_default_ORD 49
+#define DT_N_S_pin_controller_S_uart0_default_ORD_STR_SORTABLE 00049
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart0_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart0_default_SUPPORTS_ORDS \
-	51, /* /pin-controller/uart0_default/group1 */ \
-	52, /* /pin-controller/uart0_default/group2 */ \
-	83, /* /soc/uart@60000000 */
+	50, /* /pin-controller/uart0_default/group1 */ \
+	51, /* /pin-controller/uart0_default/group2 */ \
+	82, /* /soc/uart@60000000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_uart0_default_EXISTS 1
@@ -5845,12 +5741,12 @@
 #define DT_N_S_pin_controller_S_uart0_default_S_group1_HASH mw9A94JnX0K15LdzaqSiBYHstgeiBk__IFPWTJ90zX0
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart0_default_S_group1_ORD 51
-#define DT_N_S_pin_controller_S_uart0_default_S_group1_ORD_STR_SORTABLE 00051
+#define DT_N_S_pin_controller_S_uart0_default_S_group1_ORD 50
+#define DT_N_S_pin_controller_S_uart0_default_S_group1_ORD_STR_SORTABLE 00050
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart0_default_S_group1_REQUIRES_ORDS \
-	50, /* /pin-controller/uart0_default */
+	49, /* /pin-controller/uart0_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart0_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -5944,12 +5840,12 @@
 #define DT_N_S_pin_controller_S_uart0_default_S_group2_HASH OhplDHWYl94QPNbqB4nVbAksIsz36XFx3_uS1MnAXRo
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart0_default_S_group2_ORD 52
-#define DT_N_S_pin_controller_S_uart0_default_S_group2_ORD_STR_SORTABLE 00052
+#define DT_N_S_pin_controller_S_uart0_default_S_group2_ORD 51
+#define DT_N_S_pin_controller_S_uart0_default_S_group2_ORD_STR_SORTABLE 00051
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart0_default_S_group2_REQUIRES_ORDS \
-	50, /* /pin-controller/uart0_default */
+	49, /* /pin-controller/uart0_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart0_default_S_group2_SUPPORTS_ORDS /* nothing */
@@ -6043,17 +5939,17 @@
 #define DT_N_S_pin_controller_S_uart1_default_HASH Za3R9RQFTTeTNTsukpYfmI5vvUCv8X0sGpn_TdFPSws
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart1_default_ORD 53
-#define DT_N_S_pin_controller_S_uart1_default_ORD_STR_SORTABLE 00053
+#define DT_N_S_pin_controller_S_uart1_default_ORD 52
+#define DT_N_S_pin_controller_S_uart1_default_ORD_STR_SORTABLE 00052
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart1_default_REQUIRES_ORDS \
-	25, /* /pin-controller */
+	24, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart1_default_SUPPORTS_ORDS \
-	54, /* /pin-controller/uart1_default/group1 */ \
-	55, /* /pin-controller/uart1_default/group2 */
+	53, /* /pin-controller/uart1_default/group1 */ \
+	54, /* /pin-controller/uart1_default/group2 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_uart1_default_EXISTS 1
@@ -6118,12 +6014,12 @@
 #define DT_N_S_pin_controller_S_uart1_default_S_group1_HASH 4gmTcArfeyRCUqxUGGAfveDAntz196es6EtTlUsIqHU
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart1_default_S_group1_ORD 54
-#define DT_N_S_pin_controller_S_uart1_default_S_group1_ORD_STR_SORTABLE 00054
+#define DT_N_S_pin_controller_S_uart1_default_S_group1_ORD 53
+#define DT_N_S_pin_controller_S_uart1_default_S_group1_ORD_STR_SORTABLE 00053
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart1_default_S_group1_REQUIRES_ORDS \
-	53, /* /pin-controller/uart1_default */
+	52, /* /pin-controller/uart1_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart1_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -6217,12 +6113,12 @@
 #define DT_N_S_pin_controller_S_uart1_default_S_group2_HASH 6ELlh0iX_Udb9B7oGb38aHVE3rZMi1d6XkvfucuUmgw
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart1_default_S_group2_ORD 55
-#define DT_N_S_pin_controller_S_uart1_default_S_group2_ORD_STR_SORTABLE 00055
+#define DT_N_S_pin_controller_S_uart1_default_S_group2_ORD 54
+#define DT_N_S_pin_controller_S_uart1_default_S_group2_ORD_STR_SORTABLE 00054
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart1_default_S_group2_REQUIRES_ORDS \
-	53, /* /pin-controller/uart1_default */
+	52, /* /pin-controller/uart1_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart1_default_S_group2_SUPPORTS_ORDS /* nothing */
@@ -6276,7 +6172,7 @@
  * Node identifier: DT_N_S_soc_S_adc_60040000
  *
  * Binding (compatible = espressif,esp32-adc):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/adc/espressif,esp32-adc.yaml
+ *   $ZEPHYR_BASE/dts/bindings/adc/espressif,esp32-adc.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -6319,13 +6215,13 @@
 #define DT_N_S_soc_S_adc_60040000_HASH kIFkITTsWHxDzqiccZgKpCp6UYxr1Xa1kpKjb_sgujM
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_adc_60040000_ORD 56
-#define DT_N_S_soc_S_adc_60040000_ORD_STR_SORTABLE 00056
+#define DT_N_S_soc_S_adc_60040000_ORD 55
+#define DT_N_S_soc_S_adc_60040000_ORD_STR_SORTABLE 00055
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_adc_60040000_REQUIRES_ORDS \
 	5, /* /soc */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_adc_60040000_SUPPORTS_ORDS /* nothing */
@@ -6418,7 +6314,7 @@
  * Node identifier: DT_N_S_soc_S_adc_60040004
  *
  * Binding (compatible = espressif,esp32-adc):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/adc/espressif,esp32-adc.yaml
+ *   $ZEPHYR_BASE/dts/bindings/adc/espressif,esp32-adc.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -6461,13 +6357,13 @@
 #define DT_N_S_soc_S_adc_60040004_HASH dFVLk3VrlMmJwBVWr8Jb6bwSyE0wZMGrTZeOcWrrwus
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_adc_60040004_ORD 57
-#define DT_N_S_soc_S_adc_60040004_ORD_STR_SORTABLE 00057
+#define DT_N_S_soc_S_adc_60040004_ORD 56
+#define DT_N_S_soc_S_adc_60040004_ORD_STR_SORTABLE 00056
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_adc_60040004_REQUIRES_ORDS \
 	5, /* /soc */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_adc_60040004_SUPPORTS_ORDS /* nothing */
@@ -6560,7 +6456,7 @@
  * Node identifier: DT_N_S_soc_S_aes_6003a000
  *
  * Binding (compatible = espressif,esp32-aes):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/crypto/espressif,esp32-aes.yaml
+ *   $ZEPHYR_BASE/dts/bindings/crypto/espressif,esp32-aes.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -6603,13 +6499,13 @@
 #define DT_N_S_soc_S_aes_6003a000_HASH MFS__ZEns9tRDXy96omnCTc6M43c63zQYT_5yZPvHEM
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_aes_6003a000_ORD 58
-#define DT_N_S_soc_S_aes_6003a000_ORD_STR_SORTABLE 00058
+#define DT_N_S_soc_S_aes_6003a000_ORD 57
+#define DT_N_S_soc_S_aes_6003a000_ORD_STR_SORTABLE 00057
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_aes_6003a000_REQUIRES_ORDS \
 	5, /* /soc */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_aes_6003a000_SUPPORTS_ORDS /* nothing */
@@ -6698,7 +6594,7 @@
  * Node identifier: DT_N_S_soc_S_can_6002b000
  *
  * Binding (compatible = espressif,esp32-twai):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/can/espressif,esp32-twai.yaml
+ *   $ZEPHYR_BASE/dts/bindings/can/espressif,esp32-twai.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -6741,15 +6637,15 @@
 #define DT_N_S_soc_S_can_6002b000_HASH 5r5gdCmTNDc_BaL_yCWZJGUz9pqM5G_LAQAzeh6ftoA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_can_6002b000_ORD 59
-#define DT_N_S_soc_S_can_6002b000_ORD_STR_SORTABLE 00059
+#define DT_N_S_soc_S_can_6002b000_ORD 58
+#define DT_N_S_soc_S_can_6002b000_ORD_STR_SORTABLE 00058
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_can_6002b000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */ \
-	48, /* /pin-controller/twai_default */
+	23, /* /clock */ \
+	47, /* /pin-controller/twai_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_can_6002b000_SUPPORTS_ORDS /* nothing */
@@ -6893,7 +6789,7 @@
  * Node identifier: DT_N_S_soc_S_coretemp_60008800
  *
  * Binding (compatible = espressif,esp32-temp):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/sensor/espressif,esp32-temp.yaml
+ *   $ZEPHYR_BASE/dts/bindings/sensor/espressif,esp32-temp.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -6936,8 +6832,8 @@
 #define DT_N_S_soc_S_coretemp_60008800_HASH s570n_MdF8JSOwZbhQjCHHlLF8TLPdTfxDKC5TQAz0Y
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_coretemp_60008800_ORD 60
-#define DT_N_S_soc_S_coretemp_60008800_ORD_STR_SORTABLE 00060
+#define DT_N_S_soc_S_coretemp_60008800_ORD 59
+#define DT_N_S_soc_S_coretemp_60008800_ORD_STR_SORTABLE 00059
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_coretemp_60008800_REQUIRES_ORDS \
@@ -7036,7 +6932,7 @@
  * Node identifier: DT_N_S_soc_S_i2c_60013000
  *
  * Binding (compatible = espressif,esp32-i2c):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/i2c/espressif,esp32-i2c.yaml
+ *   $ZEPHYR_BASE/dts/bindings/i2c/espressif,esp32-i2c.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -7079,15 +6975,15 @@
 #define DT_N_S_soc_S_i2c_60013000_HASH diC9FjkAugIysmEE2Y8Og0QD8HpYHFYLio2pDvLOy8c
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2c_60013000_ORD 61
-#define DT_N_S_soc_S_i2c_60013000_ORD_STR_SORTABLE 00061
+#define DT_N_S_soc_S_i2c_60013000_ORD 60
+#define DT_N_S_soc_S_i2c_60013000_ORD_STR_SORTABLE 00060
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2c_60013000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */ \
-	30, /* /pin-controller/i2c0_default */
+	23, /* /clock */ \
+	29, /* /pin-controller/i2c0_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_i2c_60013000_SUPPORTS_ORDS /* nothing */
@@ -7242,7 +7138,7 @@
  * Node identifier: DT_N_S_soc_S_dma_6003f000
  *
  * Binding (compatible = espressif,esp32-gdma):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/dma/espressif,esp32-gdma.yaml
+ *   $ZEPHYR_BASE/dts/bindings/dma/espressif,esp32-gdma.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -7285,19 +7181,19 @@
 #define DT_N_S_soc_S_dma_6003f000_HASH ChjKwIh8h_E_Bk6GwR2A6PxkBTP21qk6VLD9eGTpvrc
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_dma_6003f000_ORD 62
-#define DT_N_S_soc_S_dma_6003f000_ORD_STR_SORTABLE 00062
+#define DT_N_S_soc_S_dma_6003f000_ORD 61
+#define DT_N_S_soc_S_dma_6003f000_ORD_STR_SORTABLE 00061
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_dma_6003f000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_dma_6003f000_SUPPORTS_ORDS \
-	63, /* /soc/i2s@6000f000 */ \
-	64, /* /soc/i2s@6002d000 */
+	62, /* /soc/i2s@6000f000 */ \
+	63, /* /soc/i2s@6002d000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_dma_6003f000_EXISTS 1
@@ -7559,7 +7455,7 @@
  * Node identifier: DT_N_S_soc_S_i2s_6000f000
  *
  * Binding (compatible = espressif,esp32-i2s):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/i2s/espressif,esp32-i2s.yaml
+ *   $ZEPHYR_BASE/dts/bindings/i2s/espressif,esp32-i2s.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -7602,16 +7498,16 @@
 #define DT_N_S_soc_S_i2s_6000f000_HASH FjABTBTGl9eAwVAd5LyPSHuYHqhjqDz_ivspLhd8GRg
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2s_6000f000_ORD 63
-#define DT_N_S_soc_S_i2s_6000f000_ORD_STR_SORTABLE 00063
+#define DT_N_S_soc_S_i2s_6000f000_ORD 62
+#define DT_N_S_soc_S_i2s_6000f000_ORD_STR_SORTABLE 00062
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2s_6000f000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */ \
-	36, /* /pin-controller/i2s0_default */ \
-	62, /* /soc/dma@6003f000 */
+	23, /* /clock */ \
+	35, /* /pin-controller/i2s0_default */ \
+	61, /* /soc/dma@6003f000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_i2s_6000f000_SUPPORTS_ORDS /* nothing */
@@ -7820,7 +7716,7 @@
  * Node identifier: DT_N_S_soc_S_i2s_6002d000
  *
  * Binding (compatible = espressif,esp32-i2s):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/i2s/espressif,esp32-i2s.yaml
+ *   $ZEPHYR_BASE/dts/bindings/i2s/espressif,esp32-i2s.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -7863,16 +7759,16 @@
 #define DT_N_S_soc_S_i2s_6002d000_HASH CUHU_JCAgzfutPFLKs94Sa_Ao6CXCFxQLlCNi0J1Jl0
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2s_6002d000_ORD 64
-#define DT_N_S_soc_S_i2s_6002d000_ORD_STR_SORTABLE 00064
+#define DT_N_S_soc_S_i2s_6002d000_ORD 63
+#define DT_N_S_soc_S_i2s_6002d000_ORD_STR_SORTABLE 00063
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2s_6002d000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */ \
-	38, /* /pin-controller/i2s1_default */ \
-	62, /* /soc/dma@6003f000 */
+	23, /* /clock */ \
+	37, /* /pin-controller/i2s1_default */ \
+	61, /* /soc/dma@6003f000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_i2s_6002d000_SUPPORTS_ORDS /* nothing */
@@ -8081,7 +7977,7 @@
  * Node identifier: DT_N_S_soc_S_memory_3fce5000
  *
  * Binding (compatible = mmio-sram):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/sram/mmio-sram.yaml
+ *   $ZEPHYR_BASE/dts/bindings/sram/mmio-sram.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -8124,8 +8020,8 @@
 #define DT_N_S_soc_S_memory_3fce5000_HASH ya9e7l8G8HZIHSt4qOsMkzjAb8gpBz1H5_xZF9aaKR8
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_memory_3fce5000_ORD 65
-#define DT_N_S_soc_S_memory_3fce5000_ORD_STR_SORTABLE 00065
+#define DT_N_S_soc_S_memory_3fce5000_ORD 64
+#define DT_N_S_soc_S_memory_3fce5000_ORD_STR_SORTABLE 00064
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_memory_3fce5000_REQUIRES_ORDS \
@@ -8133,8 +8029,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_memory_3fce5000_SUPPORTS_ORDS \
-	66, /* /soc/ipm@3fce9400 */ \
-	69, /* /soc/mbox@3fce9408 */
+	65, /* /soc/ipm@3fce9400 */ \
+	68, /* /soc/mbox@3fce9408 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_memory_3fce5000_EXISTS 1
@@ -8188,7 +8084,7 @@
  * Node identifier: DT_N_S_soc_S_ipm_3fce9400
  *
  * Binding (compatible = espressif,esp32-ipm):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/ipm/espressif,esp32-ipm.yaml
+ *   $ZEPHYR_BASE/dts/bindings/ipm/espressif,esp32-ipm.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -8231,14 +8127,14 @@
 #define DT_N_S_soc_S_ipm_3fce9400_HASH qFVyhyJjCS_P9l2H5RUk6F_EjPj1jBYx7tKjRARaO5I
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_ipm_3fce9400_ORD 66
-#define DT_N_S_soc_S_ipm_3fce9400_ORD_STR_SORTABLE 00066
+#define DT_N_S_soc_S_ipm_3fce9400_ORD 65
+#define DT_N_S_soc_S_ipm_3fce9400_ORD_STR_SORTABLE 00065
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_ipm_3fce9400_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	65, /* /soc/memory@3fce5000 */
+	64, /* /soc/memory@3fce5000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_ipm_3fce9400_SUPPORTS_ORDS /* nothing */
@@ -8370,7 +8266,7 @@
  * Node identifier: DT_N_S_soc_S_lcd_cam_60041000
  *
  * Binding (compatible = espressif,esp32-lcd-cam):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/video/espressif,esp32-cam.yaml
+ *   $ZEPHYR_BASE/dts/bindings/video/espressif,esp32-cam.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -8413,14 +8309,14 @@
 #define DT_N_S_soc_S_lcd_cam_60041000_HASH xfgRleDgbzEuPVZEMcIidCarjrzyGwvfZGB4rFHc0E4
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_lcd_cam_60041000_ORD 67
-#define DT_N_S_soc_S_lcd_cam_60041000_ORD_STR_SORTABLE 00067
+#define DT_N_S_soc_S_lcd_cam_60041000_ORD 66
+#define DT_N_S_soc_S_lcd_cam_60041000_ORD_STR_SORTABLE 00066
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_lcd_cam_60041000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_lcd_cam_60041000_SUPPORTS_ORDS /* nothing */
@@ -8549,7 +8445,7 @@
  * Node identifier: DT_N_S_soc_S_ledc_60019000
  *
  * Binding (compatible = espressif,esp32-ledc):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/pwm/espressif,esp32-ledc.yaml
+ *   $ZEPHYR_BASE/dts/bindings/pwm/espressif,esp32-ledc.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -8592,13 +8488,13 @@
 #define DT_N_S_soc_S_ledc_60019000_HASH ivU7PYnXftTq8IeHZYedNtxFhGTursL0wzBinUM6lpI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_ledc_60019000_ORD 68
-#define DT_N_S_soc_S_ledc_60019000_ORD_STR_SORTABLE 00068
+#define DT_N_S_soc_S_ledc_60019000_ORD 67
+#define DT_N_S_soc_S_ledc_60019000_ORD_STR_SORTABLE 00067
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_ledc_60019000_REQUIRES_ORDS \
 	5, /* /soc */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_ledc_60019000_SUPPORTS_ORDS /* nothing */
@@ -8687,7 +8583,7 @@
  * Node identifier: DT_N_S_soc_S_mbox_3fce9408
  *
  * Binding (compatible = espressif,mbox-esp32):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/mbox/espressif,mbox-esp32.yaml
+ *   $ZEPHYR_BASE/dts/bindings/mbox/espressif,mbox-esp32.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -8730,14 +8626,14 @@
 #define DT_N_S_soc_S_mbox_3fce9408_HASH CosCUcT4QYF3AwJ9hsmzi36XhtEon24YH1I4oPBTXP0
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_mbox_3fce9408_ORD 69
-#define DT_N_S_soc_S_mbox_3fce9408_ORD_STR_SORTABLE 00069
+#define DT_N_S_soc_S_mbox_3fce9408_ORD 68
+#define DT_N_S_soc_S_mbox_3fce9408_ORD_STR_SORTABLE 00068
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_mbox_3fce9408_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	65, /* /soc/memory@3fce5000 */
+	64, /* /soc/memory@3fce5000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_mbox_3fce9408_SUPPORTS_ORDS /* nothing */
@@ -8869,7 +8765,7 @@
  * Node identifier: DT_N_S_soc_S_mcpwm_6001e000
  *
  * Binding (compatible = espressif,esp32-mcpwm):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/pwm/espressif,esp32-mcpwm.yaml
+ *   $ZEPHYR_BASE/dts/bindings/pwm/espressif,esp32-mcpwm.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -8912,14 +8808,14 @@
 #define DT_N_S_soc_S_mcpwm_6001e000_HASH d2zHyqMaNADc7KUR4_WygPeNIvvIsUg3nTPCIEFKSWg
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_mcpwm_6001e000_ORD 70
-#define DT_N_S_soc_S_mcpwm_6001e000_ORD_STR_SORTABLE 00070
+#define DT_N_S_soc_S_mcpwm_6001e000_ORD 69
+#define DT_N_S_soc_S_mcpwm_6001e000_ORD_STR_SORTABLE 00069
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_mcpwm_6001e000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_mcpwm_6001e000_SUPPORTS_ORDS /* nothing */
@@ -9036,7 +8932,7 @@
  * Node identifier: DT_N_S_soc_S_mcpwm_6002c000
  *
  * Binding (compatible = espressif,esp32-mcpwm):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/pwm/espressif,esp32-mcpwm.yaml
+ *   $ZEPHYR_BASE/dts/bindings/pwm/espressif,esp32-mcpwm.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -9079,14 +8975,14 @@
 #define DT_N_S_soc_S_mcpwm_6002c000_HASH PUT9fuKEmWfw0Ikkb4eK52xX7q1kAZDHic3xFwhvGrw
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_mcpwm_6002c000_ORD 71
-#define DT_N_S_soc_S_mcpwm_6002c000_ORD_STR_SORTABLE 00071
+#define DT_N_S_soc_S_mcpwm_6002c000_ORD 70
+#define DT_N_S_soc_S_mcpwm_6002c000_ORD_STR_SORTABLE 00070
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_mcpwm_6002c000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_mcpwm_6002c000_SUPPORTS_ORDS /* nothing */
@@ -9203,7 +9099,7 @@
  * Node identifier: DT_N_S_soc_S_memory_3fc88000
  *
  * Binding (compatible = zephyr,memory-region):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/base/zephyr,memory-region.yaml
+ *   $ZEPHYR_BASE/dts/bindings/base/zephyr,memory-region.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -9246,8 +9142,8 @@
 #define DT_N_S_soc_S_memory_3fc88000_HASH dREbOCBoDHQVTmeX36l4_QWq7LHenwdZ_LEoY85fiiI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_memory_3fc88000_ORD 72
-#define DT_N_S_soc_S_memory_3fc88000_ORD_STR_SORTABLE 00072
+#define DT_N_S_soc_S_memory_3fc88000_ORD 71
+#define DT_N_S_soc_S_memory_3fc88000_ORD_STR_SORTABLE 00071
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_memory_3fc88000_REQUIRES_ORDS \
@@ -9335,7 +9231,7 @@
  * Node identifier: DT_N_S_soc_S_memory_3fce5400
  *
  * Binding (compatible = mmio-sram):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/sram/mmio-sram.yaml
+ *   $ZEPHYR_BASE/dts/bindings/sram/mmio-sram.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -9378,8 +9274,8 @@
 #define DT_N_S_soc_S_memory_3fce5400_HASH HyL82Z6ujffmB6CBSFiHfwfgvsYwqIL4lYGisoVn_Gc
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_memory_3fce5400_ORD 73
-#define DT_N_S_soc_S_memory_3fce5400_ORD_STR_SORTABLE 00073
+#define DT_N_S_soc_S_memory_3fce5400_ORD 72
+#define DT_N_S_soc_S_memory_3fce5400_ORD_STR_SORTABLE 00072
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_memory_3fce5400_REQUIRES_ORDS \
@@ -9440,7 +9336,7 @@
  * Node identifier: DT_N_S_soc_S_memory_3fcf0000
  *
  * Binding (compatible = zephyr,memory-region):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/base/zephyr,memory-region.yaml
+ *   $ZEPHYR_BASE/dts/bindings/base/zephyr,memory-region.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -9483,8 +9379,8 @@
 #define DT_N_S_soc_S_memory_3fcf0000_HASH NKnNQ0S6nCfKDGsu2JCJzWz3KO4lwmSTxQ7YFL2YaIA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_memory_3fcf0000_ORD 74
-#define DT_N_S_soc_S_memory_3fcf0000_ORD_STR_SORTABLE 00074
+#define DT_N_S_soc_S_memory_3fcf0000_ORD 73
+#define DT_N_S_soc_S_memory_3fcf0000_ORD_STR_SORTABLE 00073
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_memory_3fcf0000_REQUIRES_ORDS \
@@ -9572,7 +9468,7 @@
  * Node identifier: DT_N_S_soc_S_memory_40370000
  *
  * Binding (compatible = zephyr,memory-region):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/base/zephyr,memory-region.yaml
+ *   $ZEPHYR_BASE/dts/bindings/base/zephyr,memory-region.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -9615,8 +9511,8 @@
 #define DT_N_S_soc_S_memory_40370000_HASH bOVAfly2sNW3W_XQpUFYqABhHFpTF6t1SKi4LCt6XeM
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_memory_40370000_ORD 75
-#define DT_N_S_soc_S_memory_40370000_ORD_STR_SORTABLE 00075
+#define DT_N_S_soc_S_memory_40370000_ORD 74
+#define DT_N_S_soc_S_memory_40370000_ORD_STR_SORTABLE 00074
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_memory_40370000_REQUIRES_ORDS \
@@ -9704,7 +9600,7 @@
  * Node identifier: DT_N_S_soc_S_memory_42000000
  *
  * Binding (compatible = zephyr,memory-region):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/base/zephyr,memory-region.yaml
+ *   $ZEPHYR_BASE/dts/bindings/base/zephyr,memory-region.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -9747,8 +9643,8 @@
 #define DT_N_S_soc_S_memory_42000000_HASH MxgXaruz5v3eOd2Q__lowXsvExkVTFzT2vhBio8ss58
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_memory_42000000_ORD 76
-#define DT_N_S_soc_S_memory_42000000_ORD_STR_SORTABLE 00076
+#define DT_N_S_soc_S_memory_42000000_ORD 75
+#define DT_N_S_soc_S_memory_42000000_ORD_STR_SORTABLE 00075
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_memory_42000000_REQUIRES_ORDS \
@@ -9825,7 +9721,7 @@
  * Node identifier: DT_N_S_soc_S_pcnt_60017000
  *
  * Binding (compatible = espressif,esp32-pcnt):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/sensor/espressif,esp32-pcnt.yaml
+ *   $ZEPHYR_BASE/dts/bindings/sensor/espressif,esp32-pcnt.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -9868,14 +9764,14 @@
 #define DT_N_S_soc_S_pcnt_60017000_HASH ZClq9dISyBnVFDgypE61RUkaAu9k8TnnR9Ind07azs8
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pcnt_60017000_ORD 77
-#define DT_N_S_soc_S_pcnt_60017000_ORD_STR_SORTABLE 00077
+#define DT_N_S_soc_S_pcnt_60017000_ORD 76
+#define DT_N_S_soc_S_pcnt_60017000_ORD_STR_SORTABLE 00076
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pcnt_60017000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_pcnt_60017000_SUPPORTS_ORDS /* nothing */
@@ -9992,7 +9888,7 @@
  * Node identifier: DT_N_S_soc_S_rtc_timer_60008004
  *
  * Binding (compatible = espressif,esp32-rtc-timer):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/counter/espressif,esp32-rtc-timer.yaml
+ *   $ZEPHYR_BASE/dts/bindings/counter/espressif,esp32-rtc-timer.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -10035,14 +9931,14 @@
 #define DT_N_S_soc_S_rtc_timer_60008004_HASH 4qN_L8f9vx8os_4o1HY0xZa_bIOyuYblmZLW1PIJL7Q
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_rtc_timer_60008004_ORD 78
-#define DT_N_S_soc_S_rtc_timer_60008004_ORD_STR_SORTABLE 00078
+#define DT_N_S_soc_S_rtc_timer_60008004_ORD 77
+#define DT_N_S_soc_S_rtc_timer_60008004_ORD_STR_SORTABLE 00077
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_rtc_timer_60008004_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_rtc_timer_60008004_SUPPORTS_ORDS /* nothing */
@@ -10159,7 +10055,7 @@
  * Node identifier: DT_N_S_soc_S_sha_6003b000
  *
  * Binding (compatible = espressif,esp32-sha):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/crypto/espressif,esp32-sha.yaml
+ *   $ZEPHYR_BASE/dts/bindings/crypto/espressif,esp32-sha.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -10202,13 +10098,13 @@
 #define DT_N_S_soc_S_sha_6003b000_HASH 7OX0bTx4tdGa16cEdhK9sCwpllJb4Ei8sOPUFAW9i2o
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_sha_6003b000_ORD 79
-#define DT_N_S_soc_S_sha_6003b000_ORD_STR_SORTABLE 00079
+#define DT_N_S_soc_S_sha_6003b000_ORD 78
+#define DT_N_S_soc_S_sha_6003b000_ORD_STR_SORTABLE 00078
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_sha_6003b000_REQUIRES_ORDS \
 	5, /* /soc */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_sha_6003b000_SUPPORTS_ORDS /* nothing */
@@ -10297,7 +10193,7 @@
  * Node identifier: DT_N_S_soc_S_spi_60024000
  *
  * Binding (compatible = espressif,esp32-spi):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/spi/espressif,esp32-spi.yaml
+ *   $ZEPHYR_BASE/dts/bindings/spi/espressif,esp32-spi.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -10340,15 +10236,15 @@
 #define DT_N_S_soc_S_spi_60024000_HASH cAnuUIWiVpDjQN_NLMvQuebfun49HKk2_1TcBDFx2SE
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_60024000_ORD 80
-#define DT_N_S_soc_S_spi_60024000_ORD_STR_SORTABLE 00080
+#define DT_N_S_soc_S_spi_60024000_ORD 79
+#define DT_N_S_soc_S_spi_60024000_ORD_STR_SORTABLE 00079
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_60024000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */ \
-	40, /* /pin-controller/spim2_default */
+	23, /* /clock */ \
+	39, /* /pin-controller/spim2_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_spi_60024000_SUPPORTS_ORDS /* nothing */
@@ -10510,7 +10406,7 @@
  * Node identifier: DT_N_S_soc_S_touch_6000885c
  *
  * Binding (compatible = espressif,esp32-touch):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/input/espressif,esp32-touch-sensor.yaml
+ *   $ZEPHYR_BASE/dts/bindings/input/espressif,esp32-touch-sensor.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -10553,8 +10449,8 @@
 #define DT_N_S_soc_S_touch_6000885c_HASH lW5T4xPXuGhuol5FH_i1tsfAufZ7rqCd0mYWu_aMCLA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_touch_6000885c_ORD 81
-#define DT_N_S_soc_S_touch_6000885c_ORD_STR_SORTABLE 00081
+#define DT_N_S_soc_S_touch_6000885c_ORD 80
+#define DT_N_S_soc_S_touch_6000885c_ORD_STR_SORTABLE 00080
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_touch_6000885c_REQUIRES_ORDS \
@@ -10700,7 +10596,7 @@
  * Node identifier: DT_N_S_soc_S_trng_6003507c
  *
  * Binding (compatible = espressif,esp32-trng):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/rng/espressif,esp32-trng.yaml
+ *   $ZEPHYR_BASE/dts/bindings/rng/espressif,esp32-trng.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -10743,13 +10639,13 @@
 #define DT_N_S_soc_S_trng_6003507c_HASH HC97_ePl1pevUbx8SWLgTpeKRqKtqSyA_b3OchELVbI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_trng_6003507c_ORD 82
-#define DT_N_S_soc_S_trng_6003507c_ORD_STR_SORTABLE 00082
+#define DT_N_S_soc_S_trng_6003507c_ORD 81
+#define DT_N_S_soc_S_trng_6003507c_ORD_STR_SORTABLE 00081
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_trng_6003507c_REQUIRES_ORDS \
 	5, /* /soc */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_trng_6003507c_SUPPORTS_ORDS /* nothing */
@@ -10838,7 +10734,7 @@
  * Node identifier: DT_N_S_soc_S_uart_60000000
  *
  * Binding (compatible = espressif,esp32-uart):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/serial/espressif,esp32-uart.yaml
+ *   $ZEPHYR_BASE/dts/bindings/serial/espressif,esp32-uart.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -10881,15 +10777,15 @@
 #define DT_N_S_soc_S_uart_60000000_HASH D2t8eqRVs7EeMF7E6_m3Gv7t97nd7h5PH0XDmtUvrbk
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uart_60000000_ORD 83
-#define DT_N_S_soc_S_uart_60000000_ORD_STR_SORTABLE 00083
+#define DT_N_S_soc_S_uart_60000000_ORD 82
+#define DT_N_S_soc_S_uart_60000000_ORD_STR_SORTABLE 00082
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uart_60000000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */ \
-	50, /* /pin-controller/uart0_default */
+	23, /* /clock */ \
+	49, /* /pin-controller/uart0_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_uart_60000000_SUPPORTS_ORDS /* nothing */
@@ -11080,7 +10976,7 @@
  * Node identifier: DT_N_S_soc_S_uart_60010000
  *
  * Binding (compatible = espressif,esp32-uart):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/serial/espressif,esp32-uart.yaml
+ *   $ZEPHYR_BASE/dts/bindings/serial/espressif,esp32-uart.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -11123,14 +11019,14 @@
 #define DT_N_S_soc_S_uart_60010000_HASH OkwyyZMwHXXvX_HFm8OAnDn4_hvWBRFy2cOSz91fWpo
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uart_60010000_ORD 84
-#define DT_N_S_soc_S_uart_60010000_ORD_STR_SORTABLE 00084
+#define DT_N_S_soc_S_uart_60010000_ORD 83
+#define DT_N_S_soc_S_uart_60010000_ORD_STR_SORTABLE 00083
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uart_60010000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_uart_60010000_SUPPORTS_ORDS /* nothing */
@@ -11291,7 +11187,7 @@
  * Node identifier: DT_N_S_soc_S_uart_6002e000
  *
  * Binding (compatible = espressif,esp32-uart):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/serial/espressif,esp32-uart.yaml
+ *   $ZEPHYR_BASE/dts/bindings/serial/espressif,esp32-uart.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -11334,14 +11230,14 @@
 #define DT_N_S_soc_S_uart_6002e000_HASH CfJ0T6fz61kURKSrb0v66avgdgV4kuF8h1pW_ibpPbc
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uart_6002e000_ORD 85
-#define DT_N_S_soc_S_uart_6002e000_ORD_STR_SORTABLE 00085
+#define DT_N_S_soc_S_uart_6002e000_ORD 84
+#define DT_N_S_soc_S_uart_6002e000_ORD_STR_SORTABLE 00084
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uart_6002e000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_uart_6002e000_SUPPORTS_ORDS /* nothing */
@@ -11502,7 +11398,7 @@
  * Node identifier: DT_N_S_soc_S_uart_60038000
  *
  * Binding (compatible = espressif,esp32-usb-serial):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/serial/espressif,esp32-usb-serial.yaml
+ *   $ZEPHYR_BASE/dts/bindings/serial/espressif,esp32-usb-serial.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -11545,14 +11441,14 @@
 #define DT_N_S_soc_S_uart_60038000_HASH i55DjZv1Mym_Gwy1kdlGQYS_Iy3G4lHZXW__C0ktZe8
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uart_60038000_ORD 86
-#define DT_N_S_soc_S_uart_60038000_ORD_STR_SORTABLE 00086
+#define DT_N_S_soc_S_uart_60038000_ORD 85
+#define DT_N_S_soc_S_uart_60038000_ORD_STR_SORTABLE 00085
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uart_60038000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_uart_60038000_SUPPORTS_ORDS /* nothing */
@@ -11686,7 +11582,7 @@
  * Node identifier: DT_N_S_soc_S_usb_otg_60080000
  *
  * Binding (compatible = espressif,esp32-usb-otg):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/usb/espressif,esp32-usb-otg.yaml
+ *   $ZEPHYR_BASE/dts/bindings/usb/espressif,esp32-usb-otg.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -11729,14 +11625,14 @@
 #define DT_N_S_soc_S_usb_otg_60080000_HASH PNZSl3Hk_XMxv3clTQft8QkalCAra1lAUWIxqMgf0xA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_usb_otg_60080000_ORD 87
-#define DT_N_S_soc_S_usb_otg_60080000_ORD_STR_SORTABLE 00087
+#define DT_N_S_soc_S_usb_otg_60080000_ORD 86
+#define DT_N_S_soc_S_usb_otg_60080000_ORD_STR_SORTABLE 00086
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_usb_otg_60080000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_usb_otg_60080000_SUPPORTS_ORDS /* nothing */
@@ -11879,7 +11775,7 @@
  * Node identifier: DT_N_S_soc_S_watchdog_6001f048
  *
  * Binding (compatible = espressif,esp32-watchdog):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/watchdog/espressif,esp32-watchdog.yaml
+ *   $ZEPHYR_BASE/dts/bindings/watchdog/espressif,esp32-watchdog.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -11922,14 +11818,14 @@
 #define DT_N_S_soc_S_watchdog_6001f048_HASH DWmLPdAAzCqaMJiM_4ieP1Itac7FFBT5sXrLyDShxp4
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_watchdog_6001f048_ORD 88
-#define DT_N_S_soc_S_watchdog_6001f048_ORD_STR_SORTABLE 00088
+#define DT_N_S_soc_S_watchdog_6001f048_ORD 87
+#define DT_N_S_soc_S_watchdog_6001f048_ORD_STR_SORTABLE 00087
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_watchdog_6001f048_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_watchdog_6001f048_SUPPORTS_ORDS /* nothing */
@@ -12047,7 +11943,7 @@
  * Node identifier: DT_N_S_soc_S_watchdog_60020048
  *
  * Binding (compatible = espressif,esp32-watchdog):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/watchdog/espressif,esp32-watchdog.yaml
+ *   $ZEPHYR_BASE/dts/bindings/watchdog/espressif,esp32-watchdog.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -12090,14 +11986,14 @@
 #define DT_N_S_soc_S_watchdog_60020048_HASH dYcqxfqxhKDdp5Wc7WZNv_6Q6eeOHnvANXhuU6BI3Z4
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_watchdog_60020048_ORD 89
-#define DT_N_S_soc_S_watchdog_60020048_ORD_STR_SORTABLE 00089
+#define DT_N_S_soc_S_watchdog_60020048_ORD 88
+#define DT_N_S_soc_S_watchdog_60020048_ORD_STR_SORTABLE 00088
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_watchdog_60020048_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_watchdog_60020048_SUPPORTS_ORDS /* nothing */
@@ -12214,7 +12110,7 @@
  * Node identifier: DT_N_S_soc_S_xt_wdt_60021004
  *
  * Binding (compatible = espressif,esp32-xt-wdt):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/watchdog/espressif,esp32-xt-wdt.yaml
+ *   $ZEPHYR_BASE/dts/bindings/watchdog/espressif,esp32-xt-wdt.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -12257,14 +12153,14 @@
 #define DT_N_S_soc_S_xt_wdt_60021004_HASH LbgBebYRgPg030SGlIcQbCaWYeKTWouWYWvBH4ADkdY
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_xt_wdt_60021004_ORD 90
-#define DT_N_S_soc_S_xt_wdt_60021004_ORD_STR_SORTABLE 00090
+#define DT_N_S_soc_S_xt_wdt_60021004_ORD 89
+#define DT_N_S_soc_S_xt_wdt_60021004_ORD_STR_SORTABLE 00089
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_xt_wdt_60021004_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_xt_wdt_60021004_SUPPORTS_ORDS /* nothing */
@@ -12381,7 +12277,7 @@
  * Node identifier: DT_N_S_soc_S_counter_6001f000
  *
  * Binding (compatible = espressif,esp32-timer):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/counter/espressif,esp32-timer.yaml
+ *   $ZEPHYR_BASE/dts/bindings/counter/espressif,esp32-timer.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -12424,18 +12320,18 @@
 #define DT_N_S_soc_S_counter_6001f000_HASH Rrs5kpmU6w_9iEjhLyqLTIL2mlU51fBWqnVs1LhbFsc
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_counter_6001f000_ORD 91
-#define DT_N_S_soc_S_counter_6001f000_ORD_STR_SORTABLE 00091
+#define DT_N_S_soc_S_counter_6001f000_ORD 90
+#define DT_N_S_soc_S_counter_6001f000_ORD_STR_SORTABLE 00090
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_counter_6001f000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_counter_6001f000_SUPPORTS_ORDS \
-	92, /* /soc/counter@6001f000/counter */
+	91, /* /soc/counter@6001f000/counter */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_counter_6001f000_EXISTS 1
@@ -12563,7 +12459,7 @@
  * Node identifier: DT_N_S_soc_S_counter_6001f000_S_counter
  *
  * Binding (compatible = espressif,esp32-counter):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/counter/espressif,esp32-counter.yaml
+ *   $ZEPHYR_BASE/dts/bindings/counter/espressif,esp32-counter.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -12606,12 +12502,12 @@
 #define DT_N_S_soc_S_counter_6001f000_S_counter_HASH 1BnW7PebcpbOj6PyPgfIKSK7qnhKCToBNW9fE9PQyjI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_counter_6001f000_S_counter_ORD 92
-#define DT_N_S_soc_S_counter_6001f000_S_counter_ORD_STR_SORTABLE 00092
+#define DT_N_S_soc_S_counter_6001f000_S_counter_ORD 91
+#define DT_N_S_soc_S_counter_6001f000_S_counter_ORD_STR_SORTABLE 00091
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_counter_6001f000_S_counter_REQUIRES_ORDS \
-	91, /* /soc/counter@6001f000 */
+	90, /* /soc/counter@6001f000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_counter_6001f000_S_counter_SUPPORTS_ORDS /* nothing */
@@ -12677,7 +12573,7 @@
  * Node identifier: DT_N_S_soc_S_counter_6001f024
  *
  * Binding (compatible = espressif,esp32-timer):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/counter/espressif,esp32-timer.yaml
+ *   $ZEPHYR_BASE/dts/bindings/counter/espressif,esp32-timer.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -12720,18 +12616,18 @@
 #define DT_N_S_soc_S_counter_6001f024_HASH _tHOMBth7FeWlv20MFmpXa9YUGYxsPx0aNQxZBF_J0w
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_counter_6001f024_ORD 93
-#define DT_N_S_soc_S_counter_6001f024_ORD_STR_SORTABLE 00093
+#define DT_N_S_soc_S_counter_6001f024_ORD 92
+#define DT_N_S_soc_S_counter_6001f024_ORD_STR_SORTABLE 00092
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_counter_6001f024_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_counter_6001f024_SUPPORTS_ORDS \
-	94, /* /soc/counter@6001f024/counter */
+	93, /* /soc/counter@6001f024/counter */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_counter_6001f024_EXISTS 1
@@ -12859,7 +12755,7 @@
  * Node identifier: DT_N_S_soc_S_counter_6001f024_S_counter
  *
  * Binding (compatible = espressif,esp32-counter):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/counter/espressif,esp32-counter.yaml
+ *   $ZEPHYR_BASE/dts/bindings/counter/espressif,esp32-counter.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -12902,12 +12798,12 @@
 #define DT_N_S_soc_S_counter_6001f024_S_counter_HASH fwggem_m4lB1Y0CWaSxY44D8ApJMgGzNwFwYBLnBeFI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_counter_6001f024_S_counter_ORD 94
-#define DT_N_S_soc_S_counter_6001f024_S_counter_ORD_STR_SORTABLE 00094
+#define DT_N_S_soc_S_counter_6001f024_S_counter_ORD 93
+#define DT_N_S_soc_S_counter_6001f024_S_counter_ORD_STR_SORTABLE 00093
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_counter_6001f024_S_counter_REQUIRES_ORDS \
-	93, /* /soc/counter@6001f024 */
+	92, /* /soc/counter@6001f024 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_counter_6001f024_S_counter_SUPPORTS_ORDS /* nothing */
@@ -12973,7 +12869,7 @@
  * Node identifier: DT_N_S_soc_S_counter_60020000
  *
  * Binding (compatible = espressif,esp32-timer):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/counter/espressif,esp32-timer.yaml
+ *   $ZEPHYR_BASE/dts/bindings/counter/espressif,esp32-timer.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -13016,18 +12912,18 @@
 #define DT_N_S_soc_S_counter_60020000_HASH xCx78bIBDOX3I64HiTwhWz_zp_ta0pfUDZNQ0MGTKxo
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_counter_60020000_ORD 95
-#define DT_N_S_soc_S_counter_60020000_ORD_STR_SORTABLE 00095
+#define DT_N_S_soc_S_counter_60020000_ORD 94
+#define DT_N_S_soc_S_counter_60020000_ORD_STR_SORTABLE 00094
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_counter_60020000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_counter_60020000_SUPPORTS_ORDS \
-	96, /* /soc/counter@60020000/counter */
+	95, /* /soc/counter@60020000/counter */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_counter_60020000_EXISTS 1
@@ -13155,7 +13051,7 @@
  * Node identifier: DT_N_S_soc_S_counter_60020000_S_counter
  *
  * Binding (compatible = espressif,esp32-counter):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/counter/espressif,esp32-counter.yaml
+ *   $ZEPHYR_BASE/dts/bindings/counter/espressif,esp32-counter.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -13198,12 +13094,12 @@
 #define DT_N_S_soc_S_counter_60020000_S_counter_HASH iUSZEEHrOjgouGvxolXes3pAkjQoylGsr7B78CVLa0Y
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_counter_60020000_S_counter_ORD 96
-#define DT_N_S_soc_S_counter_60020000_S_counter_ORD_STR_SORTABLE 00096
+#define DT_N_S_soc_S_counter_60020000_S_counter_ORD 95
+#define DT_N_S_soc_S_counter_60020000_S_counter_ORD_STR_SORTABLE 00095
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_counter_60020000_S_counter_REQUIRES_ORDS \
-	95, /* /soc/counter@60020000 */
+	94, /* /soc/counter@60020000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_counter_60020000_S_counter_SUPPORTS_ORDS /* nothing */
@@ -13269,7 +13165,7 @@
  * Node identifier: DT_N_S_soc_S_counter_60020024
  *
  * Binding (compatible = espressif,esp32-timer):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/counter/espressif,esp32-timer.yaml
+ *   $ZEPHYR_BASE/dts/bindings/counter/espressif,esp32-timer.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -13312,18 +13208,18 @@
 #define DT_N_S_soc_S_counter_60020024_HASH q7XUq8otw592MMX6Vq29YDJEwNtxuvJ4YXh2h6g4hwU
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_counter_60020024_ORD 97
-#define DT_N_S_soc_S_counter_60020024_ORD_STR_SORTABLE 00097
+#define DT_N_S_soc_S_counter_60020024_ORD 96
+#define DT_N_S_soc_S_counter_60020024_ORD_STR_SORTABLE 00096
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_counter_60020024_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_counter_60020024_SUPPORTS_ORDS \
-	98, /* /soc/counter@60020024/counter */
+	97, /* /soc/counter@60020024/counter */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_counter_60020024_EXISTS 1
@@ -13451,7 +13347,7 @@
  * Node identifier: DT_N_S_soc_S_counter_60020024_S_counter
  *
  * Binding (compatible = espressif,esp32-counter):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/counter/espressif,esp32-counter.yaml
+ *   $ZEPHYR_BASE/dts/bindings/counter/espressif,esp32-counter.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -13494,12 +13390,12 @@
 #define DT_N_S_soc_S_counter_60020024_S_counter_HASH wmieNtyjn9sQES1VH5SAPFutSItagKibxS7ndwgbUKY
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_counter_60020024_S_counter_ORD 98
-#define DT_N_S_soc_S_counter_60020024_S_counter_ORD_STR_SORTABLE 00098
+#define DT_N_S_soc_S_counter_60020024_S_counter_ORD 97
+#define DT_N_S_soc_S_counter_60020024_S_counter_ORD_STR_SORTABLE 00097
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_counter_60020024_S_counter_REQUIRES_ORDS \
-	97, /* /soc/counter@60020024 */
+	96, /* /soc/counter@60020024 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_counter_60020024_S_counter_SUPPORTS_ORDS /* nothing */
@@ -13565,7 +13461,7 @@
  * Node identifier: DT_N_S_soc_S_flash_controller_60002000
  *
  * Binding (compatible = espressif,esp32-flash-controller):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/flash_controller/espressif,esp32-flash-controller.yaml
+ *   $ZEPHYR_BASE/dts/bindings/flash_controller/espressif,esp32-flash-controller.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -13608,8 +13504,8 @@
 #define DT_N_S_soc_S_flash_controller_60002000_HASH yd4D2IggpKw4LyE398Naff07xJbYibUkiq_qk5dUqD8
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_ORD 99
-#define DT_N_S_soc_S_flash_controller_60002000_ORD_STR_SORTABLE 00099
+#define DT_N_S_soc_S_flash_controller_60002000_ORD 98
+#define DT_N_S_soc_S_flash_controller_60002000_ORD_STR_SORTABLE 00098
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_REQUIRES_ORDS \
@@ -13617,7 +13513,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_SUPPORTS_ORDS \
-	100, /* /soc/flash-controller@60002000/flash@0 */
+	99, /* /soc/flash-controller@60002000/flash@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_60002000_EXISTS 1
@@ -13675,7 +13571,7 @@
  * Node identifier: DT_N_S_soc_S_flash_controller_60002000_S_flash_0
  *
  * Binding (compatible = soc-nv-flash):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/mtd/soc-nv-flash.yaml
+ *   $ZEPHYR_BASE/dts/bindings/mtd/soc-nv-flash.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -13718,16 +13614,16 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_HASH D2mNQTsAafBKTZogWP5ZJcwnGR7dkZH4NbPP40TPifI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_ORD 100
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_ORD_STR_SORTABLE 00100
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_ORD 99
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_ORD_STR_SORTABLE 00099
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_REQUIRES_ORDS \
-	99, /* /soc/flash-controller@60002000 */
+	98, /* /soc/flash-controller@60002000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_SUPPORTS_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_EXISTS 1
@@ -13785,7 +13681,7 @@
  * Node identifier: DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions
  *
  * Binding (compatible = fixed-partitions):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/mtd/fixed-partitions.yaml
+ *   $ZEPHYR_BASE/dts/bindings/mtd/fixed-partitions.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -13828,26 +13724,26 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_HASH dNzhNxyK81xeQFYip2CZ9rCb0VdF2BCsUgOYjZqcpMo
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_ORD 101
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_ORD_STR_SORTABLE 00101
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_ORD 100
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_ORD_STR_SORTABLE 00100
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_REQUIRES_ORDS \
-	100, /* /soc/flash-controller@60002000/flash@0 */
+	99, /* /soc/flash-controller@60002000/flash@0 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_SUPPORTS_ORDS \
-	102, /* /soc/flash-controller@60002000/flash@0/partitions/partition@0 */ \
-	103, /* /soc/flash-controller@60002000/flash@0/partitions/partition@10000 */ \
-	104, /* /soc/flash-controller@60002000/flash@0/partitions/partition@20000 */ \
-	105, /* /soc/flash-controller@60002000/flash@0/partitions/partition@170000 */ \
-	106, /* /soc/flash-controller@60002000/flash@0/partitions/partition@2c0000 */ \
-	107, /* /soc/flash-controller@60002000/flash@0/partitions/partition@330000 */ \
-	108, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3a0000 */ \
-	109, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3a8000 */ \
-	110, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3b0000 */ \
-	111, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3e0000 */ \
-	112, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3ff000 */
+	101, /* /soc/flash-controller@60002000/flash@0/partitions/partition@0 */ \
+	102, /* /soc/flash-controller@60002000/flash@0/partitions/partition@10000 */ \
+	103, /* /soc/flash-controller@60002000/flash@0/partitions/partition@20000 */ \
+	104, /* /soc/flash-controller@60002000/flash@0/partitions/partition@170000 */ \
+	105, /* /soc/flash-controller@60002000/flash@0/partitions/partition@2c0000 */ \
+	106, /* /soc/flash-controller@60002000/flash@0/partitions/partition@330000 */ \
+	107, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3a0000 */ \
+	108, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3a8000 */ \
+	109, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3b0000 */ \
+	110, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3e0000 */ \
+	111, /* /soc/flash-controller@60002000/flash@0/partitions/partition@3ff000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_EXISTS 1
@@ -13913,12 +13809,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0_HASH oDsImwagDdfCPnWV2WOVcSz6DvQuTknj1gY7ra4w5Cw
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0_ORD 102
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0_ORD_STR_SORTABLE 00102
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0_ORD 101
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0_ORD_STR_SORTABLE 00101
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0_SUPPORTS_ORDS /* nothing */
@@ -14012,12 +13908,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000_HASH fieo_ZZ_e2gacspwZIAewOHWM7IxeT3uY7EGlWW2yes
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000_ORD 103
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000_ORD_STR_SORTABLE 00103
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000_ORD 102
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000_ORD_STR_SORTABLE 00102
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000_SUPPORTS_ORDS /* nothing */
@@ -14111,12 +14007,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000_HASH _RYkLIzjY4UgPmWibu0PcD8f_q1lghSkV21XtY_S_TM
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000_ORD 104
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000_ORD_STR_SORTABLE 00104
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000_ORD 103
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000_ORD_STR_SORTABLE 00103
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000_SUPPORTS_ORDS /* nothing */
@@ -14210,12 +14106,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000_HASH _VUyUmkd_u2hu0MU_IKV1_jAVg0T_PtFaII_lPXtG3Q
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000_ORD 105
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000_ORD_STR_SORTABLE 00105
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000_ORD 104
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000_ORD_STR_SORTABLE 00104
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000_SUPPORTS_ORDS /* nothing */
@@ -14309,12 +14205,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000_HASH mgJTA6mdjCUIKu0BM_g6Crq3a6L7JZLHyJTgl1I_egE
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000_ORD 106
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000_ORD_STR_SORTABLE 00106
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000_ORD 105
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000_ORD_STR_SORTABLE 00105
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000_SUPPORTS_ORDS /* nothing */
@@ -14408,12 +14304,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000_HASH x7dGVvVNfxVTT9coyYV5eMB7_C4THzsLcHou93SEXIQ
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000_ORD 107
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000_ORD_STR_SORTABLE 00107
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000_ORD 106
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000_ORD_STR_SORTABLE 00106
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000_SUPPORTS_ORDS /* nothing */
@@ -14507,12 +14403,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000_HASH MFbK2mwgeWhCZwHgtDHUw3nXa2bjAnxM3Em9ay4u2KY
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000_ORD 108
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000_ORD_STR_SORTABLE 00108
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000_ORD 107
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000_ORD_STR_SORTABLE 00107
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000_SUPPORTS_ORDS /* nothing */
@@ -14606,12 +14502,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000_HASH H_pMNiTzPzv5CHmjNphsrycI6__KzwyiYJbytejQtTs
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000_ORD 109
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000_ORD_STR_SORTABLE 00109
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000_ORD 108
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000_ORD_STR_SORTABLE 00108
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000_SUPPORTS_ORDS /* nothing */
@@ -14705,12 +14601,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000_HASH FwNzLzGEzQBAe3N4r3VO2x4UwK4rCMBOfdTATEQvVjM
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000_ORD 110
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000_ORD_STR_SORTABLE 00110
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000_ORD 109
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000_ORD_STR_SORTABLE 00109
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000_SUPPORTS_ORDS /* nothing */
@@ -14804,12 +14700,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000_HASH x1ZlLZHhfqkhNm59vRztuqo3qPs7ruj_uO7YXxbgDRI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000_ORD 111
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000_ORD_STR_SORTABLE 00111
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000_ORD 110
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000_ORD_STR_SORTABLE 00110
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000_SUPPORTS_ORDS /* nothing */
@@ -14903,12 +14799,12 @@
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000_HASH 2bpF1B_hYyCbTR1o1QejsFP72ANPsszTta3EJTOEFFU
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000_ORD 112
-#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000_ORD_STR_SORTABLE 00112
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000_ORD 111
+#define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000_ORD_STR_SORTABLE 00111
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000_REQUIRES_ORDS \
-	101, /* /soc/flash-controller@60002000/flash@0/partitions */
+	100, /* /soc/flash-controller@60002000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000_SUPPORTS_ORDS /* nothing */
@@ -14962,7 +14858,7 @@
  * Node identifier: DT_N_S_soc_S_gpio_S_gpio_60004800
  *
  * Binding (compatible = espressif,esp32-gpio):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/gpio/espressif,esp32-gpio.yaml
+ *   $ZEPHYR_BASE/dts/bindings/gpio/espressif,esp32-gpio.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -15005,8 +14901,8 @@
 #define DT_N_S_soc_S_gpio_S_gpio_60004800_HASH tkds8hEbm4oeIpnghhwVoKJPakkp8n6NOFephgEpHvo
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_gpio_S_gpio_60004800_ORD 113
-#define DT_N_S_soc_S_gpio_S_gpio_60004800_ORD_STR_SORTABLE 00113
+#define DT_N_S_soc_S_gpio_S_gpio_60004800_ORD 112
+#define DT_N_S_soc_S_gpio_S_gpio_60004800_ORD_STR_SORTABLE 00112
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_gpio_S_gpio_60004800_REQUIRES_ORDS \
@@ -15114,12 +15010,122 @@
 #define DT_N_S_soc_S_gpio_S_gpio_60004800_P_zephyr_pm_device_runtime_auto_EXISTS 1
 
 /*
+ * Devicetree node: /soc/gpio/gpio@60004000/lcd-pwr-hog
+ *
+ * Node identifier: DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_PATH "/soc/gpio/gpio@60004000/lcd-pwr-hog"
+
+/* Node's name with unit-address: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FULL_NAME "lcd-pwr-hog"
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FULL_NAME_UNQUOTED lcd-pwr-hog
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FULL_NAME_TOKEN lcd_pwr_hog
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FULL_NAME_UPPER_TOKEN LCD_PWR_HOG
+
+/* Node parent (/soc/gpio/gpio@60004000) identifier: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_PARENT DT_N_S_soc_S_gpio_S_gpio_60004000
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_CHILD_IDX 0
+
+/* Helpers for dealing with node labels: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_NODELABEL_NUM 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_NODELABEL(fn) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_NODELABEL_VARGS(fn, ...) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_gpio_S_gpio_60004000) fn(DT_N_S_soc_S_gpio) fn(DT_N_S_soc) fn(DT_N)
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_CHILD_NUM 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_CHILD_NUM_STATUS_OKAY 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_CHILD(fn) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's hash: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_HASH phT6h4E660jp1pcLo8LV7CTIcPzGbqd_aAmsBqH_PGY
+
+/* Node's dependency ordinal: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_ORD 113
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_ORD_STR_SORTABLE 00113
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_REQUIRES_ORDS \
+	8, /* /soc/gpio/gpio@60004000 */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_SUPPORTS_ORDS /* nothing */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_EXISTS 1
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_REG_NUM 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_RANGES_NUM 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_FOREACH_RANGE(fn) 
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_IRQ_NUM 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_IRQ_LEVEL 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_PINCTRL_NUM 0
+
+/* GPIO hog properties: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_NUM 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_IDX_0_PH DT_N_S_soc_S_gpio_S_gpio_60004000
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_IDX_0_VAL_pin 18
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_IDX_0_VAL_pin_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_IDX_0_VAL_flags 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_IDX_0_VAL_flags_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_IDX_0_FOREACH_CELL(fn) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, , 0, pin) \
+	fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, , 0, flags)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_IDX_0_FOREACH_CELL_SEP(fn, sep) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, , 0, pin) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, , 0, flags)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_GPIO_HOGS_IDX_0_NUM_CELLS 2
+
+/* Generic property macros: */
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpio_hog 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpio_hog_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios {18 /* 0x12 */, 0 /* 0x0 */}
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_IDX_0 18
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_IDX_1_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_IDX_1 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, gpios, 0) \
+	fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, gpios, 1)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, gpios, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, gpios, 1)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, gpios, 0, __VA_ARGS__) \
+	fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, gpios, 1, __VA_ARGS__)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, gpios, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, gpios, 1, __VA_ARGS__)
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_LEN 2
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_gpios_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_input 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_input_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_output_low 0
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_output_low_EXISTS 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_output_high 1
+#define DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog_P_output_high_EXISTS 1
+
+/*
  * Devicetree node: /soc/i2c@60027000
  *
  * Node identifier: DT_N_S_soc_S_i2c_60027000
  *
  * Binding (compatible = espressif,esp32-i2c):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/i2c/espressif,esp32-i2c.yaml
+ *   $ZEPHYR_BASE/dts/bindings/i2c/espressif,esp32-i2c.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -15169,8 +15175,8 @@
 #define DT_N_S_soc_S_i2c_60027000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */ \
-	34, /* /pin-controller/i2c1_touch_default */
+	23, /* /clock */ \
+	33, /* /pin-controller/i2c1_touch_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_i2c_60027000_SUPPORTS_ORDS \
@@ -15327,7 +15333,7 @@
  * Node identifier: DT_N_S_soc_S_i2c_60027000_S_cst81xx_15
  *
  * Binding (compatible = hynitron,cst816s):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/input/hynitron,cst816s.yaml
+ *   $ZEPHYR_BASE/dts/bindings/input/hynitron,cst816s.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -15474,7 +15480,7 @@
 #define DT_N_S_soc_S_i2c_60027000_S_cst81xx_15_P_compatible_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_i2c_60027000_S_cst81xx_15, compatible, 0, __VA_ARGS__)
 #define DT_N_S_soc_S_i2c_60027000_S_cst81xx_15_P_compatible_LEN 1
 #define DT_N_S_soc_S_i2c_60027000_S_cst81xx_15_P_compatible_EXISTS 1
-#define DT_N_S_soc_S_i2c_60027000_S_cst81xx_15_P_zephyr_deferred_init 1
+#define DT_N_S_soc_S_i2c_60027000_S_cst81xx_15_P_zephyr_deferred_init 0
 #define DT_N_S_soc_S_i2c_60027000_S_cst81xx_15_P_zephyr_deferred_init_EXISTS 1
 #define DT_N_S_soc_S_i2c_60027000_S_cst81xx_15_P_wakeup_source 0
 #define DT_N_S_soc_S_i2c_60027000_S_cst81xx_15_P_wakeup_source_EXISTS 1
@@ -15485,6 +15491,12 @@
  * Devicetree node: /soc/i2c@60027000/lsm6dsl@6a
  *
  * Node identifier: DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a
+ *
+ * Binding (compatible = st,lsm6dsl):
+ *   $ZEPHYR_BASE/dts/bindings/sensor/st,lsm6dsl-i2c.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
  */
 
 /* Node's full path: */
@@ -15536,7 +15548,7 @@
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_EXISTS 1
-#define DT_N_INST_0_i2c_device DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a
+#define DT_N_INST_0_st_lsm6dsl DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a
 #define DT_N_NODELABEL_imu     DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a
 
 /* Bus info (controller: '/soc/i2c@60027000', type: '['i2c']') */
@@ -15551,25 +15563,17 @@
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_FOREACH_RANGE(fn) 
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_IRQ_NUM 0
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_IRQ_LEVEL 0
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_COMPAT_MATCHES_i2c_device 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_COMPAT_MATCHES_st_lsm6dsl 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_COMPAT_VENDOR_IDX_0 "STMicroelectronics"
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_COMPAT_MODEL_IDX_0 "lsm6dsl"
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_STATUS_okay 1
 
 /* Pin control (pinctrl-<i>, pinctrl-names) properties: */
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_PINCTRL_NUM 0
 
 /* Generic property macros: */
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible {"i2c-device"}
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0 "i2c-device"
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0_STRING_UNQUOTED i2c-device
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0_STRING_TOKEN i2c_device
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0_STRING_UPPER_TOKEN I2C_DEVICE
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, compatible, 0)
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, compatible, 0)
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, compatible, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, compatible, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_LEN 1
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_EXISTS 1
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_reg {106 /* 0x6a */}
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_reg_IDX_0_EXISTS 1
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_reg_IDX_0 106
@@ -15580,7 +15584,7 @@
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_STRING_UPPER_TOKEN OKAY
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_IDX_0 "okay"
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_IDX_0_ENUM_IDX 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_IDX_0_ENUM_IDX 0
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_IDX_0_ENUM_VAL_okay_EXISTS 1
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_ENUM_VAL_okay_EXISTS 1
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, status, 0)
@@ -15589,6 +15593,24 @@
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, status, 0, __VA_ARGS__)
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_LEN 1
 #define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_status_EXISTS 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible {"st,lsm6dsl"}
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0 "st,lsm6dsl"
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0_STRING_UNQUOTED st,lsm6dsl
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0_STRING_TOKEN st_lsm6dsl
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_IDX_0_STRING_UPPER_TOKEN ST_LSM6DSL
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, compatible, 0)
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, compatible, 0)
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, compatible, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, compatible, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_LEN 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_compatible_EXISTS 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_zephyr_deferred_init 0
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_zephyr_deferred_init_EXISTS 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_wakeup_source 0
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_wakeup_source_EXISTS 1
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_zephyr_pm_device_runtime_auto 0
+#define DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a_P_zephyr_pm_device_runtime_auto_EXISTS 1
 
 /*
  * Devicetree node: /soc/i2c@60027000/max17048@36
@@ -15596,7 +15618,7 @@
  * Node identifier: DT_N_S_soc_S_i2c_60027000_S_max17048_36
  *
  * Binding (compatible = maxim,max17048):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/fuel-gauge/maxim,max17048.yaml
+ *   $ZEPHYR_BASE/dts/bindings/fuel-gauge/maxim,max17048.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -15708,7 +15730,7 @@
 #define DT_N_S_soc_S_i2c_60027000_S_max17048_36_P_compatible_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36, compatible, 0, __VA_ARGS__)
 #define DT_N_S_soc_S_i2c_60027000_S_max17048_36_P_compatible_LEN 1
 #define DT_N_S_soc_S_i2c_60027000_S_max17048_36_P_compatible_EXISTS 1
-#define DT_N_S_soc_S_i2c_60027000_S_max17048_36_P_zephyr_deferred_init 1
+#define DT_N_S_soc_S_i2c_60027000_S_max17048_36_P_zephyr_deferred_init 0
 #define DT_N_S_soc_S_i2c_60027000_S_max17048_36_P_zephyr_deferred_init_EXISTS 1
 #define DT_N_S_soc_S_i2c_60027000_S_max17048_36_P_wakeup_source 0
 #define DT_N_S_soc_S_i2c_60027000_S_max17048_36_P_wakeup_source_EXISTS 1
@@ -15721,7 +15743,7 @@
  * Node identifier: DT_N_S_soc_S_memory_3c000000
  *
  * Binding (compatible = zephyr,memory-region):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/base/zephyr,memory-region.yaml
+ *   $ZEPHYR_BASE/dts/bindings/base/zephyr,memory-region.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -15843,7 +15865,7 @@
  * Node identifier: DT_N_S_soc_S_memory_3c000000_S_psram0
  *
  * Binding (compatible = espressif,esp32-psram):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/memory-controllers/espressif,esp32-psram.yaml
+ *   $ZEPHYR_BASE/dts/bindings/memory-controllers/espressif,esp32-psram.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -15945,7 +15967,7 @@
  * Node identifier: DT_N_S_soc_S_sdhc_60028000
  *
  * Binding (compatible = espressif,esp32-sdhc):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/sdhc/espressif,esp32-sdhc.yaml
+ *   $ZEPHYR_BASE/dts/bindings/sdhc/espressif,esp32-sdhc.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -15995,7 +16017,7 @@
 #define DT_N_S_soc_S_sdhc_60028000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@600c2000 */ \
-	24, /* /clock */
+	23, /* /clock */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_sdhc_60028000_SUPPORTS_ORDS \
@@ -16099,7 +16121,7 @@
  * Node identifier: DT_N_S_soc_S_sdhc_60028000_S_sdhc_0
  *
  * Binding (compatible = espressif,esp32-sdhc-slot):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/sdhc/espressif,esp32-sdhc-slot.yaml
+ *   $ZEPHYR_BASE/dts/bindings/sdhc/espressif,esp32-sdhc-slot.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -16242,7 +16264,7 @@
  * Node identifier: DT_N_S_soc_S_sdhc_60028000_S_sdhc_1
  *
  * Binding (compatible = espressif,esp32-sdhc-slot):
- *   /home/nedi/zephyrproject/zephyr/dts/bindings/sdhc/espressif,esp32-sdhc-slot.yaml
+ *   $ZEPHYR_BASE/dts/bindings/sdhc/espressif,esp32-sdhc-slot.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
@@ -16406,10 +16428,10 @@
 #define DT_CHOSEN_zephyr_touch_EXISTS            1
 
 /* Macros for iterating over all nodes and enabled nodes */
-#define DT_FOREACH_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_memory_42000000) fn(DT_N_S_soc_S_memory_3c000000) fn(DT_N_S_soc_S_memory_3c000000_S_psram0) fn(DT_N_S_soc_S_memory_40370000) fn(DT_N_S_soc_S_memory_3fc88000) fn(DT_N_S_soc_S_memory_3fcf0000) fn(DT_N_S_soc_S_memory_3fce5000) fn(DT_N_S_soc_S_memory_3fce5400) fn(DT_N_S_soc_S_ipm_3fce9400) fn(DT_N_S_soc_S_mbox_3fce9408) fn(DT_N_S_soc_S_interrupt_controller_600c2000) fn(DT_N_S_soc_S_xt_wdt_60021004) fn(DT_N_S_soc_S_rtc_timer_60008004) fn(DT_N_S_soc_S_flash_controller_60002000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000) fn(DT_N_S_soc_S_uart_60000000) fn(DT_N_S_soc_S_uart_60010000) fn(DT_N_S_soc_S_uart_6002e000) fn(DT_N_S_soc_S_gpio) fn(DT_N_S_soc_S_gpio_S_gpio_60004000) fn(DT_N_S_soc_S_gpio_S_gpio_60004800) fn(DT_N_S_soc_S_touch_6000885c) fn(DT_N_S_soc_S_i2c_60013000) fn(DT_N_S_soc_S_i2c_60027000) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36) fn(DT_N_S_soc_S_i2c_60027000_S_cst81xx_15) fn(DT_N_S_soc_S_i2s_6000f000) fn(DT_N_S_soc_S_i2s_6002d000) fn(DT_N_S_soc_S_spi_60024000) fn(DT_N_S_soc_S_spi_60025000) fn(DT_N_S_soc_S_coretemp_60008800) fn(DT_N_S_soc_S_adc_60040000) fn(DT_N_S_soc_S_adc_60040004) fn(DT_N_S_soc_S_can_6002b000) fn(DT_N_S_soc_S_lcd_cam_60041000) fn(DT_N_S_soc_S_uart_60038000) fn(DT_N_S_soc_S_usb_otg_60080000) fn(DT_N_S_soc_S_counter_6001f000) fn(DT_N_S_soc_S_counter_6001f000_S_counter) fn(DT_N_S_soc_S_counter_6001f024) fn(DT_N_S_soc_S_counter_6001f024_S_counter) fn(DT_N_S_soc_S_counter_60020000) fn(DT_N_S_soc_S_counter_60020000_S_counter) fn(DT_N_S_soc_S_counter_60020024) fn(DT_N_S_soc_S_counter_60020024_S_counter) fn(DT_N_S_soc_S_watchdog_6001f048) fn(DT_N_S_soc_S_watchdog_60020048) fn(DT_N_S_soc_S_trng_6003507c) fn(DT_N_S_soc_S_ledc_60019000) fn(DT_N_S_soc_S_mcpwm_6001e000) fn(DT_N_S_soc_S_mcpwm_6002c000) fn(DT_N_S_soc_S_pcnt_60017000) fn(DT_N_S_soc_S_dma_6003f000) fn(DT_N_S_soc_S_sdhc_60028000) fn(DT_N_S_soc_S_sdhc_60028000_S_sdhc_0) fn(DT_N_S_soc_S_sdhc_60028000_S_sdhc_1) fn(DT_N_S_soc_S_sha_6003b000) fn(DT_N_S_soc_S_aes_6003a000) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_1) fn(DT_N_S_cpus_S_power_states) fn(DT_N_S_cpus_S_power_states_S_light_sleep) fn(DT_N_S_cpus_S_power_states_S_deep_sleep) fn(DT_N_S_wifi) fn(DT_N_S_esp32_bt_hci) fn(DT_N_S_pin_controller) fn(DT_N_S_pin_controller_S_uart0_default) fn(DT_N_S_pin_controller_S_uart0_default_S_group1) fn(DT_N_S_pin_controller_S_uart0_default_S_group2) fn(DT_N_S_pin_controller_S_uart1_default) fn(DT_N_S_pin_controller_S_uart1_default_S_group1) fn(DT_N_S_pin_controller_S_uart1_default_S_group2) fn(DT_N_S_pin_controller_S_i2c0_default) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1) fn(DT_N_S_pin_controller_S_i2c1_default) fn(DT_N_S_pin_controller_S_i2c1_default_S_group1) fn(DT_N_S_pin_controller_S_i2s0_default) fn(DT_N_S_pin_controller_S_i2s0_default_S_group1) fn(DT_N_S_pin_controller_S_i2s1_default) fn(DT_N_S_pin_controller_S_i2s1_default_S_group1) fn(DT_N_S_pin_controller_S_spim2_default) fn(DT_N_S_pin_controller_S_spim2_default_S_group1) fn(DT_N_S_pin_controller_S_spim2_default_S_group2) fn(DT_N_S_pin_controller_S_spim3_default) fn(DT_N_S_pin_controller_S_spim3_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_default_S_group2) fn(DT_N_S_pin_controller_S_twai_default) fn(DT_N_S_pin_controller_S_twai_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_lcd_default) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group2) fn(DT_N_S_pin_controller_S_i2c1_touch_default) fn(DT_N_S_pin_controller_S_i2c1_touch_default_S_group1) fn(DT_N_S_clock) fn(DT_N_S_buttons) fn(DT_N_S_buttons_S_button_0) fn(DT_N_S_buttons_S_imu_wake1) fn(DT_N_S_buttons_S_imu_wake2) fn(DT_N_S_mipi_dbi) fn(DT_N_S_mipi_dbi_S_gc9a01_0) fn(DT_N_S_leds) fn(DT_N_S_leds_S_lcd_backlight) fn(DT_N_S_leds_S_lcd_power_enable) fn(DT_N_S_charger_inputs) fn(DT_N_S_charger_inputs_S_charger_status)
-#define DT_FOREACH_OKAY_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_memory_42000000) fn(DT_N_S_soc_S_memory_3c000000) fn(DT_N_S_soc_S_memory_3c000000_S_psram0) fn(DT_N_S_soc_S_memory_40370000) fn(DT_N_S_soc_S_memory_3fc88000) fn(DT_N_S_soc_S_memory_3fcf0000) fn(DT_N_S_soc_S_memory_3fce5000) fn(DT_N_S_soc_S_memory_3fce5400) fn(DT_N_S_soc_S_interrupt_controller_600c2000) fn(DT_N_S_soc_S_flash_controller_60002000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000) fn(DT_N_S_soc_S_uart_60000000) fn(DT_N_S_soc_S_gpio) fn(DT_N_S_soc_S_gpio_S_gpio_60004000) fn(DT_N_S_soc_S_gpio_S_gpio_60004800) fn(DT_N_S_soc_S_i2c_60027000) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36) fn(DT_N_S_soc_S_i2c_60027000_S_cst81xx_15) fn(DT_N_S_soc_S_spi_60024000) fn(DT_N_S_soc_S_spi_60025000) fn(DT_N_S_soc_S_uart_60038000) fn(DT_N_S_soc_S_usb_otg_60080000) fn(DT_N_S_soc_S_watchdog_6001f048) fn(DT_N_S_soc_S_trng_6003507c) fn(DT_N_S_soc_S_sdhc_60028000) fn(DT_N_S_soc_S_sha_6003b000) fn(DT_N_S_soc_S_aes_6003a000) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_1) fn(DT_N_S_cpus_S_power_states) fn(DT_N_S_cpus_S_power_states_S_light_sleep) fn(DT_N_S_cpus_S_power_states_S_deep_sleep) fn(DT_N_S_wifi) fn(DT_N_S_esp32_bt_hci) fn(DT_N_S_pin_controller) fn(DT_N_S_pin_controller_S_uart0_default) fn(DT_N_S_pin_controller_S_uart0_default_S_group1) fn(DT_N_S_pin_controller_S_uart0_default_S_group2) fn(DT_N_S_pin_controller_S_uart1_default) fn(DT_N_S_pin_controller_S_uart1_default_S_group1) fn(DT_N_S_pin_controller_S_uart1_default_S_group2) fn(DT_N_S_pin_controller_S_i2c0_default) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1) fn(DT_N_S_pin_controller_S_i2c1_default) fn(DT_N_S_pin_controller_S_i2c1_default_S_group1) fn(DT_N_S_pin_controller_S_i2s0_default) fn(DT_N_S_pin_controller_S_i2s0_default_S_group1) fn(DT_N_S_pin_controller_S_i2s1_default) fn(DT_N_S_pin_controller_S_i2s1_default_S_group1) fn(DT_N_S_pin_controller_S_spim2_default) fn(DT_N_S_pin_controller_S_spim2_default_S_group1) fn(DT_N_S_pin_controller_S_spim2_default_S_group2) fn(DT_N_S_pin_controller_S_spim3_default) fn(DT_N_S_pin_controller_S_spim3_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_default_S_group2) fn(DT_N_S_pin_controller_S_twai_default) fn(DT_N_S_pin_controller_S_twai_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_lcd_default) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group2) fn(DT_N_S_pin_controller_S_i2c1_touch_default) fn(DT_N_S_pin_controller_S_i2c1_touch_default_S_group1) fn(DT_N_S_clock) fn(DT_N_S_buttons) fn(DT_N_S_buttons_S_button_0) fn(DT_N_S_buttons_S_imu_wake1) fn(DT_N_S_buttons_S_imu_wake2) fn(DT_N_S_mipi_dbi) fn(DT_N_S_mipi_dbi_S_gc9a01_0) fn(DT_N_S_leds) fn(DT_N_S_leds_S_lcd_backlight) fn(DT_N_S_leds_S_lcd_power_enable) fn(DT_N_S_charger_inputs) fn(DT_N_S_charger_inputs_S_charger_status)
-#define DT_FOREACH_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_memory_42000000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3c000000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3c000000_S_psram0, __VA_ARGS__) fn(DT_N_S_soc_S_memory_40370000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fc88000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fcf0000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fce5000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fce5400, __VA_ARGS__) fn(DT_N_S_soc_S_ipm_3fce9400, __VA_ARGS__) fn(DT_N_S_soc_S_mbox_3fce9408, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_600c2000, __VA_ARGS__) fn(DT_N_S_soc_S_xt_wdt_60021004, __VA_ARGS__) fn(DT_N_S_soc_S_rtc_timer_60008004, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60000000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60010000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_6002e000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004800, __VA_ARGS__) fn(DT_N_S_soc_S_touch_6000885c, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60013000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_cst81xx_15, __VA_ARGS__) fn(DT_N_S_soc_S_i2s_6000f000, __VA_ARGS__) fn(DT_N_S_soc_S_i2s_6002d000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_60024000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_60025000, __VA_ARGS__) fn(DT_N_S_soc_S_coretemp_60008800, __VA_ARGS__) fn(DT_N_S_soc_S_adc_60040000, __VA_ARGS__) fn(DT_N_S_soc_S_adc_60040004, __VA_ARGS__) fn(DT_N_S_soc_S_can_6002b000, __VA_ARGS__) fn(DT_N_S_soc_S_lcd_cam_60041000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60038000, __VA_ARGS__) fn(DT_N_S_soc_S_usb_otg_60080000, __VA_ARGS__) fn(DT_N_S_soc_S_counter_6001f000, __VA_ARGS__) fn(DT_N_S_soc_S_counter_6001f000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_counter_6001f024, __VA_ARGS__) fn(DT_N_S_soc_S_counter_6001f024_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_counter_60020000, __VA_ARGS__) fn(DT_N_S_soc_S_counter_60020000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_counter_60020024, __VA_ARGS__) fn(DT_N_S_soc_S_counter_60020024_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_6001f048, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_60020048, __VA_ARGS__) fn(DT_N_S_soc_S_trng_6003507c, __VA_ARGS__) fn(DT_N_S_soc_S_ledc_60019000, __VA_ARGS__) fn(DT_N_S_soc_S_mcpwm_6001e000, __VA_ARGS__) fn(DT_N_S_soc_S_mcpwm_6002c000, __VA_ARGS__) fn(DT_N_S_soc_S_pcnt_60017000, __VA_ARGS__) fn(DT_N_S_soc_S_dma_6003f000, __VA_ARGS__) fn(DT_N_S_soc_S_sdhc_60028000, __VA_ARGS__) fn(DT_N_S_soc_S_sdhc_60028000_S_sdhc_0, __VA_ARGS__) fn(DT_N_S_soc_S_sdhc_60028000_S_sdhc_1, __VA_ARGS__) fn(DT_N_S_soc_S_sha_6003b000, __VA_ARGS__) fn(DT_N_S_soc_S_aes_6003a000, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_1, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_light_sleep, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_deep_sleep, __VA_ARGS__) fn(DT_N_S_wifi, __VA_ARGS__) fn(DT_N_S_esp32_bt_hci, __VA_ARGS__) fn(DT_N_S_pin_controller, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_twai_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_twai_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_touch_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_touch_default_S_group1, __VA_ARGS__) fn(DT_N_S_clock, __VA_ARGS__) fn(DT_N_S_buttons, __VA_ARGS__) fn(DT_N_S_buttons_S_button_0, __VA_ARGS__) fn(DT_N_S_buttons_S_imu_wake1, __VA_ARGS__) fn(DT_N_S_buttons_S_imu_wake2, __VA_ARGS__) fn(DT_N_S_mipi_dbi, __VA_ARGS__) fn(DT_N_S_mipi_dbi_S_gc9a01_0, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__) fn(DT_N_S_leds_S_lcd_power_enable, __VA_ARGS__) fn(DT_N_S_charger_inputs, __VA_ARGS__) fn(DT_N_S_charger_inputs_S_charger_status, __VA_ARGS__)
-#define DT_FOREACH_OKAY_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_memory_42000000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3c000000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3c000000_S_psram0, __VA_ARGS__) fn(DT_N_S_soc_S_memory_40370000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fc88000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fcf0000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fce5000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fce5400, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_600c2000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60000000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004800, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_cst81xx_15, __VA_ARGS__) fn(DT_N_S_soc_S_spi_60024000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_60025000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60038000, __VA_ARGS__) fn(DT_N_S_soc_S_usb_otg_60080000, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_6001f048, __VA_ARGS__) fn(DT_N_S_soc_S_trng_6003507c, __VA_ARGS__) fn(DT_N_S_soc_S_sdhc_60028000, __VA_ARGS__) fn(DT_N_S_soc_S_sha_6003b000, __VA_ARGS__) fn(DT_N_S_soc_S_aes_6003a000, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_1, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_light_sleep, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_deep_sleep, __VA_ARGS__) fn(DT_N_S_wifi, __VA_ARGS__) fn(DT_N_S_esp32_bt_hci, __VA_ARGS__) fn(DT_N_S_pin_controller, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_twai_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_twai_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_touch_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_touch_default_S_group1, __VA_ARGS__) fn(DT_N_S_clock, __VA_ARGS__) fn(DT_N_S_buttons, __VA_ARGS__) fn(DT_N_S_buttons_S_button_0, __VA_ARGS__) fn(DT_N_S_buttons_S_imu_wake1, __VA_ARGS__) fn(DT_N_S_buttons_S_imu_wake2, __VA_ARGS__) fn(DT_N_S_mipi_dbi, __VA_ARGS__) fn(DT_N_S_mipi_dbi_S_gc9a01_0, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__) fn(DT_N_S_leds_S_lcd_power_enable, __VA_ARGS__) fn(DT_N_S_charger_inputs, __VA_ARGS__) fn(DT_N_S_charger_inputs_S_charger_status, __VA_ARGS__)
+#define DT_FOREACH_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_memory_42000000) fn(DT_N_S_soc_S_memory_3c000000) fn(DT_N_S_soc_S_memory_3c000000_S_psram0) fn(DT_N_S_soc_S_memory_40370000) fn(DT_N_S_soc_S_memory_3fc88000) fn(DT_N_S_soc_S_memory_3fcf0000) fn(DT_N_S_soc_S_memory_3fce5000) fn(DT_N_S_soc_S_memory_3fce5400) fn(DT_N_S_soc_S_ipm_3fce9400) fn(DT_N_S_soc_S_mbox_3fce9408) fn(DT_N_S_soc_S_interrupt_controller_600c2000) fn(DT_N_S_soc_S_xt_wdt_60021004) fn(DT_N_S_soc_S_rtc_timer_60008004) fn(DT_N_S_soc_S_flash_controller_60002000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000) fn(DT_N_S_soc_S_uart_60000000) fn(DT_N_S_soc_S_uart_60010000) fn(DT_N_S_soc_S_uart_6002e000) fn(DT_N_S_soc_S_gpio) fn(DT_N_S_soc_S_gpio_S_gpio_60004000) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog) fn(DT_N_S_soc_S_gpio_S_gpio_60004800) fn(DT_N_S_soc_S_touch_6000885c) fn(DT_N_S_soc_S_i2c_60013000) fn(DT_N_S_soc_S_i2c_60027000) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36) fn(DT_N_S_soc_S_i2c_60027000_S_cst81xx_15) fn(DT_N_S_soc_S_i2s_6000f000) fn(DT_N_S_soc_S_i2s_6002d000) fn(DT_N_S_soc_S_spi_60024000) fn(DT_N_S_soc_S_spi_60025000) fn(DT_N_S_soc_S_coretemp_60008800) fn(DT_N_S_soc_S_adc_60040000) fn(DT_N_S_soc_S_adc_60040004) fn(DT_N_S_soc_S_can_6002b000) fn(DT_N_S_soc_S_lcd_cam_60041000) fn(DT_N_S_soc_S_uart_60038000) fn(DT_N_S_soc_S_usb_otg_60080000) fn(DT_N_S_soc_S_counter_6001f000) fn(DT_N_S_soc_S_counter_6001f000_S_counter) fn(DT_N_S_soc_S_counter_6001f024) fn(DT_N_S_soc_S_counter_6001f024_S_counter) fn(DT_N_S_soc_S_counter_60020000) fn(DT_N_S_soc_S_counter_60020000_S_counter) fn(DT_N_S_soc_S_counter_60020024) fn(DT_N_S_soc_S_counter_60020024_S_counter) fn(DT_N_S_soc_S_watchdog_6001f048) fn(DT_N_S_soc_S_watchdog_60020048) fn(DT_N_S_soc_S_trng_6003507c) fn(DT_N_S_soc_S_ledc_60019000) fn(DT_N_S_soc_S_mcpwm_6001e000) fn(DT_N_S_soc_S_mcpwm_6002c000) fn(DT_N_S_soc_S_pcnt_60017000) fn(DT_N_S_soc_S_dma_6003f000) fn(DT_N_S_soc_S_sdhc_60028000) fn(DT_N_S_soc_S_sdhc_60028000_S_sdhc_0) fn(DT_N_S_soc_S_sdhc_60028000_S_sdhc_1) fn(DT_N_S_soc_S_sha_6003b000) fn(DT_N_S_soc_S_aes_6003a000) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_1) fn(DT_N_S_cpus_S_power_states) fn(DT_N_S_cpus_S_power_states_S_light_sleep) fn(DT_N_S_cpus_S_power_states_S_deep_sleep) fn(DT_N_S_wifi) fn(DT_N_S_esp32_bt_hci) fn(DT_N_S_pin_controller) fn(DT_N_S_pin_controller_S_uart0_default) fn(DT_N_S_pin_controller_S_uart0_default_S_group1) fn(DT_N_S_pin_controller_S_uart0_default_S_group2) fn(DT_N_S_pin_controller_S_uart1_default) fn(DT_N_S_pin_controller_S_uart1_default_S_group1) fn(DT_N_S_pin_controller_S_uart1_default_S_group2) fn(DT_N_S_pin_controller_S_i2c0_default) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1) fn(DT_N_S_pin_controller_S_i2c1_default) fn(DT_N_S_pin_controller_S_i2c1_default_S_group1) fn(DT_N_S_pin_controller_S_i2s0_default) fn(DT_N_S_pin_controller_S_i2s0_default_S_group1) fn(DT_N_S_pin_controller_S_i2s1_default) fn(DT_N_S_pin_controller_S_i2s1_default_S_group1) fn(DT_N_S_pin_controller_S_spim2_default) fn(DT_N_S_pin_controller_S_spim2_default_S_group1) fn(DT_N_S_pin_controller_S_spim2_default_S_group2) fn(DT_N_S_pin_controller_S_spim3_default) fn(DT_N_S_pin_controller_S_spim3_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_default_S_group2) fn(DT_N_S_pin_controller_S_twai_default) fn(DT_N_S_pin_controller_S_twai_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_lcd_default) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group2) fn(DT_N_S_pin_controller_S_i2c1_touch_default) fn(DT_N_S_pin_controller_S_i2c1_touch_default_S_group1) fn(DT_N_S_clock) fn(DT_N_S_buttons) fn(DT_N_S_buttons_S_button_0) fn(DT_N_S_buttons_S_imu_wake1) fn(DT_N_S_buttons_S_imu_wake2) fn(DT_N_S_mipi_dbi) fn(DT_N_S_mipi_dbi_S_gc9a01_0) fn(DT_N_S_leds) fn(DT_N_S_leds_S_lcd_backlight) fn(DT_N_S_charger_inputs) fn(DT_N_S_charger_inputs_S_charger_status)
+#define DT_FOREACH_OKAY_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_memory_42000000) fn(DT_N_S_soc_S_memory_3c000000) fn(DT_N_S_soc_S_memory_3c000000_S_psram0) fn(DT_N_S_soc_S_memory_40370000) fn(DT_N_S_soc_S_memory_3fc88000) fn(DT_N_S_soc_S_memory_3fcf0000) fn(DT_N_S_soc_S_memory_3fce5000) fn(DT_N_S_soc_S_memory_3fce5400) fn(DT_N_S_soc_S_interrupt_controller_600c2000) fn(DT_N_S_soc_S_flash_controller_60002000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000) fn(DT_N_S_soc_S_uart_60000000) fn(DT_N_S_soc_S_gpio) fn(DT_N_S_soc_S_gpio_S_gpio_60004000) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog) fn(DT_N_S_soc_S_gpio_S_gpio_60004800) fn(DT_N_S_soc_S_i2c_60027000) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36) fn(DT_N_S_soc_S_i2c_60027000_S_cst81xx_15) fn(DT_N_S_soc_S_spi_60024000) fn(DT_N_S_soc_S_spi_60025000) fn(DT_N_S_soc_S_uart_60038000) fn(DT_N_S_soc_S_usb_otg_60080000) fn(DT_N_S_soc_S_watchdog_6001f048) fn(DT_N_S_soc_S_trng_6003507c) fn(DT_N_S_soc_S_sdhc_60028000) fn(DT_N_S_soc_S_sha_6003b000) fn(DT_N_S_soc_S_aes_6003a000) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_1) fn(DT_N_S_cpus_S_power_states) fn(DT_N_S_cpus_S_power_states_S_light_sleep) fn(DT_N_S_cpus_S_power_states_S_deep_sleep) fn(DT_N_S_wifi) fn(DT_N_S_esp32_bt_hci) fn(DT_N_S_pin_controller) fn(DT_N_S_pin_controller_S_uart0_default) fn(DT_N_S_pin_controller_S_uart0_default_S_group1) fn(DT_N_S_pin_controller_S_uart0_default_S_group2) fn(DT_N_S_pin_controller_S_uart1_default) fn(DT_N_S_pin_controller_S_uart1_default_S_group1) fn(DT_N_S_pin_controller_S_uart1_default_S_group2) fn(DT_N_S_pin_controller_S_i2c0_default) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1) fn(DT_N_S_pin_controller_S_i2c1_default) fn(DT_N_S_pin_controller_S_i2c1_default_S_group1) fn(DT_N_S_pin_controller_S_i2s0_default) fn(DT_N_S_pin_controller_S_i2s0_default_S_group1) fn(DT_N_S_pin_controller_S_i2s1_default) fn(DT_N_S_pin_controller_S_i2s1_default_S_group1) fn(DT_N_S_pin_controller_S_spim2_default) fn(DT_N_S_pin_controller_S_spim2_default_S_group1) fn(DT_N_S_pin_controller_S_spim2_default_S_group2) fn(DT_N_S_pin_controller_S_spim3_default) fn(DT_N_S_pin_controller_S_spim3_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_default_S_group2) fn(DT_N_S_pin_controller_S_twai_default) fn(DT_N_S_pin_controller_S_twai_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_lcd_default) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group1) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group2) fn(DT_N_S_pin_controller_S_i2c1_touch_default) fn(DT_N_S_pin_controller_S_i2c1_touch_default_S_group1) fn(DT_N_S_clock) fn(DT_N_S_buttons) fn(DT_N_S_buttons_S_button_0) fn(DT_N_S_buttons_S_imu_wake1) fn(DT_N_S_buttons_S_imu_wake2) fn(DT_N_S_mipi_dbi) fn(DT_N_S_mipi_dbi_S_gc9a01_0) fn(DT_N_S_leds) fn(DT_N_S_leds_S_lcd_backlight) fn(DT_N_S_charger_inputs) fn(DT_N_S_charger_inputs_S_charger_status)
+#define DT_FOREACH_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_memory_42000000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3c000000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3c000000_S_psram0, __VA_ARGS__) fn(DT_N_S_soc_S_memory_40370000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fc88000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fcf0000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fce5000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fce5400, __VA_ARGS__) fn(DT_N_S_soc_S_ipm_3fce9400, __VA_ARGS__) fn(DT_N_S_soc_S_mbox_3fce9408, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_600c2000, __VA_ARGS__) fn(DT_N_S_soc_S_xt_wdt_60021004, __VA_ARGS__) fn(DT_N_S_soc_S_rtc_timer_60008004, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60000000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60010000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_6002e000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004800, __VA_ARGS__) fn(DT_N_S_soc_S_touch_6000885c, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60013000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_cst81xx_15, __VA_ARGS__) fn(DT_N_S_soc_S_i2s_6000f000, __VA_ARGS__) fn(DT_N_S_soc_S_i2s_6002d000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_60024000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_60025000, __VA_ARGS__) fn(DT_N_S_soc_S_coretemp_60008800, __VA_ARGS__) fn(DT_N_S_soc_S_adc_60040000, __VA_ARGS__) fn(DT_N_S_soc_S_adc_60040004, __VA_ARGS__) fn(DT_N_S_soc_S_can_6002b000, __VA_ARGS__) fn(DT_N_S_soc_S_lcd_cam_60041000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60038000, __VA_ARGS__) fn(DT_N_S_soc_S_usb_otg_60080000, __VA_ARGS__) fn(DT_N_S_soc_S_counter_6001f000, __VA_ARGS__) fn(DT_N_S_soc_S_counter_6001f000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_counter_6001f024, __VA_ARGS__) fn(DT_N_S_soc_S_counter_6001f024_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_counter_60020000, __VA_ARGS__) fn(DT_N_S_soc_S_counter_60020000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_counter_60020024, __VA_ARGS__) fn(DT_N_S_soc_S_counter_60020024_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_6001f048, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_60020048, __VA_ARGS__) fn(DT_N_S_soc_S_trng_6003507c, __VA_ARGS__) fn(DT_N_S_soc_S_ledc_60019000, __VA_ARGS__) fn(DT_N_S_soc_S_mcpwm_6001e000, __VA_ARGS__) fn(DT_N_S_soc_S_mcpwm_6002c000, __VA_ARGS__) fn(DT_N_S_soc_S_pcnt_60017000, __VA_ARGS__) fn(DT_N_S_soc_S_dma_6003f000, __VA_ARGS__) fn(DT_N_S_soc_S_sdhc_60028000, __VA_ARGS__) fn(DT_N_S_soc_S_sdhc_60028000_S_sdhc_0, __VA_ARGS__) fn(DT_N_S_soc_S_sdhc_60028000_S_sdhc_1, __VA_ARGS__) fn(DT_N_S_soc_S_sha_6003b000, __VA_ARGS__) fn(DT_N_S_soc_S_aes_6003a000, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_1, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_light_sleep, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_deep_sleep, __VA_ARGS__) fn(DT_N_S_wifi, __VA_ARGS__) fn(DT_N_S_esp32_bt_hci, __VA_ARGS__) fn(DT_N_S_pin_controller, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_twai_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_twai_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_touch_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_touch_default_S_group1, __VA_ARGS__) fn(DT_N_S_clock, __VA_ARGS__) fn(DT_N_S_buttons, __VA_ARGS__) fn(DT_N_S_buttons_S_button_0, __VA_ARGS__) fn(DT_N_S_buttons_S_imu_wake1, __VA_ARGS__) fn(DT_N_S_buttons_S_imu_wake2, __VA_ARGS__) fn(DT_N_S_mipi_dbi, __VA_ARGS__) fn(DT_N_S_mipi_dbi_S_gc9a01_0, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__) fn(DT_N_S_charger_inputs, __VA_ARGS__) fn(DT_N_S_charger_inputs_S_charger_status, __VA_ARGS__)
+#define DT_FOREACH_OKAY_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_memory_42000000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3c000000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3c000000_S_psram0, __VA_ARGS__) fn(DT_N_S_soc_S_memory_40370000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fc88000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fcf0000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fce5000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_3fce5400, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_600c2000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_20000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_170000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_2c0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_330000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3a8000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3b0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3e0000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_3ff000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60000000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004000_S_lcd_pwr_hog, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_S_gpio_60004800, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_60027000_S_cst81xx_15, __VA_ARGS__) fn(DT_N_S_soc_S_spi_60024000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_60025000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_60038000, __VA_ARGS__) fn(DT_N_S_soc_S_usb_otg_60080000, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_6001f048, __VA_ARGS__) fn(DT_N_S_soc_S_trng_6003507c, __VA_ARGS__) fn(DT_N_S_soc_S_sdhc_60028000, __VA_ARGS__) fn(DT_N_S_soc_S_sha_6003b000, __VA_ARGS__) fn(DT_N_S_soc_S_aes_6003a000, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_1, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_light_sleep, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_deep_sleep, __VA_ARGS__) fn(DT_N_S_wifi, __VA_ARGS__) fn(DT_N_S_esp32_bt_hci, __VA_ARGS__) fn(DT_N_S_pin_controller, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart1_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2s1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim2_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_twai_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_twai_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spim3_lcd_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_touch_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c1_touch_default_S_group1, __VA_ARGS__) fn(DT_N_S_clock, __VA_ARGS__) fn(DT_N_S_buttons, __VA_ARGS__) fn(DT_N_S_buttons_S_button_0, __VA_ARGS__) fn(DT_N_S_buttons_S_imu_wake1, __VA_ARGS__) fn(DT_N_S_buttons_S_imu_wake2, __VA_ARGS__) fn(DT_N_S_mipi_dbi, __VA_ARGS__) fn(DT_N_S_mipi_dbi_S_gc9a01_0, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_lcd_backlight, __VA_ARGS__) fn(DT_N_S_charger_inputs, __VA_ARGS__) fn(DT_N_S_charger_inputs_S_charger_status, __VA_ARGS__)
 #define DT_COMPAT_fixed_partitions_LABEL_mcuboot DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_0
 #define DT_COMPAT_fixed_partitions_LABEL_mcuboot_EXISTS 1
 #define DT_COMPAT_fixed_partitions_LABEL_sys DT_N_S_soc_S_flash_controller_60002000_S_flash_0_S_partitions_S_partition_10000
@@ -16448,7 +16470,7 @@
 #define DT_COMPAT_HAS_OKAY_espressif_esp32_uart 1
 #define DT_COMPAT_HAS_OKAY_espressif_esp32_gpio 1
 #define DT_COMPAT_HAS_OKAY_espressif_esp32_i2c 1
-#define DT_COMPAT_HAS_OKAY_i2c_device 1
+#define DT_COMPAT_HAS_OKAY_st_lsm6dsl 1
 #define DT_COMPAT_HAS_OKAY_maxim_max17048 1
 #define DT_COMPAT_HAS_OKAY_hynitron_cst816s 1
 #define DT_COMPAT_HAS_OKAY_espressif_esp32_spi 1
@@ -16486,7 +16508,7 @@
 #define DT_N_INST_espressif_esp32_uart_NUM_OKAY 1
 #define DT_N_INST_espressif_esp32_gpio_NUM_OKAY 2
 #define DT_N_INST_espressif_esp32_i2c_NUM_OKAY 1
-#define DT_N_INST_i2c_device_NUM_OKAY 1
+#define DT_N_INST_st_lsm6dsl_NUM_OKAY 1
 #define DT_N_INST_maxim_max17048_NUM_OKAY 1
 #define DT_N_INST_hynitron_cst816s_NUM_OKAY 1
 #define DT_N_INST_espressif_esp32_spi_NUM_OKAY 2
@@ -16556,10 +16578,10 @@
 #define DT_FOREACH_OKAY_VARGS_espressif_esp32_i2c(fn, ...) fn(DT_N_S_soc_S_i2c_60027000, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_espressif_esp32_i2c(fn) fn(0)
 #define DT_FOREACH_OKAY_INST_VARGS_espressif_esp32_i2c(fn, ...) fn(0, __VA_ARGS__)
-#define DT_FOREACH_OKAY_i2c_device(fn) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a)
-#define DT_FOREACH_OKAY_VARGS_i2c_device(fn, ...) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, __VA_ARGS__)
-#define DT_FOREACH_OKAY_INST_i2c_device(fn) fn(0)
-#define DT_FOREACH_OKAY_INST_VARGS_i2c_device(fn, ...) fn(0, __VA_ARGS__)
+#define DT_FOREACH_OKAY_st_lsm6dsl(fn) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a)
+#define DT_FOREACH_OKAY_VARGS_st_lsm6dsl(fn, ...) fn(DT_N_S_soc_S_i2c_60027000_S_lsm6dsl_6a, __VA_ARGS__)
+#define DT_FOREACH_OKAY_INST_st_lsm6dsl(fn) fn(0)
+#define DT_FOREACH_OKAY_INST_VARGS_st_lsm6dsl(fn, ...) fn(0, __VA_ARGS__)
 #define DT_FOREACH_OKAY_maxim_max17048(fn) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36)
 #define DT_FOREACH_OKAY_VARGS_maxim_max17048(fn, ...) fn(DT_N_S_soc_S_i2c_60027000_S_max17048_36, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_maxim_max17048(fn) fn(0)
@@ -16648,7 +16670,7 @@
 /*
  * Bus information for status "okay" nodes of each compatible
  */
-#define DT_COMPAT_i2c_device_BUS_i2c 1
+#define DT_COMPAT_st_lsm6dsl_BUS_i2c 1
 #define DT_COMPAT_maxim_max17048_BUS_i2c 1
 #define DT_COMPAT_hynitron_cst816s_BUS_i2c 1
 #define DT_COMPAT_galaxycore_gc9x01x_BUS_mipi_dbi 1

@@ -1066,7 +1066,7 @@ zephyr_udc0: &usb_otg {
    compatible = "galaxycore,gc9x01x";
    reg = <0>;
    status = "okay";
-   zephyr,deferred-init;
+
    orientation = "180";
    mipi-max-frequency = <20000000>;
    mipi-mode = "MIPI_DBI_MODE_SPI_4WIRE";
@@ -1083,11 +1083,6 @@ zephyr_udc0: &usb_otg {
   lcd_backlight: lcd_backlight {
    gpios = <&gpio0 7 (0 << 0)>;
    label = "LCD backlight";
-  };
-
-  lcd_power_enable: lcd_power_enable {
-   gpios = <&gpio0 18 (0 << 0)>;
-   label = "LCD power enable";
   };
  };
 
@@ -1146,7 +1141,7 @@ zephyr_udc0: &usb_otg {
  pinctrl-names = "default";
 
  imu: lsm6dsl@6a {
-  compatible = "i2c-device";
+  compatible = "st,lsm6dsl";
   reg = <0x6a>;
   status = "okay";
  };
@@ -1155,16 +1150,24 @@ zephyr_udc0: &usb_otg {
   compatible = "maxim,max17048";
   reg = <0x36>;
   status = "okay";
-  zephyr,deferred-init;
+
  };
 
  cst816s: cst81xx@15 {
   compatible = "hynitron,cst816s";
   reg = <0x15>;
   status = "okay";
-  zephyr,deferred-init;
+
   irq-gpios = <&gpio0 1 ((1 << 4) | (1 << 0))>;
   rst-gpios = <&gpio0 2 (1 << 0)>;
+ };
+};
+
+&gpio0 {
+ lcd-pwr-hog {
+  gpio-hog;
+  gpios = <18 (0 << 0)>;
+  output-high;
  };
 };
 

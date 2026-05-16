@@ -154,11 +154,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/subsys/input/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/subsys/shell/cmake_install.cmake")
 endif()
 

@@ -295,6 +295,13 @@
 				ngpios = < 0x20 >;                   /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:255 */
 				status = "okay";                     /* in zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts:60 */
 				phandle = < 0x5 >;                   /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:236 */
+
+				/* node '/soc/gpio/gpio@60004000/lcd-pwr-hog' defined in Hacktor_Basic/app.overlay:128 */
+				lcd-pwr-hog {
+					gpio-hog;             /* in Hacktor_Basic/app.overlay:129 */
+					gpios = < 0x12 0x0 >; /* in Hacktor_Basic/app.overlay:130 */
+					output-high;          /* in Hacktor_Basic/app.overlay:131 */
+				};
 			};
 
 			/* node '/soc/gpio/gpio@60004800' defined in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:258 */
@@ -353,34 +360,32 @@
 			interrupts = < 0x2b 0x0 0x0 >;       /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:293 */
 			interrupt-parent = < &intc >;        /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:294 */
 			clocks = < &clock 0x6 >;             /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:295 */
-			status = "okay";                     /* in Hacktor_Basic/app.overlay:104 */
-			clock-frequency = < 0x186a0 >;       /* in Hacktor_Basic/app.overlay:105 */
-			pinctrl-0 = < &i2c1_touch_default >; /* in Hacktor_Basic/app.overlay:106 */
-			pinctrl-names = "default";           /* in Hacktor_Basic/app.overlay:107 */
+			status = "okay";                     /* in Hacktor_Basic/app.overlay:99 */
+			clock-frequency = < 0x186a0 >;       /* in Hacktor_Basic/app.overlay:100 */
+			pinctrl-0 = < &i2c1_touch_default >; /* in Hacktor_Basic/app.overlay:101 */
+			pinctrl-names = "default";           /* in Hacktor_Basic/app.overlay:102 */
 
-			/* node '/soc/i2c@60027000/lsm6dsl@6a' defined in Hacktor_Basic/app.overlay:109 */
+			/* node '/soc/i2c@60027000/lsm6dsl@6a' defined in Hacktor_Basic/app.overlay:104 */
 			imu: lsm6dsl@6a {
-				compatible = "i2c-device"; /* in Hacktor_Basic/app.overlay:110 */
-				reg = < 0x6a >;            /* in Hacktor_Basic/app.overlay:111 */
-				status = "okay";           /* in Hacktor_Basic/app.overlay:112 */
+				compatible = "st,lsm6dsl"; /* in Hacktor_Basic/app.overlay:105 */
+				reg = < 0x6a >;            /* in Hacktor_Basic/app.overlay:106 */
+				status = "okay";           /* in Hacktor_Basic/app.overlay:107 */
 			};
 
-			/* node '/soc/i2c@60027000/max17048@36' defined in Hacktor_Basic/app.overlay:115 */
+			/* node '/soc/i2c@60027000/max17048@36' defined in Hacktor_Basic/app.overlay:110 */
 			fuel_gauge: max17048@36 {
-				compatible = "maxim,max17048"; /* in Hacktor_Basic/app.overlay:116 */
-				reg = < 0x36 >;                /* in Hacktor_Basic/app.overlay:117 */
-				status = "okay";               /* in Hacktor_Basic/app.overlay:118 */
-				zephyr,deferred-init;          /* in Hacktor_Basic/app.overlay:119 */
+				compatible = "maxim,max17048"; /* in Hacktor_Basic/app.overlay:111 */
+				reg = < 0x36 >;                /* in Hacktor_Basic/app.overlay:112 */
+				status = "okay";               /* in Hacktor_Basic/app.overlay:113 */
 			};
 
-			/* node '/soc/i2c@60027000/cst81xx@15' defined in Hacktor_Basic/app.overlay:122 */
+			/* node '/soc/i2c@60027000/cst81xx@15' defined in Hacktor_Basic/app.overlay:117 */
 			cst816s: cst81xx@15 {
-				compatible = "hynitron,cst816s"; /* in Hacktor_Basic/app.overlay:123 */
-				reg = < 0x15 >;                  /* in Hacktor_Basic/app.overlay:124 */
-				status = "okay";                 /* in Hacktor_Basic/app.overlay:125 */
-				zephyr,deferred-init;            /* in Hacktor_Basic/app.overlay:126 */
-				irq-gpios = < &gpio0 0x1 0x11 >; /* in Hacktor_Basic/app.overlay:127 */
-				rst-gpios = < &gpio0 0x2 0x1 >;  /* in Hacktor_Basic/app.overlay:128 */
+				compatible = "hynitron,cst816s"; /* in Hacktor_Basic/app.overlay:118 */
+				reg = < 0x15 >;                  /* in Hacktor_Basic/app.overlay:119 */
+				status = "okay";                 /* in Hacktor_Basic/app.overlay:120 */
+				irq-gpios = < &gpio0 0x1 0x11 >; /* in Hacktor_Basic/app.overlay:122 */
+				rst-gpios = < &gpio0 0x2 0x1 >;  /* in Hacktor_Basic/app.overlay:123 */
 			};
 		};
 
@@ -445,13 +450,13 @@
 			interrupt-parent = < &intc >;       /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:341 */
 			clocks = < &clock 0x16 >;           /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:342 */
 			dma-host = < 0x1 >;                 /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:343 */
-			#address-cells = < 0x1 >;           /* in Hacktor_Basic/app.overlay:94 */
-			#size-cells = < 0x0 >;              /* in Hacktor_Basic/app.overlay:95 */
-			status = "okay";                    /* in Hacktor_Basic/app.overlay:96 */
-			pinctrl-0 = < &spim3_lcd_default >; /* in Hacktor_Basic/app.overlay:97 */
-			pinctrl-names = "default";          /* in Hacktor_Basic/app.overlay:98 */
-			clock-frequency = < 0x1312d00 >;    /* in Hacktor_Basic/app.overlay:99 */
-			cs-gpios = < &gpio0 0x4 0x1 >;      /* in Hacktor_Basic/app.overlay:100 */
+			#address-cells = < 0x1 >;           /* in Hacktor_Basic/app.overlay:89 */
+			#size-cells = < 0x0 >;              /* in Hacktor_Basic/app.overlay:90 */
+			status = "okay";                    /* in Hacktor_Basic/app.overlay:91 */
+			pinctrl-0 = < &spim3_lcd_default >; /* in Hacktor_Basic/app.overlay:92 */
+			pinctrl-names = "default";          /* in Hacktor_Basic/app.overlay:93 */
+			clock-frequency = < 0x1312d00 >;    /* in Hacktor_Basic/app.overlay:94 */
+			cs-gpios = < &gpio0 0x4 0x1 >;      /* in Hacktor_Basic/app.overlay:95 */
 			phandle = < 0x11 >;                 /* in Hacktor_Basic/app.overlay:19 */
 		};
 
@@ -514,7 +519,7 @@
 			interrupts = < 0x60 0x0 0x0 >;             /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:396 */
 			interrupt-parent = < &intc >;              /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:397 */
 			clocks = < &clock 0x4 >;                   /* in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:398 */
-			status = "okay";                           /* in Hacktor_Basic/app.overlay:67 */
+			status = "okay";                           /* in Hacktor_Basic/app.overlay:62 */
 		};
 
 		/* node '/soc/usb_otg@60080000' defined in zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi:401 */
@@ -939,34 +944,34 @@
 			};
 		};
 
-		/* node '/pin-controller/spim3_lcd_default' defined in Hacktor_Basic/app.overlay:72 */
+		/* node '/pin-controller/spim3_lcd_default' defined in Hacktor_Basic/app.overlay:67 */
 		spim3_lcd_default: spim3_lcd_default {
-			phandle = < 0xd >; /* in Hacktor_Basic/app.overlay:97 */
+			phandle = < 0xd >; /* in Hacktor_Basic/app.overlay:92 */
 
-			/* node '/pin-controller/spim3_lcd_default/group1' defined in Hacktor_Basic/app.overlay:73 */
+			/* node '/pin-controller/spim3_lcd_default/group1' defined in Hacktor_Basic/app.overlay:68 */
 			group1 {
 				pinmux = < 0xff90cd >,
-				         < 0x217fcc >; /* in Hacktor_Basic/app.overlay:74 */
+				         < 0x217fcc >; /* in Hacktor_Basic/app.overlay:69 */
 			};
 
-			/* node '/pin-controller/spim3_lcd_default/group2' defined in Hacktor_Basic/app.overlay:77 */
+			/* node '/pin-controller/spim3_lcd_default/group2' defined in Hacktor_Basic/app.overlay:72 */
 			group2 {
-				pinmux = < 0x227fcb >; /* in Hacktor_Basic/app.overlay:78 */
-				output-low;            /* in Hacktor_Basic/app.overlay:79 */
+				pinmux = < 0x227fcb >; /* in Hacktor_Basic/app.overlay:73 */
+				output-low;            /* in Hacktor_Basic/app.overlay:74 */
 			};
 		};
 
-		/* node '/pin-controller/i2c1_touch_default' defined in Hacktor_Basic/app.overlay:83 */
+		/* node '/pin-controller/i2c1_touch_default' defined in Hacktor_Basic/app.overlay:78 */
 		i2c1_touch_default: i2c1_touch_default {
-			phandle = < 0x8 >; /* in Hacktor_Basic/app.overlay:106 */
+			phandle = < 0x8 >; /* in Hacktor_Basic/app.overlay:101 */
 
-			/* node '/pin-controller/i2c1_touch_default/group1' defined in Hacktor_Basic/app.overlay:84 */
+			/* node '/pin-controller/i2c1_touch_default/group1' defined in Hacktor_Basic/app.overlay:79 */
 			group1 {
 				pinmux = < 0x2e1708 >,
-				         < 0x2d96c9 >; /* in Hacktor_Basic/app.overlay:85 */
-				bias-pull-up;          /* in Hacktor_Basic/app.overlay:86 */
-				drive-open-drain;      /* in Hacktor_Basic/app.overlay:87 */
-				output-high;           /* in Hacktor_Basic/app.overlay:88 */
+				         < 0x2d96c9 >; /* in Hacktor_Basic/app.overlay:80 */
+				bias-pull-up;          /* in Hacktor_Basic/app.overlay:81 */
+				drive-open-drain;      /* in Hacktor_Basic/app.overlay:82 */
+				output-high;           /* in Hacktor_Basic/app.overlay:83 */
 			};
 		};
 	};
@@ -992,18 +997,18 @@
 			zephyr,code = < 0xb >;       /* in zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts:43 */
 		};
 
-		/* node '/buttons/imu_wake1' defined in Hacktor_Basic/app.overlay:133 */
+		/* node '/buttons/imu_wake1' defined in Hacktor_Basic/app.overlay:136 */
 		imu_wake1 {
-			gpios = < &gpio0 0x11 0x0 >; /* in Hacktor_Basic/app.overlay:134 */
-			label = "IMU INT1";          /* in Hacktor_Basic/app.overlay:135 */
-			zephyr,code = < 0x8f >;      /* in Hacktor_Basic/app.overlay:136 */
+			gpios = < &gpio0 0x11 0x0 >; /* in Hacktor_Basic/app.overlay:137 */
+			label = "IMU INT1";          /* in Hacktor_Basic/app.overlay:138 */
+			zephyr,code = < 0x8f >;      /* in Hacktor_Basic/app.overlay:139 */
 		};
 
-		/* node '/buttons/imu_wake2' defined in Hacktor_Basic/app.overlay:139 */
+		/* node '/buttons/imu_wake2' defined in Hacktor_Basic/app.overlay:142 */
 		imu_wake2 {
-			gpios = < &gpio0 0xe 0x0 >; /* in Hacktor_Basic/app.overlay:140 */
-			label = "IMU INT2";         /* in Hacktor_Basic/app.overlay:141 */
-			zephyr,code = < 0x8f >;     /* in Hacktor_Basic/app.overlay:142 */
+			gpios = < &gpio0 0xe 0x0 >; /* in Hacktor_Basic/app.overlay:143 */
+			label = "IMU INT2";         /* in Hacktor_Basic/app.overlay:144 */
+			zephyr,code = < 0x8f >;     /* in Hacktor_Basic/app.overlay:145 */
 		};
 	};
 
@@ -1022,7 +1027,6 @@
 			compatible = "galaxycore,gc9x01x";     /* in Hacktor_Basic/app.overlay:27 */
 			reg = < 0x0 >;                         /* in Hacktor_Basic/app.overlay:28 */
 			status = "okay";                       /* in Hacktor_Basic/app.overlay:29 */
-			zephyr,deferred-init;                  /* in Hacktor_Basic/app.overlay:30 */
 			orientation = "180";                   /* in Hacktor_Basic/app.overlay:31 */
 			mipi-max-frequency = < 0x1312d00 >;    /* in Hacktor_Basic/app.overlay:32 */
 			mipi-mode = "MIPI_DBI_MODE_SPI_4WIRE"; /* in Hacktor_Basic/app.overlay:33 */
@@ -1042,23 +1046,17 @@
 			gpios = < &gpio0 0x7 0x0 >; /* in Hacktor_Basic/app.overlay:45 */
 			label = "LCD backlight";    /* in Hacktor_Basic/app.overlay:46 */
 		};
-
-		/* node '/leds/lcd_power_enable' defined in Hacktor_Basic/app.overlay:49 */
-		lcd_power_enable: lcd_power_enable {
-			gpios = < &gpio0 0x12 0x0 >; /* in Hacktor_Basic/app.overlay:50 */
-			label = "LCD power enable";  /* in Hacktor_Basic/app.overlay:51 */
-		};
 	};
 
-	/* node '/charger_inputs' defined in Hacktor_Basic/app.overlay:55 */
+	/* node '/charger_inputs' defined in Hacktor_Basic/app.overlay:50 */
 	charger_inputs {
-		compatible = "gpio-keys"; /* in Hacktor_Basic/app.overlay:56 */
+		compatible = "gpio-keys"; /* in Hacktor_Basic/app.overlay:51 */
 
-		/* node '/charger_inputs/charger_status' defined in Hacktor_Basic/app.overlay:58 */
+		/* node '/charger_inputs/charger_status' defined in Hacktor_Basic/app.overlay:53 */
 		charger_status: charger_status {
-			gpios = < &gpio0 0x15 0x11 >; /* in Hacktor_Basic/app.overlay:59 */
-			label = "Charge status";      /* in Hacktor_Basic/app.overlay:60 */
-			zephyr,code = < 0xc2 >;       /* in Hacktor_Basic/app.overlay:61 */
+			gpios = < &gpio0 0x15 0x11 >; /* in Hacktor_Basic/app.overlay:54 */
+			label = "Charge status";      /* in Hacktor_Basic/app.overlay:55 */
+			zephyr,code = < 0xc2 >;       /* in Hacktor_Basic/app.overlay:56 */
 		};
 	};
 };

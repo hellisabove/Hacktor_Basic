@@ -1,46 +1,13 @@
 [
   [
-    "CONFIG_LV_Z_VDB_SIZE",
+    "CONFIG_INPUT",
     "y",
-    "int",
-    "10",
+    "bool",
+    "n",
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
       1
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_BITS_PER_PIXEL",
-    "y",
-    "int",
-    "32",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2
-    ]
-  ],
-  [
-    "CONFIG_INPUT",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      3
-    ]
-  ],
-  [
-    "CONFIG_LV_DPI_DEF",
-    "y",
-    "int",
-    "130",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      4
     ]
   ],
   [
@@ -51,40 +18,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      5
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_FLUSH_THREAD",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      6
-    ]
-  ],
-  [
-    "CONFIG_LV_COLOR_16_SWAP",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      7
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_DOUBLE_VDB",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      8
+      2
     ]
   ],
   [
@@ -95,7 +29,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      9
+      3
     ]
   ],
   [
@@ -106,18 +40,18 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      10
+      4
     ]
   ],
   [
     "CONFIG_MAIN_STACK_SIZE",
     "y",
     "int",
-    "4096",
+    "8192",
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      11
+      5
     ]
   ],
   [
@@ -128,7 +62,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      12
+      6
     ]
   ],
   [
@@ -139,7 +73,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      13
+      7
     ]
   ],
   [
@@ -163,28 +97,6 @@
     ]
   ],
   [
-    "CONFIG_LV_Z_FULL_REFRESH",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      16
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_VDB_ALIGN",
-    "y",
-    "int",
-    "4",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      17
-    ]
-  ],
-  [
     "CONFIG_MIPI_DSI",
     "y",
     "bool",
@@ -192,7 +104,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      18
+      10
     ]
   ],
   [
@@ -203,29 +115,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      19
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_VDB_CUSTOM_SECTION",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      20
-    ]
-  ],
-  [
-    "CONFIG_INPUT_INIT_PRIORITY",
-    "y",
-    "int",
-    "90",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      21
+      11
     ]
   ],
   [
@@ -236,7 +126,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      22
+      12
     ]
   ],
   [
@@ -253,22 +143,11 @@
     "CONFIG_GPIO_HOGS",
     "y",
     "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      24
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_VDB_ZEPHYR_REGION",
     "y",
-    "bool",
-    "n",
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      25
+      14
     ]
   ],
   [
@@ -279,7 +158,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      26
+      15
     ]
   ],
   [
@@ -312,7 +191,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      29
+      18
     ]
   ],
   [
@@ -323,7 +202,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      30
+      19
     ]
   ],
   [
@@ -344,7 +223,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      32
+      21
     ]
   ],
   [
@@ -355,7 +234,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      33
+      22
     ]
   ],
   [
@@ -366,7 +245,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      34
+      23
     ]
   ],
   [
@@ -377,7 +256,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      35
+      24
     ]
   ],
   [
@@ -388,7 +267,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      36
+      25
     ]
   ],
   [
@@ -399,7 +278,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      37
+      26
     ]
   ],
   [
@@ -410,7 +289,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      38
+      27
     ]
   ],
   [
@@ -432,7 +311,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      40
+      29
     ]
   ],
   [
@@ -443,7 +322,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      41
+      30
     ]
   ],
   [
@@ -454,7 +333,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      42
+      31
     ]
   ],
   [
@@ -465,7 +344,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      43
+      32
     ]
   ],
   [
@@ -476,7 +355,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      44
+      33
     ]
   ],
   [
@@ -487,7 +366,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      45
+      34
     ]
   ],
   [
@@ -498,7 +377,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      46
+      35
     ]
   ],
   [
@@ -509,7 +388,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      47
+      36
     ]
   ],
   [
@@ -520,7 +399,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      48
+      37
     ]
   ],
   [
@@ -531,7 +410,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      49
+      38
     ]
   ],
   [
@@ -542,7 +421,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      50
+      39
     ]
   ],
   [
@@ -553,7 +432,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      51
+      40
     ]
   ],
   [
@@ -574,7 +453,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      53
+      42
     ]
   ],
   [
@@ -585,7 +464,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      54
+      43
     ]
   ],
   [
@@ -596,7 +475,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      55
+      44
     ]
   ],
   [
@@ -607,7 +486,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      56
+      45
     ]
   ],
   [
@@ -618,7 +497,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      57
+      46
     ]
   ],
   [
@@ -629,7 +508,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      58
+      47
     ]
   ],
   [
@@ -640,7 +519,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      59
+      48
     ]
   ],
   [
@@ -651,7 +530,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      60
+      49
     ]
   ],
   [
@@ -659,9 +538,10 @@
     "y",
     "bool",
     "y",
-    "select",
+    "assign",
     [
-      "INPUT_GPIO_KEYS && DT_HAS_GPIO_KEYS_ENABLED && INPUT"
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      50
     ]
   ],
   [
@@ -672,7 +552,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      62
+      51
     ]
   ],
   [
@@ -683,7 +563,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      63
+      52
     ]
   ],
   [
@@ -694,7 +574,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      64
+      53
     ]
   ],
   [
@@ -705,7 +585,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      65
+      54
     ]
   ],
   [
@@ -716,7 +596,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      66
+      55
     ]
   ],
   [
@@ -727,7 +607,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      67
+      56
     ]
   ],
   [
@@ -738,7 +618,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      68
+      57
     ]
   ],
   [
@@ -749,7 +629,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      69
+      58
     ]
   ],
   [
@@ -760,7 +640,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      70
+      59
     ]
   ],
   [
@@ -771,7 +651,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      71
+      60
     ]
   ],
   [
@@ -782,7 +662,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      72
+      61
     ]
   ],
   [
@@ -793,7 +673,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      73
+      62
     ]
   ],
   [
@@ -804,7 +684,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      74
+      63
     ]
   ],
   [
@@ -815,7 +695,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      75
+      64
     ]
   ],
   [
@@ -826,7 +706,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      76
+      65
     ]
   ],
   [
@@ -837,7 +717,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      77
+      66
     ]
   ],
   [
@@ -848,7 +728,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      78
+      67
     ]
   ],
   [
@@ -859,7 +739,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      79
+      68
     ]
   ],
   [
@@ -870,7 +750,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      80
+      69
     ]
   ],
   [
@@ -881,7 +761,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      81
+      70
     ]
   ],
   [
@@ -892,18 +772,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      82
-    ]
-  ],
-  [
-    "CONFIG_COMMON_LIBC_MALLOC_ARENA_SIZE",
-    "y",
-    "int",
-    "-1",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      83
+      71
     ]
   ],
   [
@@ -925,7 +794,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      85
+      73
     ]
   ],
   [
@@ -936,7 +805,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      86
+      74
     ]
   ],
   [
@@ -947,7 +816,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      87
+      75
     ]
   ],
   [
@@ -980,7 +849,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      90
+      78
     ]
   ],
   [
@@ -991,7 +860,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      91
+      79
     ]
   ],
   [
@@ -1013,7 +882,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      93
+      81
     ]
   ],
   [
@@ -1024,7 +893,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      94
+      82
     ]
   ],
   [
@@ -1035,7 +904,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      95
+      83
     ]
   ],
   [
@@ -1057,7 +926,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      97
+      85
     ]
   ],
   [
@@ -1068,7 +937,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      98
+      86
     ]
   ],
   [
@@ -1079,7 +948,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      99
+      87
     ]
   ],
   [
@@ -1391,6 +1260,17 @@
     ]
   ],
   [
+    "CONFIG_DT_HAS_ST_LSM6DSL_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/Kconfig/Kconfig.dts",
+      11158
+    ]
+  ],
+  [
     "CONFIG_DT_HAS_ZEPHYR_MEMORY_REGION_ENABLED",
     "n",
     "bool",
@@ -1431,7 +1311,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      140
+      129
     ]
   ],
   [
@@ -1452,7 +1332,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      154
+      143
     ]
   ],
   [
@@ -1496,7 +1376,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      170
+      159
     ]
   ],
   [
@@ -1710,7 +1590,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      236
+      225
     ]
   ],
   [
@@ -1743,7 +1623,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      246
+      235
     ]
   ],
   [
@@ -1787,7 +1667,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      260
+      249
     ]
   ],
   [
@@ -1952,7 +1832,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      323
+      312
     ]
   ],
   [
@@ -2018,7 +1898,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      347
+      336
     ]
   ],
   [
@@ -2084,7 +1964,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      364
+      353
     ]
   ],
   [
@@ -2095,7 +1975,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      365
+      354
     ]
   ],
   [
@@ -2139,3051 +2019,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      384
-    ]
-  ],
-  [
-    "CONFIG_LV_CONF_SKIP",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      394
-    ]
-  ],
-  [
-    "CONFIG_LV_CONF_MINIMAL",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      395
-    ]
-  ],
-  [
-    "CONFIG_LV_COLOR_DEPTH_32",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_COLOR_DEPTH_24",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_COLOR_DEPTH_16",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_COLOR_DEPTH_8",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_COLOR_DEPTH_1",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_COLOR_DEPTH",
-    "n",
-    "int",
-    "16",
-    "default",
-    [
-      "/home/nedi/zephyrproject/modules/lib/gui/lvgl/zephyr/../Kconfig",
-      38
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_BUILTIN_MALLOC",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_CLIB_MALLOC",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_MICROPYTHON_MALLOC",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_RTTHREAD_MALLOC",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_CUSTOM_MALLOC",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_BUILTIN_STRING",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_CLIB_STRING",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_CUSTOM_STRING",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_BUILTIN_SPRINTF",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_CLIB_SPRINTF",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_CUSTOM_SPRINTF",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_MEM_SIZE_KILOBYTES",
-    "y",
-    "int",
-    "64",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      422
-    ]
-  ],
-  [
-    "CONFIG_LV_MEM_POOL_EXPAND_SIZE_KILOBYTES",
-    "y",
-    "int",
-    "0",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      423
-    ]
-  ],
-  [
-    "CONFIG_LV_MEM_ADR",
-    "y",
-    "hex",
-    "0x0",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      424
-    ]
-  ],
-  [
-    "CONFIG_LV_DEF_REFR_PERIOD",
-    "y",
-    "int",
-    "33",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      430
-    ]
-  ],
-  [
-    "CONFIG_LV_OS_NONE",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_OS_PTHREAD",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_OS_FREERTOS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_OS_CMSIS_RTOS2",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_OS_RTTHREAD",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_OS_WINDOWS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_OS_MQX",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_OS_CUSTOM",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_DRAW_BUF_STRIDE_ALIGN",
-    "y",
-    "int",
-    "1",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      449
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_BUF_ALIGN",
-    "y",
-    "int",
-    "4",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      450
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_LAYER_SIMPLE_BUF_SIZE",
-    "y",
-    "int",
-    "24576",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      451
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_LAYER_MAX_MEMORY",
-    "y",
-    "int",
-    "0",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      452
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_SW",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      453
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SUPPORT_RGB565",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      454
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SUPPORT_RGB565A8",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      455
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SUPPORT_RGB888",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      456
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SUPPORT_XRGB8888",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      457
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SUPPORT_ARGB8888",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      458
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SUPPORT_L8",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      459
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SUPPORT_AL88",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      460
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SUPPORT_A8",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      461
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SUPPORT_I1",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      462
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_I1_LUM_THRESHOLD",
-    "y",
-    "int",
-    "127",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      463
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_DRAW_UNIT_CNT",
-    "y",
-    "int",
-    "1",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      464
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_ARM2D_SYNC",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      465
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_NATIVE_HELIUM_ASM",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      466
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_COMPLEX",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      467
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_SW_COMPLEX_GRADIENTS",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      468
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_SHADOW_CACHE_SIZE",
-    "y",
-    "int",
-    "0",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      469
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_CIRCLE_CACHE_SIZE",
-    "y",
-    "int",
-    "4",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      470
-    ]
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_ASM_NONE",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_ASM_NEON",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_ASM_HELIUM",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_DRAW_SW_ASM_CUSTOM",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_SW_ASM",
-    "n",
-    "int",
-    "0",
-    "default",
-    [
-      "/home/nedi/zephyrproject/modules/lib/gui/lvgl/zephyr/../Kconfig",
-      360
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_VGLITE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      476
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_PXP",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      477
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_G2D",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      478
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_DAVE2D",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      479
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_SDL",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      480
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_VG_LITE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      481
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_VECTOR_GRAPHIC",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      482
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DRAW_DMA2D",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      483
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LOG",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      493
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ASSERT_NULL",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      499
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ASSERT_MALLOC",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      500
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ASSERT_STYLE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      501
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ASSERT_MEM_INTEGRITY",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      502
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ASSERT_OBJ",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      503
-    ]
-  ],
-  [
-    "CONFIG_LV_ASSERT_HANDLER_INCLUDE",
-    "y",
-    "string",
-    "assert.h",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      504
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_REFR_DEBUG",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      510
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LAYER_DEBUG",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      511
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_PARALLEL_DRAW_DEBUG",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      512
-    ]
-  ],
-  [
-    "CONFIG_LV_ENABLE_GLOBAL_CUSTOM",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      518
-    ]
-  ],
-  [
-    "CONFIG_LV_CACHE_DEF_SIZE",
-    "y",
-    "int",
-    "0",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      519
-    ]
-  ],
-  [
-    "CONFIG_LV_IMAGE_HEADER_CACHE_DEF_CNT",
-    "y",
-    "int",
-    "0",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      520
-    ]
-  ],
-  [
-    "CONFIG_LV_GRADIENT_MAX_STOPS",
-    "y",
-    "int",
-    "2",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      521
-    ]
-  ],
-  [
-    "CONFIG_LV_COLOR_MIX_ROUND_OFS",
-    "y",
-    "int",
-    "128",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      522
-    ]
-  ],
-  [
-    "CONFIG_LV_OBJ_STYLE_CACHE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      523
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_OBJ_ID",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      524
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_OBJ_NAME",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      525
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_OBJ_PROPERTY",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      526
-    ]
-  ],
-  [
-    "CONFIG_LV_BIG_ENDIAN_SYSTEM",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      533
-    ]
-  ],
-  [
-    "CONFIG_LV_ATTRIBUTE_MEM_ALIGN_SIZE",
-    "y",
-    "int",
-    "1",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      534
-    ]
-  ],
-  [
-    "CONFIG_LV_ATTRIBUTE_FAST_MEM_USE_IRAM",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      535
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FLOAT",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      536
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_MATRIX",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      537
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_PRIVATE_API",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      538
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_8",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      548
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_10",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      549
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_12",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      550
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_14",
-    "y",
-    "bool",
-    "y",
-    "select",
-    [
-      "LV_FONT_DEFAULT_MONTSERRAT_14 && <choice LV_FONT_DEFAULT>"
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_16",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      552
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_18",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      553
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_20",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      554
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_22",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      555
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_24",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      556
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_26",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      557
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_28",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      558
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_30",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      559
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_32",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      560
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_34",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      561
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_36",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      562
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_38",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      563
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_40",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      564
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_42",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      565
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_44",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      566
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_46",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      567
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_48",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      568
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_MONTSERRAT_28_COMPRESSED",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      569
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_DEJAVU_16_PERSIAN_HEBREW",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      570
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_SIMSUN_14_CJK",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      571
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_SIMSUN_16_CJK",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      572
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_SOURCE_HAN_SANS_SC_14_CJK",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      573
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_SOURCE_HAN_SANS_SC_16_CJK",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      574
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_UNSCII_8",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      575
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_UNSCII_16",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      576
-    ]
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_8",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_10",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_12",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_14",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_16",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_18",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_20",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_22",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_24",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_26",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_28",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_30",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_32",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_34",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_36",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_38",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_40",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_42",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_44",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_46",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_48",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_MONTSERRAT_28_COMPRESSED",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_DEJAVU_16_PERSIAN_HEBREW",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_SIMSUN_14_CJK",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_SIMSUN_16_CJK",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_SOURCE_HAN_SANS_SC_14_CJK",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_SOURCE_HAN_SANS_SC_16_CJK",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_UNSCII_8",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_DEFAULT_UNSCII_16",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_FONT_FMT_TXT_LARGE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      608
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FONT_COMPRESSED",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      609
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FONT_PLACEHOLDER",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      610
-    ]
-  ],
-  [
-    "CONFIG_LV_TXT_ENC_UTF8",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_TXT_ENC_ASCII",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_TXT_BREAK_CHARS",
-    "y",
-    "string",
-    " ,.;:-_)}",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      623
-    ]
-  ],
-  [
-    "CONFIG_LV_TXT_LINE_BREAK_LONG_LEN",
-    "y",
-    "int",
-    "0",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      624
-    ]
-  ],
-  [
-    "CONFIG_LV_TXT_COLOR_CMD",
-    "y",
-    "string",
-    "#",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      625
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_BIDI",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      626
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ARABIC_PERSIAN_CHARS",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      627
-    ]
-  ],
-  [
-    "CONFIG_LV_WIDGETS_HAS_DEFAULT_VALUE",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      633
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ANIMIMG",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      634
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ARC",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      635
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ARCLABEL",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      636
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_BAR",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      637
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_BUTTON",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      638
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_BUTTONMATRIX",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      639
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_CALENDAR",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      640
-    ]
-  ],
-  [
-    "CONFIG_LV_CALENDAR_WEEK_STARTS_MONDAY",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      641
-    ]
-  ],
-  [
-    "CONFIG_LV_MONDAY_STR",
-    "y",
-    "string",
-    "Mo",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      646
-    ]
-  ],
-  [
-    "CONFIG_LV_TUESDAY_STR",
-    "y",
-    "string",
-    "Tu",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      647
-    ]
-  ],
-  [
-    "CONFIG_LV_WEDNESDAY_STR",
-    "y",
-    "string",
-    "We",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      648
-    ]
-  ],
-  [
-    "CONFIG_LV_THURSDAY_STR",
-    "y",
-    "string",
-    "Th",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      649
-    ]
-  ],
-  [
-    "CONFIG_LV_FRIDAY_STR",
-    "y",
-    "string",
-    "Fr",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      650
-    ]
-  ],
-  [
-    "CONFIG_LV_SATURDAY_STR",
-    "y",
-    "string",
-    "Sa",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      651
-    ]
-  ],
-  [
-    "CONFIG_LV_SUNDAY_STR",
-    "y",
-    "string",
-    "Su",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      652
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_CALENDAR_HEADER_ARROW",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      655
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_CALENDAR_HEADER_DROPDOWN",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      656
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_CALENDAR_CHINESE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      657
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_CANVAS",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      658
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_CHART",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      659
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_CHECKBOX",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      660
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DROPDOWN",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      661
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_IMAGE",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      662
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_IMAGEBUTTON",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      663
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_KEYBOARD",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      664
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LABEL",
-    "y",
-    "bool",
-    "y",
-    "select",
-    [
-      "LV_USE_TEXTAREA && LVGL"
-    ]
-  ],
-  [
-    "CONFIG_LV_LABEL_TEXT_SELECTION",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      666
-    ]
-  ],
-  [
-    "CONFIG_LV_LABEL_LONG_TXT_HINT",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      667
-    ]
-  ],
-  [
-    "CONFIG_LV_LABEL_WAIT_CHAR_COUNT",
-    "y",
-    "int",
-    "3",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      668
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LED",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      669
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LINE",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      670
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LIST",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      671
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_MENU",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      672
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_MSGBOX",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      673
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ROLLER",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      674
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_SCALE",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      675
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_SLIDER",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      676
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_SPAN",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      677
-    ]
-  ],
-  [
-    "CONFIG_LV_SPAN_SNIPPET_STACK_SIZE",
-    "y",
-    "int",
-    "64",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      678
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_SPINBOX",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      679
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_SPINNER",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      680
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_SWITCH",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      681
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_TEXTAREA",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      682
-    ]
-  ],
-  [
-    "CONFIG_LV_TEXTAREA_DEF_PWD_SHOW_TIME",
-    "y",
-    "int",
-    "1500",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      683
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_TABLE",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      684
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_TABVIEW",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      685
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_TILEVIEW",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      686
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_WIN",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      687
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_THEME_DEFAULT",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      693
-    ]
-  ],
-  [
-    "CONFIG_LV_THEME_DEFAULT_DARK",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      694
-    ]
-  ],
-  [
-    "CONFIG_LV_THEME_DEFAULT_GROW",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      695
-    ]
-  ],
-  [
-    "CONFIG_LV_THEME_DEFAULT_TRANSITION_TIME",
-    "y",
-    "int",
-    "80",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      696
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_THEME_SIMPLE",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      697
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_THEME_MONO",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      698
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FLEX",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      704
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_GRID",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      705
-    ]
-  ],
-  [
-    "CONFIG_LV_FS_DEFAULT_DRIVER_LETTER",
-    "y",
-    "int",
-    "0",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      711
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FS_STDIO",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      712
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FS_POSIX",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      713
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FS_WIN32",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      714
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FS_FATFS",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      715
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FS_MEMFS",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      716
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FS_LITTLEFS",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      717
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FS_ARDUINO_ESP_LITTLEFS",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      718
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FS_ARDUINO_SD",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      719
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FS_UEFI",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      720
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LODEPNG",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      721
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LIBPNG",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      722
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_BMP",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      723
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_TJPGD",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      724
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LIBJPEG_TURBO",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      725
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_GIF",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      726
-    ]
-  ],
-  [
-    "CONFIG_LV_BIN_DECODER_RAM_LOAD",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      727
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_RLE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      728
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_QRCODE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      729
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_BARCODE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      730
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FREETYPE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      731
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_TINY_TTF",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      732
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_RLOTTIE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      733
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_THORVG",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      734
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LZ4",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      735
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FFMPEG",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      736
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_SNAPSHOT",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      742
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_SYSMON",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      743
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_PROFILER",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      744
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_MONKEY",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      745
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_GRIDNAV",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      746
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FRAGMENT",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      747
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_IMGFONT",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      748
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_OBSERVER",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      749
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_IME_PINYIN",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      750
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FILE_EXPLORER",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      751
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FONT_MANAGER",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      752
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_TEST",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      753
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_XML",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      754
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_COLOR_FILTER",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      755
-    ]
-  ],
-  [
-    "CONFIG_LVGL_VERSION_MAJOR",
-    "n",
-    "int",
-    "9",
-    "default",
-    [
-      "/home/nedi/zephyrproject/modules/lib/gui/lvgl/zephyr/../Kconfig",
-      1728
-    ]
-  ],
-  [
-    "CONFIG_LVGL_VERSION_MINOR",
-    "n",
-    "int",
-    "3",
-    "default",
-    [
-      "/home/nedi/zephyrproject/modules/lib/gui/lvgl/zephyr/../Kconfig",
-      1731
-    ]
-  ],
-  [
-    "CONFIG_LVGL_VERSION_PATCH",
-    "n",
-    "int",
-    "0",
-    "default",
-    [
-      "/home/nedi/zephyrproject/modules/lib/gui/lvgl/zephyr/../Kconfig",
-      1734
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_SDL",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      764
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_X11",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      765
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_WAYLAND",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      766
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LINUX_FBDEV",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      767
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_NUTTX",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      768
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LINUX_DRM",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      769
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_TFT_ESPI",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      770
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_EVDEV",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      771
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_LIBINPUT",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      772
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ST7735",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      773
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ST7789",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      774
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ST7796",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      775
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ILI9341",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      776
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_GENERIC_MIPI",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      777
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_RENESAS_GLCDC",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      778
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_ST_LTDC",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      779
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_FT81X",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      780
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_UEFI",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      781
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_OPENGLES",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      782
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_QNX",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      783
-    ]
-  ],
-  [
-    "CONFIG_LV_BUILD_EXAMPLES",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      789
-    ]
-  ],
-  [
-    "CONFIG_LV_BUILD_DEMOS",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      795
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_WIDGETS",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      796
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_KEYPAD_AND_ENCODER",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      797
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_BENCHMARK",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      798
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_RENDER",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      799
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_SCROLL",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      800
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_STRESS",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      801
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_MUSIC",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      802
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_FLEX_LAYOUT",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      803
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_MULTILANG",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      804
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_SMARTWATCH",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      805
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_EBIKE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      806
-    ]
-  ],
-  [
-    "CONFIG_LV_USE_DEMO_HIGH_RES",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      807
+      373
     ]
   ],
   [
@@ -5216,7 +2052,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      818
+      386
     ]
   ],
   [
@@ -5227,7 +2063,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      819
+      387
     ]
   ],
   [
@@ -5282,7 +2118,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      830
+      398
     ]
   ],
   [
@@ -5304,7 +2140,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      837
+      405
     ]
   ],
   [
@@ -5326,7 +2162,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      845
+      413
     ]
   ],
   [
@@ -5348,7 +2184,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      856
+      424
     ]
   ],
   [
@@ -5370,7 +2206,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      863
+      431
     ]
   ],
   [
@@ -5414,7 +2250,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      877
+      445
     ]
   ],
   [
@@ -5458,7 +2294,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      896
+      464
     ]
   ],
   [
@@ -5490,182 +2326,18 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      901
+      469
     ]
   ],
   [
     "CONFIG_LVGL",
     "y",
     "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      902
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_LOG_LEVEL",
-    "n",
-    "int",
-    "0",
-    "default",
-    [
-      "/home/nedi/zephyrproject/zephyr/modules/lvgl/Kconfig",
-      51
-    ]
-  ],
-  [
-    "CONFIG_APP_LINK_WITH_LVGL",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      904
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_AREA_X_ALIGNMENT_WIDTH",
-    "y",
-    "int",
-    "1",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      905
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_AREA_Y_ALIGNMENT_WIDTH",
-    "y",
-    "int",
-    "1",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      906
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_AUTO_INIT",
-    "y",
-    "bool",
     "n",
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      907
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_LVGL_MUTEX",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      908
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_RUN_LVGL_ON_WORKQUEUE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      909
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_MEM_POOL_HEAP_LIB_C",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_Z_MEM_POOL_SYS_HEAP",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_Z_MEM_POOL_SIZE",
-    "y",
-    "int",
-    "65536",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      916
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_MEMORY_POOL_CUSTOM_SECTION",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      917
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_MEMORY_POOL_ZEPHYR_REGION",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      918
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_MONOCHROME_CONVERSION_BUFFER",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      919
-    ]
-  ],
-  [
-    "CONFIG_LV_Z_BUFFER_ALLOC_STATIC",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_LV_Z_BUFFER_ALLOC_DYNAMIC",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LV_Z_SHELL",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      929
+      470
     ]
   ],
   [
@@ -5676,7 +2348,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      930
+      471
     ]
   ],
   [
@@ -5687,7 +2359,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      931
+      472
     ]
   ],
   [
@@ -5698,7 +2370,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      932
+      473
     ]
   ],
   [
@@ -5709,7 +2381,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      933
+      474
     ]
   ],
   [
@@ -5720,7 +2392,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      934
+      475
     ]
   ],
   [
@@ -5731,7 +2403,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      935
+      476
     ]
   ],
   [
@@ -5742,7 +2414,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      936
+      477
     ]
   ],
   [
@@ -5786,7 +2458,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      962
+      503
     ]
   ],
   [
@@ -5935,7 +2607,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      985
+      526
     ]
   ],
   [
@@ -5946,7 +2618,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      986
+      527
     ]
   ],
   [
@@ -5957,7 +2629,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      987
+      528
     ]
   ],
   [
@@ -5968,7 +2640,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      988
+      529
     ]
   ],
   [
@@ -5979,7 +2651,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      989
+      530
     ]
   ],
   [
@@ -5990,7 +2662,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      990
+      531
     ]
   ],
   [
@@ -6001,7 +2673,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      991
+      532
     ]
   ],
   [
@@ -6012,7 +2684,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      996
+      537
     ]
   ],
   [
@@ -6023,7 +2695,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      997
+      538
     ]
   ],
   [
@@ -6034,7 +2706,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      998
+      539
     ]
   ],
   [
@@ -6045,7 +2717,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      999
+      540
     ]
   ],
   [
@@ -6111,7 +2783,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1007
+      548
     ]
   ],
   [
@@ -6133,7 +2805,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1009
+      550
     ]
   ],
   [
@@ -6144,7 +2816,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1010
+      551
     ]
   ],
   [
@@ -6155,7 +2827,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1011
+      552
     ]
   ],
   [
@@ -6362,7 +3034,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1035
+      576
     ]
   ],
   [
@@ -6449,7 +3121,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1044
+      585
     ]
   ],
   [
@@ -6460,7 +3132,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1045
+      586
     ]
   ],
   [
@@ -6471,7 +3143,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1046
+      587
     ]
   ],
   [
@@ -6482,7 +3154,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1047
+      588
     ]
   ],
   [
@@ -6493,7 +3165,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1048
+      589
     ]
   ],
   [
@@ -6504,7 +3176,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1049
+      590
     ]
   ],
   [
@@ -6515,7 +3187,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1050
+      591
     ]
   ],
   [
@@ -6526,7 +3198,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1051
+      592
     ]
   ],
   [
@@ -6537,7 +3209,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1052
+      593
     ]
   ],
   [
@@ -6556,7 +3228,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1054
+      595
     ]
   ],
   [
@@ -6567,7 +3239,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1055
+      596
     ]
   ],
   [
@@ -6659,7 +3331,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1069
+      610
     ]
   ],
   [
@@ -6767,7 +3439,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1081
+      622
     ]
   ],
   [
@@ -6866,7 +3538,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1101
+      642
     ]
   ],
   [
@@ -6877,7 +3549,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1107
+      648
     ]
   ],
   [
@@ -6958,7 +3630,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1129
+      670
     ]
   ],
   [
@@ -6969,7 +3641,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1130
+      671
     ]
   ],
   [
@@ -6980,7 +3652,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1131
+      672
     ]
   ],
   [
@@ -6991,7 +3663,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1138
+      679
     ]
   ],
   [
@@ -7022,7 +3694,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1147
+      688
     ]
   ],
   [
@@ -7033,7 +3705,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1148
+      689
     ]
   ],
   [
@@ -7114,7 +3786,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1157
+      698
     ]
   ],
   [
@@ -7125,7 +3797,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1158
+      699
     ]
   ],
   [
@@ -7136,7 +3808,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1159
+      700
     ]
   ],
   [
@@ -7147,7 +3819,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1160
+      701
     ]
   ],
   [
@@ -7158,7 +3830,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1161
+      702
     ]
   ],
   [
@@ -7169,7 +3841,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1166
+      707
     ]
   ],
   [
@@ -7190,7 +3862,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1168
+      709
     ]
   ],
   [
@@ -7201,7 +3873,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1169
+      710
     ]
   ],
   [
@@ -7342,7 +4014,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1207
+      748
     ]
   ],
   [
@@ -7353,7 +4025,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1208
+      749
     ]
   ],
   [
@@ -7386,7 +4058,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1211
+      752
     ]
   ],
   [
@@ -7397,7 +4069,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1212
+      753
     ]
   ],
   [
@@ -7418,7 +4090,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1214
+      755
     ]
   ],
   [
@@ -7429,7 +4101,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1215
+      756
     ]
   ],
   [
@@ -7440,7 +4112,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1216
+      757
     ]
   ],
   [
@@ -7475,7 +4147,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1220
+      761
     ]
   ],
   [
@@ -7502,7 +4174,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1227
+      768
     ]
   ],
   [
@@ -7513,7 +4185,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1233
+      774
     ]
   ],
   [
@@ -7524,7 +4196,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1234
+      775
     ]
   ],
   [
@@ -7535,7 +4207,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1235
+      776
     ]
   ],
   [
@@ -7546,7 +4218,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1236
+      777
     ]
   ],
   [
@@ -7557,7 +4229,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1237
+      778
     ]
   ],
   [
@@ -7568,7 +4240,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1238
+      779
     ]
   ],
   [
@@ -7579,7 +4251,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1239
+      780
     ]
   ],
   [
@@ -7590,7 +4262,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1240
+      781
     ]
   ],
   [
@@ -7601,7 +4273,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1243
+      784
     ]
   ],
   [
@@ -7612,7 +4284,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1244
+      785
     ]
   ],
   [
@@ -7623,7 +4295,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1249
+      790
     ]
   ],
   [
@@ -7634,7 +4306,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1250
+      791
     ]
   ],
   [
@@ -7645,7 +4317,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1251
+      792
     ]
   ],
   [
@@ -7656,7 +4328,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1267
+      808
     ]
   ],
   [
@@ -7667,7 +4339,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1268
+      809
     ]
   ],
   [
@@ -7678,7 +4350,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1269
+      810
     ]
   ],
   [
@@ -7689,7 +4361,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1275
+      816
     ]
   ],
   [
@@ -7700,7 +4372,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1276
+      817
     ]
   ],
   [
@@ -7711,7 +4383,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1277
+      818
     ]
   ],
   [
@@ -7722,7 +4394,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1278
+      819
     ]
   ],
   [
@@ -7743,7 +4415,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1280
+      821
     ]
   ],
   [
@@ -7754,7 +4426,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1281
+      822
     ]
   ],
   [
@@ -7775,7 +4447,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1285
+      826
     ]
   ],
   [
@@ -7806,7 +4478,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1302
+      843
     ]
   ],
   [
@@ -7838,7 +4510,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1307
+      848
     ]
   ],
   [
@@ -7849,7 +4521,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1308
+      849
     ]
   ],
   [
@@ -7860,7 +4532,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1314
+      855
     ]
   ],
   [
@@ -7871,7 +4543,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1315
+      856
     ]
   ],
   [
@@ -7882,7 +4554,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1316
+      857
     ]
   ],
   [
@@ -7893,7 +4565,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1322
+      863
     ]
   ],
   [
@@ -7904,7 +4576,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1323
+      864
     ]
   ],
   [
@@ -7915,7 +4587,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1324
+      865
     ]
   ],
   [
@@ -7926,7 +4598,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1325
+      866
     ]
   ],
   [
@@ -7937,7 +4609,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1326
+      867
     ]
   ],
   [
@@ -7948,7 +4620,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1342
+      883
     ]
   ],
   [
@@ -7959,7 +4631,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1343
+      884
     ]
   ],
   [
@@ -7970,7 +4642,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1344
+      885
     ]
   ],
   [
@@ -7981,7 +4653,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1345
+      886
     ]
   ],
   [
@@ -7992,7 +4664,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1346
+      887
     ]
   ],
   [
@@ -8003,7 +4675,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1347
+      888
     ]
   ],
   [
@@ -8014,7 +4686,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1353
+      894
     ]
   ],
   [
@@ -8025,7 +4697,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1354
+      895
     ]
   ],
   [
@@ -8036,7 +4708,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1355
+      896
     ]
   ],
   [
@@ -8047,7 +4719,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1356
+      897
     ]
   ],
   [
@@ -8058,7 +4730,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1357
+      898
     ]
   ],
   [
@@ -8069,7 +4741,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1358
+      899
     ]
   ],
   [
@@ -8139,7 +4811,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1366
+      907
     ]
   ],
   [
@@ -8150,7 +4822,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1367
+      908
     ]
   ],
   [
@@ -8161,7 +4833,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1368
+      909
     ]
   ],
   [
@@ -8172,7 +4844,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1369
+      910
     ]
   ],
   [
@@ -8193,7 +4865,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1371
+      912
     ]
   ],
   [
@@ -8204,7 +4876,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1372
+      913
     ]
   ],
   [
@@ -8215,7 +4887,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1373
+      914
     ]
   ],
   [
@@ -8226,7 +4898,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1374
+      915
     ]
   ],
   [
@@ -8237,7 +4909,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1375
+      916
     ]
   ],
   [
@@ -8248,7 +4920,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1376
+      917
     ]
   ],
   [
@@ -8259,7 +4931,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1377
+      918
     ]
   ],
   [
@@ -8270,7 +4942,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1378
+      919
     ]
   ],
   [
@@ -8281,7 +4953,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1379
+      920
     ]
   ],
   [
@@ -8351,7 +5023,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1387
+      928
     ]
   ],
   [
@@ -8362,7 +5034,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1388
+      929
     ]
   ],
   [
@@ -8373,7 +5045,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1389
+      930
     ]
   ],
   [
@@ -8384,7 +5056,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1390
+      931
     ]
   ],
   [
@@ -8395,7 +5067,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1391
+      932
     ]
   ],
   [
@@ -8406,7 +5078,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1392
+      933
     ]
   ],
   [
@@ -8417,7 +5089,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1393
+      934
     ]
   ],
   [
@@ -8428,7 +5100,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1394
+      935
     ]
   ],
   [
@@ -8439,7 +5111,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1395
+      936
     ]
   ],
   [
@@ -8450,7 +5122,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1396
+      937
     ]
   ],
   [
@@ -8520,7 +5192,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1404
+      945
     ]
   ],
   [
@@ -8531,7 +5203,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1405
+      946
     ]
   ],
   [
@@ -8542,7 +5214,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1406
+      947
     ]
   ],
   [
@@ -8553,7 +5225,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1407
+      948
     ]
   ],
   [
@@ -8564,7 +5236,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1408
+      949
     ]
   ],
   [
@@ -8575,7 +5247,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1409
+      950
     ]
   ],
   [
@@ -8586,7 +5258,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1410
+      951
     ]
   ],
   [
@@ -8597,7 +5269,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1411
+      952
     ]
   ],
   [
@@ -8608,7 +5280,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1418
+      959
     ]
   ],
   [
@@ -8619,7 +5291,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1419
+      960
     ]
   ],
   [
@@ -8689,7 +5361,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1427
+      968
     ]
   ],
   [
@@ -8700,7 +5372,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1428
+      969
     ]
   ],
   [
@@ -8711,7 +5383,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1429
+      970
     ]
   ],
   [
@@ -8781,7 +5453,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1437
+      978
     ]
   ],
   [
@@ -8792,7 +5464,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1438
+      979
     ]
   ],
   [
@@ -8803,7 +5475,18 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1439
+      980
+    ]
+  ],
+  [
+    "CONFIG_GPIO_HOGS_INIT_PRIORITY",
+    "y",
+    "int",
+    "41",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      981
     ]
   ],
   [
@@ -8814,7 +5497,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1440
+      982
     ]
   ],
   [
@@ -8836,7 +5519,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1442
+      984
     ]
   ],
   [
@@ -8847,7 +5530,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1443
+      985
     ]
   ],
   [
@@ -8858,7 +5541,7 @@
     "select",
     [
       "MAX17048 && DT_HAS_MAXIM_MAX17048_ENABLED && FUEL_GAUGE",
-      "INPUT_CST816S && DT_HAS_HYNITRON_CST816S_ENABLED && INPUT"
+      "LSM6DSL && DT_HAS_ST_LSM6DSL_ENABLED && SENSOR"
     ]
   ],
   [
@@ -8869,7 +5552,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1445
+      987
     ]
   ],
   [
@@ -8880,7 +5563,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1446
+      988
     ]
   ],
   [
@@ -8891,7 +5574,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1447
+      989
     ]
   ],
   [
@@ -8902,7 +5585,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1448
+      990
     ]
   ],
   [
@@ -8913,7 +5596,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1449
+      991
     ]
   ],
   [
@@ -8924,7 +5607,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1450
+      992
     ]
   ],
   [
@@ -8935,7 +5618,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1451
+      993
     ]
   ],
   [
@@ -9005,7 +5688,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1459
+      1001
     ]
   ],
   [
@@ -9016,51 +5699,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1460
-    ]
-  ],
-  [
-    "CONFIG_INPUT_CST816S",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1465
-    ]
-  ],
-  [
-    "CONFIG_INPUT_CST816S_INTERRUPT",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1466
-    ]
-  ],
-  [
-    "CONFIG_INPUT_CST816S_EV_DEVICE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1467
-    ]
-  ],
-  [
-    "CONFIG_INPUT_GPIO_KEYS",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1468
+      1002
     ]
   ],
   [
@@ -9071,7 +5710,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1474
+      1007
     ]
   ],
   [
@@ -9141,7 +5780,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1482
+      1015
     ]
   ],
   [
@@ -9152,7 +5791,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1483
+      1016
     ]
   ],
   [
@@ -9163,7 +5802,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1486
+      1019
     ]
   ],
   [
@@ -9174,7 +5813,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1487
+      1020
     ]
   ],
   [
@@ -9185,7 +5824,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1488
+      1021
     ]
   ],
   [
@@ -9196,7 +5835,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1489
+      1022
     ]
   ],
   [
@@ -9207,7 +5846,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1490
+      1023
     ]
   ],
   [
@@ -9218,7 +5857,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1491
+      1024
     ]
   ],
   [
@@ -9298,7 +5937,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1500
+      1033
     ]
   ],
   [
@@ -9309,7 +5948,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1501
+      1034
     ]
   ],
   [
@@ -9320,7 +5959,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1502
+      1035
     ]
   ],
   [
@@ -9331,7 +5970,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1507
+      1040
     ]
   ],
   [
@@ -9342,7 +5981,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1515
+      1048
     ]
   ],
   [
@@ -9353,7 +5992,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1516
+      1049
     ]
   ],
   [
@@ -9364,7 +6003,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1517
+      1050
     ]
   ],
   [
@@ -9375,7 +6014,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1518
+      1051
     ]
   ],
   [
@@ -9386,7 +6025,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1519
+      1052
     ]
   ],
   [
@@ -9397,7 +6036,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1520
+      1053
     ]
   ],
   [
@@ -9477,7 +6116,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1529
+      1062
     ]
   ],
   [
@@ -9488,7 +6127,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1530
+      1063
     ]
   ],
   [
@@ -9499,7 +6138,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1531
+      1064
     ]
   ],
   [
@@ -9510,7 +6149,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1532
+      1065
     ]
   ],
   [
@@ -9521,7 +6160,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1533
+      1066
     ]
   ],
   [
@@ -9532,7 +6171,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1534
+      1067
     ]
   ],
   [
@@ -9543,7 +6182,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1535
+      1068
     ]
   ],
   [
@@ -9554,7 +6193,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1536
+      1069
     ]
   ],
   [
@@ -9565,7 +6204,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1537
+      1070
     ]
   ],
   [
@@ -9576,7 +6215,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1538
+      1071
     ]
   ],
   [
@@ -9587,7 +6226,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1539
+      1072
     ]
   ],
   [
@@ -9598,18 +6237,217 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1540
+      1073
     ]
   ],
   [
     "CONFIG_SENSOR",
     "y",
     "bool",
+    "y",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1074
+    ]
+  ],
+  [
+    "CONFIG_SENSOR_LOG_LEVEL_OFF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SENSOR_LOG_LEVEL_ERR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SENSOR_LOG_LEVEL_WRN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SENSOR_LOG_LEVEL_INF",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SENSOR_LOG_LEVEL_DBG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SENSOR_LOG_LEVEL_DEFAULT",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_SENSOR_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/nedi/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
+      36
+    ]
+  ],
+  [
+    "CONFIG_SENSOR_INIT_PRIORITY",
+    "y",
+    "int",
+    "90",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1082
+    ]
+  ],
+  [
+    "CONFIG_SENSOR_ASYNC_API",
+    "y",
+    "bool",
     "n",
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1541
+      1083
+    ]
+  ],
+  [
+    "CONFIG_SENSOR_SHELL",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1084
+    ]
+  ],
+  [
+    "CONFIG_SENSOR_SHELL_BATTERY",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1085
+    ]
+  ],
+  [
+    "CONFIG_SENSOR_INFO",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1086
+    ]
+  ],
+  [
+    "CONFIG_LSM6DSL",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1091
+    ]
+  ],
+  [
+    "CONFIG_LSM6DSL_TRIGGER_NONE",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    null
+  ],
+  [
+    "CONFIG_LSM6DSL_ENABLE_TEMP",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1093
+    ]
+  ],
+  [
+    "CONFIG_LSM6DSL_SENSORHUB",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1094
+    ]
+  ],
+  [
+    "CONFIG_LSM6DSL_GYRO_FS",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1099
+    ]
+  ],
+  [
+    "CONFIG_LSM6DSL_GYRO_ODR",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1100
+    ]
+  ],
+  [
+    "CONFIG_LSM6DSL_ACCEL_FS",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1101
+    ]
+  ],
+  [
+    "CONFIG_LSM6DSL_ACCEL_ODR",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1102
     ]
   ],
   [
@@ -9620,7 +6458,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1542
+      1105
     ]
   ],
   [
@@ -9663,7 +6501,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1550
+      1113
     ]
   ],
   [
@@ -9733,7 +6571,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1558
+      1121
     ]
   ],
   [
@@ -9744,7 +6582,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1559
+      1122
     ]
   ],
   [
@@ -9755,7 +6593,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1560
+      1123
     ]
   ],
   [
@@ -9766,7 +6604,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1561
+      1124
     ]
   ],
   [
@@ -9777,7 +6615,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1562
+      1125
     ]
   ],
   [
@@ -9788,7 +6626,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1563
+      1126
     ]
   ],
   [
@@ -9799,7 +6637,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1564
+      1127
     ]
   ],
   [
@@ -9810,7 +6648,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1569
+      1132
     ]
   ],
   [
@@ -9821,7 +6659,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1570
+      1133
     ]
   ],
   [
@@ -9832,7 +6670,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1571
+      1134
     ]
   ],
   [
@@ -9843,7 +6681,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1572
+      1135
     ]
   ],
   [
@@ -9854,7 +6692,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1573
+      1136
     ]
   ],
   [
@@ -9865,7 +6703,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1574
+      1137
     ]
   ],
   [
@@ -9876,7 +6714,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1575
+      1138
     ]
   ],
   [
@@ -9887,7 +6725,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1576
+      1139
     ]
   ],
   [
@@ -9898,7 +6736,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1577
+      1140
     ]
   ],
   [
@@ -9909,7 +6747,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1578
+      1141
     ]
   ],
   [
@@ -9920,7 +6758,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1579
+      1142
     ]
   ],
   [
@@ -9931,7 +6769,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1580
+      1143
     ]
   ],
   [
@@ -9942,7 +6780,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1581
+      1144
     ]
   ],
   [
@@ -9953,7 +6791,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1582
+      1145
     ]
   ],
   [
@@ -10023,7 +6861,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1590
+      1153
     ]
   ],
   [
@@ -10034,7 +6872,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1591
+      1154
     ]
   ],
   [
@@ -10045,7 +6883,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1592
+      1155
     ]
   ],
   [
@@ -10056,7 +6894,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1597
+      1160
     ]
   ],
   [
@@ -10067,7 +6905,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1598
+      1161
     ]
   ],
   [
@@ -10078,7 +6916,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1599
+      1162
     ]
   ],
   [
@@ -10099,7 +6937,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1603
+      1166
     ]
   ],
   [
@@ -10110,7 +6948,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1604
+      1167
     ]
   ],
   [
@@ -10121,7 +6959,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1605
+      1168
     ]
   ],
   [
@@ -10132,7 +6970,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1606
+      1169
     ]
   ],
   [
@@ -10143,7 +6981,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1607
+      1170
     ]
   ],
   [
@@ -10154,7 +6992,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1614
+      1177
     ]
   ],
   [
@@ -10165,7 +7003,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1615
+      1178
     ]
   ],
   [
@@ -10176,7 +7014,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1616
+      1179
     ]
   ],
   [
@@ -10187,7 +7025,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1617
+      1180
     ]
   ],
   [
@@ -10198,7 +7036,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1618
+      1181
     ]
   ],
   [
@@ -10209,7 +7047,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1619
+      1182
     ]
   ],
   [
@@ -10220,7 +7058,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1620
+      1183
     ]
   ],
   [
@@ -10231,7 +7069,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1621
+      1184
     ]
   ],
   [
@@ -10242,7 +7080,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1624
+      1187
     ]
   ],
   [
@@ -10253,7 +7091,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1625
+      1188
     ]
   ],
   [
@@ -10264,7 +7102,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1626
+      1189
     ]
   ],
   [
@@ -10323,16 +7161,16 @@
     "CONFIG_PICOLIBC",
     "y",
     "bool",
-    "y",
-    "assign",
+    null,
+    "unset",
     null
   ],
   [
     "CONFIG_NEWLIB_LIBC",
     "y",
     "bool",
-    null,
-    "unset",
+    "y",
+    "assign",
     null
   ],
   [
@@ -10350,7 +7188,7 @@
     "y",
     "select",
     [
-      "PICOLIBC && PICOLIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
+      "NEWLIB_LIBC && NEWLIB_LIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
     ]
   ],
   [
@@ -10361,7 +7199,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1640
+      1203
     ]
   ],
   [
@@ -10372,7 +7210,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1641
+      1204
     ]
   ],
   [
@@ -10382,40 +7220,18 @@
     "y",
     "imply",
     [
-      "PICOLIBC && PICOLIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
+      "NEWLIB_LIBC && NEWLIB_LIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
     ]
   ],
   [
     "CONFIG_COMMON_LIBC_MALLOC",
     "y",
     "bool",
-    "y",
+    "n",
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1643
-    ]
-  ],
-  [
-    "CONFIG_COMMON_LIBC_CALLOC",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1644
-    ]
-  ],
-  [
-    "CONFIG_COMMON_LIBC_REALLOCARRAY",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1645
+      1206
     ]
   ],
   [
@@ -10426,40 +7242,74 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1646
+      1207
     ]
   ],
   [
-    "CONFIG_PICOLIBC_USE_MODULE",
+    "CONFIG_NEWLIB_LIBC_MIN_REQUIRED_HEAP_SIZE",
     "y",
-    "bool",
-    null,
-    "unset",
-    null
+    "int",
+    "8192",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1208
+    ]
   ],
   [
-    "CONFIG_PICOLIBC_USE_TOOLCHAIN",
+    "CONFIG_NEWLIB_LIBC_FLOAT_PRINTF",
     "y",
     "bool",
     "y",
     "assign",
-    null
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1209
+    ]
   ],
   [
-    "CONFIG_PICOLIBC_IO_FLOAT",
+    "CONFIG_NEWLIB_LIBC_FLOAT_SCANF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1210
+    ]
   ],
   [
-    "CONFIG_PICOLIBC_IO_LONG_LONG",
+    "CONFIG_NEWLIB_LIBC_HEAP_LISTENER",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1211
+    ]
+  ],
+  [
+    "CONFIG_NEWLIB_LIBC_CUSTOM_SBRK",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1212
+    ]
+  ],
+  [
+    "CONFIG_NEWLIB_LIBC_USE_POSIX_LIMITS_H",
     "y",
     "bool",
     "y",
     "assign",
-    null
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1213
+    ]
   ],
   [
     "CONFIG_STDOUT_CONSOLE",
@@ -10469,7 +7319,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1651
+      1214
     ]
   ],
   [
@@ -10479,8 +7329,7 @@
     "y",
     "select",
     [
-      "PICOLIBC && PICOLIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>",
-      "COMMON_LIBC_MALLOC && COMMON_LIBC_MALLOC_ARENA_SIZE != 0"
+      "NEWLIB_LIBC && NEWLIB_LIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
     ]
   ],
   [
@@ -10491,7 +7340,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1658
+      1221
     ]
   ],
   [
@@ -10502,7 +7351,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1668
+      1231
     ]
   ],
   [
@@ -10513,7 +7362,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1674
+      1237
     ]
   ],
   [
@@ -10524,18 +7373,18 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1680
+      1243
     ]
   ],
   [
     "CONFIG_SYS_HEAP_INFO",
     "y",
     "bool",
-    "y",
-    "select",
+    "n",
+    "assign",
     [
-      "LV_Z_MEM_POOL_SYS_HEAP && <choice LV_Z_MEMORY_POOL>",
-      "LV_Z_MEM_POOL_SYS_HEAP && <choice LV_Z_MEMORY_POOL>"
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1244
     ]
   ],
   [
@@ -10546,7 +7395,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1682
+      1245
     ]
   ],
   [
@@ -10557,7 +7406,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1683
+      1246
     ]
   ],
   [
@@ -10568,7 +7417,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1684
+      1247
     ]
   ],
   [
@@ -10579,7 +7428,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1685
+      1248
     ]
   ],
   [
@@ -10614,7 +7463,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1689
+      1252
     ]
   ],
   [
@@ -10625,7 +7474,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1690
+      1253
     ]
   ],
   [
@@ -10636,7 +7485,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1696
+      1259
     ]
   ],
   [
@@ -10647,7 +7496,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1702
+      1265
     ]
   ],
   [
@@ -10658,7 +7507,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1705
+      1268
     ]
   ],
   [
@@ -10669,7 +7518,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1710
+      1273
     ]
   ],
   [
@@ -10680,7 +7529,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1711
+      1274
     ]
   ],
   [
@@ -10691,7 +7540,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1712
+      1275
     ]
   ],
   [
@@ -10702,7 +7551,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1713
+      1276
     ]
   ],
   [
@@ -10724,7 +7573,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1715
+      1278
     ]
   ],
   [
@@ -10735,7 +7584,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1716
+      1279
     ]
   ],
   [
@@ -10756,7 +7605,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1718
+      1281
     ]
   ],
   [
@@ -10795,11 +7644,11 @@
     "CONFIG_CBPRINTF_FP_SUPPORT",
     "y",
     "bool",
-    "n",
+    "y",
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1723
+      1286
     ]
   ],
   [
@@ -10810,7 +7659,29 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1724
+      1287
+    ]
+  ],
+  [
+    "CONFIG_CBPRINTF_FP_ALWAYS_A",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1288
+    ]
+  ],
+  [
+    "CONFIG_CBPRINTF_N_SPECIFIER",
+    "y",
+    "bool",
+    "y",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1289
     ]
   ],
   [
@@ -10821,7 +7692,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1725
+      1290
     ]
   ],
   [
@@ -10891,7 +7762,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1733
+      1298
     ]
   ],
   [
@@ -10913,7 +7784,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1735
+      1300
     ]
   ],
   [
@@ -10924,7 +7795,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1736
+      1301
     ]
   ],
   [
@@ -10994,7 +7865,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1749
+      1314
     ]
   ],
   [
@@ -11005,7 +7876,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1750
+      1315
     ]
   ],
   [
@@ -11063,7 +7934,7 @@
     "y",
     "select",
     [
-      "PICOLIBC && PICOLIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
+      "NEWLIB_LIBC && NEWLIB_LIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
     ]
   ],
   [
@@ -11096,7 +7967,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1764
+      1329
     ]
   ],
   [
@@ -11107,7 +7978,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1768
+      1333
     ]
   ],
   [
@@ -11118,7 +7989,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1769
+      1334
     ]
   ],
   [
@@ -11137,7 +8008,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1775
+      1340
     ]
   ],
   [
@@ -11159,7 +8030,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1777
+      1342
     ]
   ],
   [
@@ -11170,7 +8041,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1778
+      1343
     ]
   ],
   [
@@ -11181,7 +8052,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1779
+      1344
     ]
   ],
   [
@@ -11192,7 +8063,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1780
+      1345
     ]
   ],
   [
@@ -11203,7 +8074,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1781
+      1346
     ]
   ],
   [
@@ -11214,7 +8085,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1782
+      1347
     ]
   ],
   [
@@ -11225,7 +8096,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1788
+      1353
     ]
   ],
   [
@@ -11236,7 +8107,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1791
+      1356
     ]
   ],
   [
@@ -11247,7 +8118,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1797
+      1362
     ]
   ],
   [
@@ -11258,7 +8129,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1804
+      1369
     ]
   ],
   [
@@ -11269,7 +8140,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1805
+      1370
     ]
   ],
   [
@@ -11280,7 +8151,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1806
+      1371
     ]
   ],
   [
@@ -11291,7 +8162,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1807
+      1372
     ]
   ],
   [
@@ -11302,7 +8173,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1812
+      1377
     ]
   ],
   [
@@ -11313,7 +8184,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1818
+      1383
     ]
   ],
   [
@@ -11324,7 +8195,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1819
+      1384
     ]
   ],
   [
@@ -11335,7 +8206,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1820
+      1385
     ]
   ],
   [
@@ -11346,7 +8217,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1821
+      1386
     ]
   ],
   [
@@ -11377,7 +8248,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1824
+      1389
     ]
   ],
   [
@@ -11388,7 +8259,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1825
+      1390
     ]
   ],
   [
@@ -11399,7 +8270,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1826
+      1391
     ]
   ],
   [
@@ -11410,7 +8281,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1827
+      1392
     ]
   ],
   [
@@ -11421,7 +8292,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1828
+      1393
     ]
   ],
   [
@@ -11432,7 +8303,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1829
+      1394
     ]
   ],
   [
@@ -11443,7 +8314,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1830
+      1395
     ]
   ],
   [
@@ -11454,7 +8325,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1831
+      1396
     ]
   ],
   [
@@ -11465,7 +8336,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1832
+      1397
     ]
   ],
   [
@@ -11476,7 +8347,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1833
+      1398
     ]
   ],
   [
@@ -11487,7 +8358,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1836
+      1401
     ]
   ],
   [
@@ -11498,7 +8369,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1837
+      1402
     ]
   ],
   [
@@ -11509,7 +8380,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1838
+      1403
     ]
   ],
   [
@@ -11520,7 +8391,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1839
+      1404
     ]
   ],
   [
@@ -11531,7 +8402,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1840
+      1405
     ]
   ],
   [
@@ -11542,7 +8413,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1841
+      1406
     ]
   ],
   [
@@ -11553,7 +8424,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1842
+      1407
     ]
   ],
   [
@@ -11564,7 +8435,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1847
+      1412
     ]
   ],
   [
@@ -11575,7 +8446,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1848
+      1413
     ]
   ],
   [
@@ -11586,7 +8457,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1849
+      1414
     ]
   ],
   [
@@ -11597,137 +8468,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1852
-    ]
-  ],
-  [
-    "CONFIG_INPUT_LOG_LEVEL_OFF",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_INPUT_LOG_LEVEL_ERR",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_INPUT_LOG_LEVEL_WRN",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_INPUT_LOG_LEVEL_INF",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_INPUT_LOG_LEVEL_DBG",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_INPUT_LOG_LEVEL_DEFAULT",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_INPUT_LOG_LEVEL",
-    "n",
-    "int",
-    "3",
-    "default",
-    [
-      "/home/nedi/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      36
-    ]
-  ],
-  [
-    "CONFIG_INPUT_MODE_SYNCHRONOUS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_INPUT_MODE_THREAD",
-    "y",
-    "bool",
-    "y",
-    "assign",
-    null
-  ],
-  [
-    "CONFIG_INPUT_THREAD_PRIORITY_OVERRIDE",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1862
-    ]
-  ],
-  [
-    "CONFIG_INPUT_QUEUE_MAX_MSGS",
-    "y",
-    "int",
-    "16",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1863
-    ]
-  ],
-  [
-    "CONFIG_INPUT_THREAD_STACK_SIZE",
-    "y",
-    "int",
-    "1024",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1864
-    ]
-  ],
-  [
-    "CONFIG_INPUT_EVENT_DUMP",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1865
-    ]
-  ],
-  [
-    "CONFIG_INPUT_SHELL",
-    "y",
-    "bool",
-    "n",
-    "assign",
-    [
-      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1866
+      1417
     ]
   ],
   [
@@ -11738,7 +8479,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1867
+      1418
     ]
   ],
   [
@@ -11749,7 +8490,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1872
+      1423
     ]
   ],
   [
@@ -11760,7 +8501,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1873
+      1424
     ]
   ],
   [
@@ -11771,7 +8512,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1874
+      1425
     ]
   ],
   [
@@ -11782,7 +8523,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1877
+      1428
     ]
   ],
   [
@@ -11793,7 +8534,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1878
+      1429
     ]
   ],
   [
@@ -11804,7 +8545,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1879
+      1430
     ]
   ],
   [
@@ -11815,7 +8556,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1884
+      1435
     ]
   ],
   [
@@ -11850,7 +8591,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1888
+      1439
     ]
   ],
   [
@@ -11861,7 +8602,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1889
+      1440
     ]
   ],
   [
@@ -11872,7 +8613,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1890
+      1441
     ]
   ],
   [
@@ -11883,7 +8624,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1891
+      1442
     ]
   ],
   [
@@ -11894,7 +8635,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1892
+      1443
     ]
   ],
   [
@@ -11905,7 +8646,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1897
+      1448
     ]
   ],
   [
@@ -11916,7 +8657,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1898
+      1449
     ]
   ],
   [
@@ -11927,7 +8668,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1899
+      1450
     ]
   ],
   [
@@ -11938,7 +8679,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1900
+      1451
     ]
   ],
   [
@@ -11949,7 +8690,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1906
+      1457
     ]
   ],
   [
@@ -11960,7 +8701,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1907
+      1458
     ]
   ],
   [
@@ -11971,7 +8712,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1908
+      1459
     ]
   ],
   [
@@ -11982,7 +8723,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1909
+      1460
     ]
   ],
   [
@@ -11993,7 +8734,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1910
+      1461
     ]
   ],
   [
@@ -12004,7 +8745,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1911
+      1462
     ]
   ],
   [
@@ -12015,7 +8756,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1912
+      1463
     ]
   ],
   [
@@ -12026,7 +8767,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1913
+      1464
     ]
   ],
   [
@@ -12037,7 +8778,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1914
+      1465
     ]
   ],
   [
@@ -12048,7 +8789,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1915
+      1466
     ]
   ],
   [
@@ -12059,7 +8800,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1916
+      1467
     ]
   ],
   [
@@ -12070,7 +8811,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1917
+      1468
     ]
   ],
   [
@@ -12081,7 +8822,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1918
+      1469
     ]
   ],
   [
@@ -12092,7 +8833,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1928
+      1479
     ]
   ],
   [
@@ -12103,7 +8844,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1929
+      1480
     ]
   ],
   [
@@ -12114,7 +8855,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1930
+      1481
     ]
   ],
   [
@@ -12125,7 +8866,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1931
+      1482
     ]
   ],
   [
@@ -12136,7 +8877,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1934
+      1485
     ]
   ],
   [
@@ -12147,7 +8888,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1935
+      1486
     ]
   ],
   [
@@ -12158,7 +8899,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1936
+      1487
     ]
   ],
   [
@@ -12169,7 +8910,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1937
+      1488
     ]
   ],
   [
@@ -12180,7 +8921,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1938
+      1489
     ]
   ],
   [
@@ -12191,7 +8932,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1939
+      1490
     ]
   ],
   [
@@ -12202,7 +8943,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1940
+      1491
     ]
   ],
   [
@@ -12213,7 +8954,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1941
+      1492
     ]
   ],
   [
@@ -12224,7 +8965,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1942
+      1493
     ]
   ],
   [
@@ -12275,7 +9016,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1953
+      1504
     ]
   ],
   [
@@ -12286,7 +9027,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1954
+      1505
     ]
   ],
   [
@@ -12297,7 +9038,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1960
+      1511
     ]
   ],
   [
@@ -12308,7 +9049,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1961
+      1512
     ]
   ],
   [
@@ -12319,7 +9060,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1962
+      1513
     ]
   ],
   [
@@ -12330,7 +9071,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1963
+      1514
     ]
   ],
   [
@@ -12341,7 +9082,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1964
+      1515
     ]
   ],
   [
@@ -12352,7 +9093,18 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1965
+      1516
+    ]
+  ],
+  [
+    "CONFIG_LOG_USE_TAGGED_ARGUMENTS",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
+      1517
     ]
   ],
   [
@@ -12363,7 +9115,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1966
+      1518
     ]
   ],
   [
@@ -12374,7 +9126,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1967
+      1519
     ]
   ],
   [
@@ -12385,7 +9137,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1970
+      1522
     ]
   ],
   [
@@ -12396,7 +9148,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1971
+      1523
     ]
   ],
   [
@@ -12417,7 +9169,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1975
+      1527
     ]
   ],
   [
@@ -12428,7 +9180,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1984
+      1536
     ]
   ],
   [
@@ -12439,7 +9191,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1987
+      1539
     ]
   ],
   [
@@ -12450,7 +9202,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1990
+      1542
     ]
   ],
   [
@@ -12461,7 +9213,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1991
+      1543
     ]
   ],
   [
@@ -12472,7 +9224,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1996
+      1548
     ]
   ],
   [
@@ -12483,7 +9235,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      1999
+      1551
     ]
   ],
   [
@@ -12504,7 +9256,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2005
+      1557
     ]
   ],
   [
@@ -12515,7 +9267,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2006
+      1558
     ]
   ],
   [
@@ -12526,7 +9278,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2012
+      1564
     ]
   ],
   [
@@ -12537,7 +9289,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2020
+      1572
     ]
   ],
   [
@@ -12548,7 +9300,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2025
+      1577
     ]
   ],
   [
@@ -12559,7 +9311,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2026
+      1578
     ]
   ],
   [
@@ -12570,7 +9322,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2029
+      1581
     ]
   ],
   [
@@ -12581,7 +9333,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2034
+      1586
     ]
   ],
   [
@@ -12592,7 +9344,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2035
+      1587
     ]
   ],
   [
@@ -12603,7 +9355,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2036
+      1588
     ]
   ],
   [
@@ -12614,7 +9366,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2039
+      1591
     ]
   ],
   [
@@ -12625,7 +9377,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2040
+      1592
     ]
   ],
   [
@@ -12636,7 +9388,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2041
+      1593
     ]
   ],
   [
@@ -12706,7 +9458,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2049
+      1601
     ]
   ],
   [
@@ -12717,7 +9469,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2050
+      1602
     ]
   ],
   [
@@ -12728,7 +9480,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2051
+      1603
     ]
   ],
   [
@@ -12739,7 +9491,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2052
+      1604
     ]
   ],
   [
@@ -12774,7 +9526,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2056
+      1608
     ]
   ],
   [
@@ -12785,7 +9537,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2057
+      1609
     ]
   ],
   [
@@ -12796,7 +9548,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2058
+      1610
     ]
   ],
   [
@@ -12807,7 +9559,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2059
+      1611
     ]
   ],
   [
@@ -12818,7 +9570,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2060
+      1612
     ]
   ],
   [
@@ -12888,7 +9640,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2068
+      1620
     ]
   ],
   [
@@ -12899,7 +9651,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2069
+      1621
     ]
   ],
   [
@@ -12910,7 +9662,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2070
+      1622
     ]
   ],
   [
@@ -12921,7 +9673,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2071
+      1623
     ]
   ],
   [
@@ -12932,7 +9684,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2072
+      1624
     ]
   ],
   [
@@ -12943,7 +9695,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2073
+      1625
     ]
   ],
   [
@@ -12954,7 +9706,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2074
+      1626
     ]
   ],
   [
@@ -12965,7 +9717,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2075
+      1627
     ]
   ],
   [
@@ -12976,7 +9728,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2076
+      1628
     ]
   ],
   [
@@ -12987,7 +9739,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2077
+      1629
     ]
   ],
   [
@@ -12998,7 +9750,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2078
+      1630
     ]
   ],
   [
@@ -13009,7 +9761,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2079
+      1631
     ]
   ],
   [
@@ -13020,7 +9772,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2080
+      1632
     ]
   ],
   [
@@ -13031,7 +9783,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2081
+      1633
     ]
   ],
   [
@@ -13042,7 +9794,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2082
+      1634
     ]
   ],
   [
@@ -13053,7 +9805,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2083
+      1635
     ]
   ],
   [
@@ -13064,7 +9816,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2084
+      1636
     ]
   ],
   [
@@ -13075,7 +9827,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2085
+      1637
     ]
   ],
   [
@@ -13086,7 +9838,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2086
+      1638
     ]
   ],
   [
@@ -13097,7 +9849,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2087
+      1639
     ]
   ],
   [
@@ -13108,7 +9860,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2088
+      1640
     ]
   ],
   [
@@ -13119,7 +9871,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2089
+      1641
     ]
   ],
   [
@@ -13130,7 +9882,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2090
+      1642
     ]
   ],
   [
@@ -13141,7 +9893,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2091
+      1643
     ]
   ],
   [
@@ -13152,7 +9904,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2092
+      1644
     ]
   ],
   [
@@ -13163,7 +9915,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2093
+      1645
     ]
   ],
   [
@@ -13174,7 +9926,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2094
+      1646
     ]
   ],
   [
@@ -13185,7 +9937,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2095
+      1647
     ]
   ],
   [
@@ -13196,7 +9948,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2096
+      1648
     ]
   ],
   [
@@ -13207,7 +9959,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2097
+      1649
     ]
   ],
   [
@@ -13218,7 +9970,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2098
+      1650
     ]
   ],
   [
@@ -13229,7 +9981,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2099
+      1651
     ]
   ],
   [
@@ -13240,7 +9992,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2100
+      1652
     ]
   ],
   [
@@ -13251,7 +10003,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2101
+      1653
     ]
   ],
   [
@@ -13262,7 +10014,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2102
+      1654
     ]
   ],
   [
@@ -13273,7 +10025,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2103
+      1655
     ]
   ],
   [
@@ -13284,7 +10036,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2104
+      1656
     ]
   ],
   [
@@ -13295,7 +10047,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2105
+      1657
     ]
   ],
   [
@@ -13306,7 +10058,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2106
+      1658
     ]
   ],
   [
@@ -13317,7 +10069,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2107
+      1659
     ]
   ],
   [
@@ -13328,7 +10080,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2108
+      1660
     ]
   ],
   [
@@ -13339,7 +10091,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2109
+      1661
     ]
   ],
   [
@@ -13350,7 +10102,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2110
+      1662
     ]
   ],
   [
@@ -13361,7 +10113,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2111
+      1663
     ]
   ],
   [
@@ -13372,7 +10124,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2112
+      1664
     ]
   ],
   [
@@ -13383,7 +10135,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2113
+      1665
     ]
   ],
   [
@@ -13394,7 +10146,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2114
+      1666
     ]
   ],
   [
@@ -13474,7 +10226,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2121
+      1673
     ]
   ],
   [
@@ -13485,7 +10237,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2122
+      1674
     ]
   ],
   [
@@ -13496,7 +10248,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2127
+      1679
     ]
   ],
   [
@@ -13507,7 +10259,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2130
+      1682
     ]
   ],
   [
@@ -13518,7 +10270,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2135
+      1687
     ]
   ],
   [
@@ -13529,7 +10281,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2136
+      1688
     ]
   ],
   [
@@ -13540,7 +10292,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2137
+      1689
     ]
   ],
   [
@@ -13551,7 +10303,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2138
+      1690
     ]
   ],
   [
@@ -13562,7 +10314,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2139
+      1691
     ]
   ],
   [
@@ -13573,7 +10325,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2145
+      1697
     ]
   ],
   [
@@ -13584,7 +10336,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2146
+      1698
     ]
   ],
   [
@@ -13595,7 +10347,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2149
+      1701
     ]
   ],
   [
@@ -13606,7 +10358,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2150
+      1702
     ]
   ],
   [
@@ -13617,7 +10369,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2151
+      1703
     ]
   ],
   [
@@ -13628,7 +10380,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2152
+      1704
     ]
   ],
   [
@@ -13639,7 +10391,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2153
+      1705
     ]
   ],
   [
@@ -13650,7 +10402,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2154
+      1706
     ]
   ],
   [
@@ -13661,7 +10413,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2155
+      1707
     ]
   ],
   [
@@ -13672,7 +10424,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2156
+      1708
     ]
   ],
   [
@@ -13740,7 +10492,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2173
+      1725
     ]
   ],
   [
@@ -13751,7 +10503,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2174
+      1726
     ]
   ],
   [
@@ -13781,7 +10533,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2177
+      1729
     ]
   ],
   [
@@ -13792,7 +10544,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2178
+      1730
     ]
   ],
   [
@@ -13803,7 +10555,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2183
+      1735
     ]
   ],
   [
@@ -13814,7 +10566,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2184
+      1736
     ]
   ],
   [
@@ -13897,7 +10649,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2200
+      1752
     ]
   ],
   [
@@ -13908,7 +10660,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2201
+      1753
     ]
   ],
   [
@@ -13919,7 +10671,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2202
+      1754
     ]
   ],
   [
@@ -13970,7 +10722,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2208
+      1760
     ]
   ],
   [
@@ -13981,7 +10733,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2209
+      1761
     ]
   ],
   [
@@ -13992,7 +10744,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2210
+      1762
     ]
   ],
   [
@@ -14003,7 +10755,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2211
+      1763
     ]
   ],
   [
@@ -14014,7 +10766,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2212
+      1764
     ]
   ],
   [
@@ -14049,7 +10801,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2216
+      1768
     ]
   ],
   [
@@ -14060,7 +10812,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2217
+      1769
     ]
   ],
   [
@@ -14106,7 +10858,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2228
+      1780
     ]
   ],
   [
@@ -14117,7 +10869,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2229
+      1781
     ]
   ],
   [
@@ -14128,7 +10880,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2230
+      1782
     ]
   ],
   [
@@ -14139,7 +10891,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2231
+      1783
     ]
   ],
   [
@@ -14150,7 +10902,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2232
+      1784
     ]
   ],
   [
@@ -14161,7 +10913,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2233
+      1785
     ]
   ],
   [
@@ -14172,7 +10924,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2234
+      1786
     ]
   ],
   [
@@ -14183,7 +10935,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2235
+      1787
     ]
   ],
   [
@@ -14194,7 +10946,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2236
+      1788
     ]
   ],
   [
@@ -14205,7 +10957,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2237
+      1789
     ]
   ],
   [
@@ -14216,7 +10968,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2238
+      1790
     ]
   ],
   [
@@ -14227,7 +10979,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2239
+      1791
     ]
   ],
   [
@@ -14238,7 +10990,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2240
+      1792
     ]
   ],
   [
@@ -14249,7 +11001,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2241
+      1793
     ]
   ],
   [
@@ -14260,7 +11012,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2242
+      1794
     ]
   ],
   [
@@ -14271,7 +11023,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2243
+      1795
     ]
   ],
   [
@@ -14282,7 +11034,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2244
+      1796
     ]
   ],
   [
@@ -14293,7 +11045,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2245
+      1797
     ]
   ],
   [
@@ -14304,7 +11056,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2246
+      1798
     ]
   ],
   [
@@ -14315,7 +11067,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2247
+      1799
     ]
   ],
   [
@@ -14326,7 +11078,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2248
+      1800
     ]
   ],
   [
@@ -14337,7 +11089,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2251
+      1803
     ]
   ],
   [
@@ -14358,7 +11110,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2253
+      1805
     ]
   ],
   [
@@ -14379,7 +11131,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2255
+      1807
     ]
   ],
   [
@@ -14390,7 +11142,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2261
+      1813
     ]
   ],
   [
@@ -14401,7 +11153,7 @@
     "assign",
     [
       "/home/nedi/zephyrproject/Hacktor_Basic/build/zephyr/.config",
-      2267
+      1819
     ]
   ]
 ]
