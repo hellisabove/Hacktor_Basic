@@ -1,145 +1,98 @@
-# Hacktor Basic
+# Hacktor Watch Zephyr Port
 
-Small Zephyr application for the `Hacktor Watch` that brings up a round SPI LCD and capacitive touch panel.
+This repository contains the Zephyr v4.3 port of the Hacktor Watch firmware, originally written in Arduino/C++. The project has been fully refactored into pure C and leverages Zephyr's native driver APIs for a lightweight and efficient smartwatch experience.
 
-The project currently does four things:
+## Features
 
-- routes the Zephyr console and shell to the ESP32-S3 native USB serial/JTAG port
-- initializes a `GC9A01` 240x240 round LCD over `SPI3`
-- initializes a `CST816T`-style touch controller on `I2C`
-- runs a minimal LVGL UI that shows `Hello!`, touch coordinates, and a touch indicator dot
+- **Analog Watchface:** Smooth, flicker-free rendering of hour, minute, and second hands.
+- **Info Screen:** Real-time data display including:
+    - Battery percentage and precise voltage.
+    - Hardware step counter (Pedometer).
+    - Digital time readout.
+- **Optimized Graphics:** Lightweight C graphics library with SPI burst optimizations for the GC9A01 display.
+- **Native Zephyr Drivers:** 
+    - **MAX17048 Fuel Gauge** via Zephyr's Fuel Gauge API.
+    - **LSM6DS3 IMU** via Zephyr's Sensor API (with hardware pedometer support).
+    - **GC9A01 LCD** via Zephyr's Display and MIPI-DBI APIs.
+- **Power Management:** Automatic screen timeout after 10 seconds of inactivity.
+- **Input Handling:** Physical button wakes the screen and toggles between the Watchface and Info screens.
+- **Wall-Clock Time:** Accurate timekeeping initialized from the build date and updated using system uptime.
 
-## Hardware
+## Hardware Support
 
-Target board:
+Target board: `esp32s3_devkitc/esp32s3/procpu`
 
-- `esp32s3_devkitc/esp32s3/procpu`
+### Pin Mapping
 
-Connected peripherals:
-
-- LCD controller: `GC9A01`
-- Touch controller: `CST816T` using Zephyr's `hynitron,cst816s` driver path
-
-## Pin Mapping
-
-LCD:
-
-- `SPI3_SCK` -> `GPIO12`
-- `SPI3_MOSI` -> `GPIO11`
-- `SPI3_MISO` -> `GPIO13`
-- `LCD_CS` -> `GPIO4`
-- `LCD_DC` -> `GPIO5`
-- `LCD_RST` -> `GPIO3`
-- `LCD_BL` -> `GPIO7`
-- `LCD power enable` -> `GPIO18`
-
-Touch:
-
-- `I2C_SDA` -> `GPIO8`
-- `I2C_SCL` -> `GPIO9`
-- `TP_INT` -> `GPIO1`
-- `TP_RST` -> `GPIO2`
-
-These connections are described in [app.overlay](app.overlay).
-
-## What The App Does
-
-On boot, the application:
-
-1. enables the LCD backlight
-2. initializes the display after deferred Zephyr device init
-3. starts LVGL
-4. creates a simple screen with a centered `Hello!` label
-5. listens for touch events from the touch controller
-6. updates the UI with the current touch position
-
-When the panel is touched:
-
-- a small dot is drawn under the finger
-- the bottom status label shows the transformed screen coordinates
-
-When the panel is released:
-
-- the dot is hidden
-- the status text changes to `Touch released`
-
-The display is rotated 180 degrees in devicetree so the UI matches the physical mounting orientation.
+| Component | Signal | GPIO |
+|-----------|--------|------|
+| **LCD**   | SCK    | 12   |
+|           | MOSI   | 11   |
+|           | MISO   | 13   |
+|           | CS     | 4    |
+|           | DC     | 5    |
+|           | RST    | 3    |
+|           | BL     | 7    |
+|           | PWR EN | 18 (gpio-hog) |
+| **I2C**   | SDA    | 8    |
+|           | SCL    | 9    |
+| **Touch** | INT    | 1    |
+|           | RST    | 2    |
+| **Btn**   | BOOT0  | 0    |
+| **IMU**   | INT1   | 17   |
+|           | INT2   | 14   |
 
 ## Project Structure
 
-- [CMakeLists.txt](CMakeLists.txt): Zephyr app definition and source list
-- [prj.conf](prj.conf): Zephyr Kconfig options for console, shell, LVGL, display, input
-- [app.overlay](app.overlay): board-specific devicetree overlay with LCD and touch wiring
-- [src/main.c](src/main.c): minimal entry point
-- [src/panel.c](src/panel.c): LCD, touch, LVGL, and shell command logic
-- [build.sh](build.sh): local build/flash helper script
+- `src/main.c`: Application entry point and top-level state machine.
+- `src/graphics.c`: Custom graphics primitives (lines, circles, text).
+- `src/watchface.c`: Analog watchface rendering logic.
+- `src/info_screen.c`: Data display screen implementation.
+- `src/imu.c`: IMU initialization and hardware pedometer configuration.
+- `src/battery_monitor.c`: Power monitoring using the Zephyr Fuel Gauge API.
+- `src/time_keeper.c`: Accurate wall-clock time management.
+- `app.overlay`: Devicetree configuration for the ESP32-S3 and peripherals.
+- `prj.conf`: Zephyr subsystem and driver configuration.
 
-## Building
+## Getting Started
 
-The helper script expects a Zephyr workspace layout like this:
+### Prerequisites
 
-- this repository in its current directory
-- Zephyr at `../zephyr`
-- optional Python virtual environment at `../.venv`
+- Zephyr SDK v0.17.4+
+- Zephyr RTOS v4.3.0
 
-Build:
+You can use the provided setup scripts (`zephyr-v4.3.99-arch-setup.sh` or `zephyr-v4.3.99-ubuntu-setup.sh`) to prepare your environment.
+
+### Building
+
+To build the project:
 
 ```bash
 ./build.sh
 ```
 
-Clean only:
-
-```bash
-./build.sh --clean
-```
-
-Pristine rebuild:
+To perform a clean rebuild:
 
 ```bash
 ./build.sh --pristine
 ```
 
-Override the default board if needed:
+### Flashing
+
+Flash the firmware to your Hacktor Watch:
 
 ```bash
-BOARD=esp32s3_devkitc/esp32s3/procpu ./build.sh
+./build.sh --flash --port /dev/ttyACMx
 ```
+replace the x with the number showed when listing the ttys
 
-## Flashing
+## USB Console & Logging
 
-Flash the board:
+The project uses Zephyr's logging subsystem. You can view real-time logs via the ESP32-S3 native USB port:
 
 ```bash
-./build.sh --flash --port /dev/cu.usbmodemXXXX
+# Example using minicom
+minicom -D /dev/ttyACMx
 ```
 
-Optional erase before flashing:
-
-```bash
-./build.sh --flash --erase --port /dev/cu.usbmodemXXXX
-```
-
-After flashing, the script opens a serial terminal at `115200`.
-
-## USB Console And Shell
-
-The project routes both console and shell to the ESP32-S3 USB serial/JTAG peripheral.
-
-Once connected, Zephyr shell commands are available together with one project-specific command:
-
-```text
-app
-```
-
-`app` prints the current display geometry, orientation, and the latest touch state.
-
-## Notes
-
-- The LCD panel is configured through Zephyr's `galaxycore,gc9x01x` driver.
-- The touch controller is described as `hynitron,cst816s` in devicetree because that is the supported Zephyr driver path used by this hardware setup.
-- The application is intentionally small and focused on hardware bring-up rather than product UI structure.
-
-## Setup
-- In this repo there are 2 scripts for setting up zephyr 4.3. One is for arch and the other for ubuntu.
-- Download the script for your distro, it will setup the zephyr sdk and everything. Then clone the repo in the zephyrproject folder and build it.
+The logs are color-coded and provide information on hardware initialization, sensor status, and battery levels.
